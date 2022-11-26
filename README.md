@@ -16,9 +16,7 @@ This is react.js based porject with full functionalities with following techstac
 
 ## File-structure
 
-branchname- [yourname]-[pagename(eg-productPage)] `<-------push below code folder(bohemiantraders-clone) in your branch`
-
->bohemiantraders-clone `<---------------make sure folder name is same for all` 
+>bohemiantraders-clone
   >public
   >src
     >Components
