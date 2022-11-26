@@ -17,18 +17,18 @@ This is react.js based porject with full functionalities with following techstac
 ## File-structure
 
 >bohemiantraders-clone
-  >public
-  >src
-    >Components
+  -public
+  -src
+    -Components
       -Navbar.jsx
       -Footer.jsx
-    >Routes
+    -Routes
       -AllRoutes.jsx
       -PrivateRoute.jsx
-    >Context
+    -Context
       >AuthContext
         -AuthContextProvider.jsx
-    >Pages
+    -Pages
       -Home.jsx
       -Login.jsx
       -Signup.jsx   ----------- Hardeep
@@ -52,7 +52,7 @@ This is react.js based porject with full functionalities with following techstac
       -Store.js    
   -index.js
   -app.js
-  >database
+  -database
     -products.json
     -userAccounts.json
   -package.json
