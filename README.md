@@ -29,7 +29,6 @@ This is react.js based porject with full functionalities with following techstac
       >AuthContext
         -AuthContextProvider.jsx
     >Pages
-
       -Home.jsx
       -Login.jsx
       -Signup.jsx   ----------- Hardeep
@@ -50,8 +49,7 @@ This is react.js based porject with full functionalities with following techstac
         -Actions.js
         -Reducer.js
         
-      -Store.js
-      
+      -Store.js    
   -index.js
   -app.js
   >database
