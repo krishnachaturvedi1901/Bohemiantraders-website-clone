@@ -19,4 +19,4 @@ This is react.js based porject with full functionalities with following techstac
 
 
 ## File-structure
-<img  src="public\fileStructure.PNG" />
+<img  src="public\fileStructure.PNG" height="auto" width="auto" />
