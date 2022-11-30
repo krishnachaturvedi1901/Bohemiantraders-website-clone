@@ -1,11 +1,10 @@
 import React from 'react'
-import styles from "../Pages/Products/styles.module.css"
+import styles from "../../Pages/Products/styles.module.css"
 import {
     Box,
     Breadcrumb,
     BreadcrumbItem,
     BreadcrumbLink,
-    BreadcrumbSeparator,
   } from '@chakra-ui/react'
 
 const Breadscrum = () => {

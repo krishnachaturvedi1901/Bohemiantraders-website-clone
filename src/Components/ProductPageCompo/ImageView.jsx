@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Box, Text } from '@chakra-ui/react'
-import styles from "../Pages/Products/styles.module.css"
+import styles from "../../Pages/Products/styles.module.css"
 
 
 const ImageView = () => {

@@ -1,4 +1,12 @@
 @import url('https://fonts.cdnfonts.com/css/work-sans');
+.applyFontFamily{
+    margin: .3em;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../utils/fonts/work-sans.light.ttf");
+
+}
 .prodContainer{
     font-family:"Work Sans";
     font-size: 12px;
@@ -18,7 +26,7 @@
     height: auto;
 }
 .heading{
-    font-size: 2.7em;
+    
     margin: 10px;
     font-family: "Work Sans";
     font-style: normal;
@@ -38,4 +46,30 @@
 }
 .imgUnderline{
   border-bottom: 1px solid #333333;
+}
+.filterHeadStyle{
+    font-size: 14px;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 500;
+    src: url("../../utils/fonts/work-sans.extralight.ttf");
+    color: #555555;
+}
+.filterBodyStyle{
+    font-size: 12px;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../../utils/fonts/work-sans.extralight.ttf");
+    color: #333333;
+
+}
+.bottomPoster{
+    font-size: 14px;
+    margin: .5em;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../../utils/fonts/work-sans.light.ttf");
+    color:#272727;
 }

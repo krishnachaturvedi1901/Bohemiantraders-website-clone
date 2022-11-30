@@ -1,8 +1,9 @@
+import { Box } from '@chakra-ui/react'
 import React from 'react'
 
 const Pagination = () => {
   return (
-    <div>Pagination</div>
+    <Box border='1px solid red' >Pagination</Box>
   )
 }
 
