@@ -19,4 +19,4 @@ This is react.js based porject with full functionalities with following techstac
 
 
 ## File-structure
-<img  src="https://github.com/krishnachaturvedi1901/Bohemiantraders-website-clone/blob/main/public/filestructure.PNG?raw=true" height="auto" width="auto" />
+<img  src="https://i.imgur.com/q39CFdB.png" height="auto" width="auto" />
