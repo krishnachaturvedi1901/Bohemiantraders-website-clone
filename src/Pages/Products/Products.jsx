@@ -5,6 +5,7 @@ import ImageView from '../../Components/ImageView'
 import styles from "./styles.module.css"
 import Pagination from '../../Components/Pagination'
 import ProductList from '../../Components/ProductList'
+import FilterBox from '../../Components/FilterBox'
 
 const Products = () => {
   const [winWidth,setWinWidth]=useState(window.innerWidth)
@@ -31,14 +32,8 @@ const Products = () => {
      <Box display={'flex'} >
         {
           winWidth>=768?
-          <VStack border={'1px solid black'}   alignItems={'flex-start'} maxW='max-content'h={'auto'} >
-          <Box>
-            Hlwwwwwwwwwwwwwwwww
-          </Box>
-          <Box>
-           hiiiiiiiiiiiiiiiiii
-           </Box>
-
+          <VStack border={'1px solid black'}   alignItems={'flex-start'} maxW='max-content' h={'auto'} >
+             <FilterBox/>
           </VStack>
           :null
         }
