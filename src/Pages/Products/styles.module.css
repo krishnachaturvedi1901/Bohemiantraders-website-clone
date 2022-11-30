@@ -1,0 +1,41 @@
+@import url('https://fonts.cdnfonts.com/css/work-sans');
+.prodContainer{
+    font-family:"Work Sans";
+    font-size: 12px;
+    display: block;
+    height: 100%;
+    width: auto;
+    border: 1px solid black;
+}
+.breadScrum{
+    font-size: 1em;
+    font-family:"Work Sans",sans-serif;
+    color: #c4a173;
+    padding: .77vw 0 1.96vw 0;
+}
+#poster{
+    width:100%;
+    height: auto;
+}
+.heading{
+    font-size: 2.7em;
+    margin: 10px;
+    font-family: "Work Sans";
+    font-style: normal;
+    font-weight: 300;
+    src: url("../../utils/fonts/work-sans.extralight.ttf");
+}
+.imgView{
+    display: flex;
+    font-size: 1em;
+    color: #555555;
+    align-items: center;
+}
+.imgView>p{
+    margin: 10px 10px 0 0;
+    padding-bottom: 10px;
+
+}
+.imgUnderline{
+  border-bottom: 1px solid #333333;
+}

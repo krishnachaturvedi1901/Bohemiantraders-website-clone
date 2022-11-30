@@ -7,15 +7,7 @@
         "price": 150,
         "reviews": 25,
         "rating": 4.4,
-        "sizes": [
-            "2XS",
-            "XS",
-            "S",
-            "M",
-            "L",
-            "XL",
-            "2XL"
-        ],
+        "sizes": ["2XS","XS","S","M","L","XL","2XL"],
         "details": "aliquip nisi incididunt fugiat sit non magna laboris commodo nisi pariatur ipsum labore eiusmod velit velit ut do ex aute do duis Lorem consequat enim Lorem ut et veniam amet ipsum laboris sint consectetur amet irure qui proident incididunt sit minim culpa officia ex tempor enim ad ut",
         "features": [
             "White cotton voile with mulit metallic lurex stripe",
