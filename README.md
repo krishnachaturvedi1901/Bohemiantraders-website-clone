@@ -16,6 +16,7 @@ This is react.js based porject with full functionalities with following techstac
   - React-redux lib
   - Json server:(CRUD)
   - Netlify deployment
+  - Render.com server deployment
 
 
 ## File-structure
