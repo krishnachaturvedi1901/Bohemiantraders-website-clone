@@ -4,11 +4,7 @@ import Styles from "./Home.module.css"
 import {  Box, Grid, GridItem, Text } from '@chakra-ui/layout'
 import { Navbar } from '../Components/Navbar'
 import { Image } from '@chakra-ui/image'
-import { Input } from '@chakra-ui/react'
-import {Flex,Spacer} from "@chakra-ui/layout"
-import {BsInstagram} from "react-icons/bs"
-import {FaFacebookF,FaPinterestSquare, FaTiktok} from "react-icons/fa"
-import { Button } from '@chakra-ui/react'
+import Footer from '../Components/Footer'
 // import {} 
 
 export default function Home() {
@@ -101,46 +97,7 @@ export default function Home() {
                 </GridItem>
             </Grid>
         </Box>
-        <Box backgroundColor={"black"} padding={"70px"}>
-            <Grid gridTemplateColumns={['repeat(1,1fr)','repeat(1,1fr)','repeat(4,1fr)']}>
-                <GridItem>
-                    <Image w={[200,300]}   maxW={"300px"} src={"https://cdn11.bigcommerce.com/s-9srn18to/stencil/f5485050-5114-013b-119b-123f55a4ca1d/e/8e215d00-3d2b-013b-c3ef-3ea28820c29e/img/logo-white.png"}/>
-                    <Flex>
-                    <BsInstagram className={Styles.icons}/>
-                    <FaFacebookF className={Styles.icons}/>
-                    <FaPinterestSquare className={Styles.icons}/>
-                    <FaTiktok className={Styles.icons}/>
-                    </Flex>
-                </GridItem>
-                <GridItem className={Styles.about}>
-                    <h5>INFO</h5>
-                    <br />
-                    <h5>ABOUT US</h5>
-                    <h5>CONTACT US</h5>
-                    <h5>WORK WITH US</h5>
-                    <h5>TS & CS</h5>
-                    <h5>PRIVACY POLICY</h5>
-
-                </GridItem>
-                <GridItem className={Styles.about}>
-                    <h5>CUSTOMER CARE</h5>
-                    <br />
-                    <h5>SHIPPING</h5>
-                    <h5>RETURN</h5>
-                    <h5>INCLUSIVE SIZING</h5>
-                    <h5>PAYMENT METHOD</h5>
-                    <h5>GIFT CARDS</h5>
-                    <h5>OUTLET</h5>
-                </GridItem>
-                <GridItem className={Styles.about}>
-                    <h5>SUBSCRIBE TO RECEIVE UPDATES AND SPECIAL OFFERS!</h5>
-                    <br />
-                    <Flex><Input style={{color:"white", fontSize:"13px", fontWeight:"500"}} variant='flushed' placeholder='YOUR EMAIL ADDRESS' />
-                    <Button style={{fontSize:"13px",backgroundColor:"transparent", borderRadius:"0px"}} className={Styles.footer}>SUBSCRIBE</Button></Flex>
-                    
-                </GridItem>
-            </Grid>
-        </Box>
+        <Footer />
     </div>
   )
 }

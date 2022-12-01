@@ -3,6 +3,7 @@ import { Image } from "@chakra-ui/image";
 import { Box, Container, Flex, Spacer, Stack } from "@chakra-ui/layout";
 import { Menu, MenuButton, MenuItem, MenuList } from "@chakra-ui/menu";
 import { Select } from "@chakra-ui/select";
+import { Link } from "react-router-dom";
 import "./Navbar.css"
 
 export const Navbar = () =>{
@@ -37,6 +38,7 @@ export const Navbar = () =>{
                     <option value='option1'>USD</option>
                     <option value='option3'>NZD</option>
                 </Select>
+                <Link to="/login"><p>Login</p></Link>
                 </Box>
             </Flex>
             </Box>

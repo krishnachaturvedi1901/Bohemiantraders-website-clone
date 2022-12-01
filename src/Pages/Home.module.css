@@ -88,26 +88,3 @@
     font-weight: 500;
     letter-spacing: 1px;
 }
-
-.icons{
-    color:white;
-    margin-top: 20px;
-    margin-right: 14px;
-}
-
-.about{
-    font-size: 13px;
-    font-weight: 500;
-    font-family: sans-serif;
-    color: white;
-    letter-spacing: 1.25px;
-}
-
-.footer{
-    font-size: 13px;
-    font-weight: 500;
-    letter-spacing: 1.25px;
-    color:white;
-    border-bottom:1px solid white;
-    border-radius: 0px;
-}
