@@ -13,7 +13,7 @@ import { Button } from '@chakra-ui/react'
 
 export default function Home() {
   return (
-    <div>
+    <div width="100%">
         <Box className={Styles.top}>
             <h5>FREE SHIPPING FOR ALL DOMESTIC AUSTRALIAN ORDERS OVER $250</h5>
         </Box>
@@ -21,23 +21,23 @@ export default function Home() {
         <Box  m={"0 auto 50px"} width={"98%"}><Image src="https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/carousel-black-friday-2022.jpg?t=1668994561"/></Box>
         
         <Box mb={"50px"}>
-        <Grid templateColumns='repeat(4, 1fr)' >
-            <GridItem style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-1-black-friday-2022.jpg?t=1668994764)`}} className={Styles.grid_item} >
+        <Grid templateColumns={['repeat(1,1fr)','repeat(4, 1fr)']} >
+            <GridItem w={[480,180,400]}  style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-1-black-friday-2022.jpg?t=1668994764)`}} className={Styles.grid_item} >
                 <p  className={Styles.grid_child} style={{paddingTop:"520px", paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP WOMEN</p>
             </GridItem>
-            <GridItem style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-2-black-friday-2022.jpg?t=1668994796)`}} className={Styles.grid_item} >
+            <GridItem w={[480,180,400]} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-2-black-friday-2022.jpg?t=1668994796)`}} className={Styles.grid_item} >
                 <p  className={Styles.grid_child} style={{paddingTop:"520px",paddingBottom:"20px" ,paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP DRESSES</p>
             </GridItem>
-            <GridItem style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-3-black-friday-2022.jpg?t=1668994879)`}} className={Styles.grid_item} >
+            <GridItem w={[480,180,400]} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-3-black-friday-2022.jpg?t=1668994879)`}} className={Styles.grid_item} >
                 <p  className={Styles.grid_child} style={{paddingTop:"520px", paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP EVENT WEAR</p>
             </GridItem>
-             <GridItem style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-4-black-friday-2022.jpg?t=1668994937)`}} className={Styles.grid_item} >
+             <GridItem w={[480,180,400]} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-4-black-friday-2022.jpg?t=1668994937)`}} className={Styles.grid_item} >
                 <p  className={Styles.grid_child} style={{paddingTop:"520px", paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP COLOUR BLOCK</p>
             </GridItem>
         </Grid>
         </Box>
         <Box mb={"50px"} width="80%" margin="auto">
-        <Grid templateColumns='repeat(4, 1fr)' >
+        <Grid templateColumns={['repeat(2,1fr)','repeat(4, 1fr)']} >
             <GridItem className={Styles.cart_home} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/500x659/products/2663/27526/ETCH-SIZING-TEMPLATE4_05__62410.1661734412.jpg?c=2)`}}>
                 <button className={Styles.cart_home_btn}>QUICK VIEW</button>
             </GridItem>
@@ -53,12 +53,12 @@ export default function Home() {
         </Grid>
         </Box>
         <Box mb={"50px"}>
-            <Image src="https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/l-black-friday.jpg?t=1668994655"/>
+            <Image  src="https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/l-black-friday.jpg?t=1668994655"/>
         </Box>
         <Text mb={"50px"} fontSize='5xl' fontWeight="300" textAlign="center"> Explore</Text>
 
         <Box mb={"100px"}>
-            <Grid gap={1.5}  templateColumns = 'repeat(4,1fr)'>
+            <Grid gap={1.5}  templateColumns = {['repeat(2,1fr),repeat(4,1fr)']}>
             <GridItem colStart={1} colEnd={2} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-5-black-friday-2022.jpg?t=1668994999)`}} className={Styles.grid_item} >
                 <p  className={Styles.grid_child} style={{paddingTop:"520px",paddingBottom:"20px" ,paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP MINI</p>
             </GridItem>
@@ -70,12 +70,12 @@ export default function Home() {
             </GridItem>
             </Grid>
         </Box>
-        <Box mb={"50px"} className={Styles.home_about_us}>
-            <Grid gridTemplateColumns={'repeat(2, 1fr)'}>
-                <GridItem > <Text  className={Styles.home_about_us_child1}  fontSize='4xl' fontWeight="300"> MADE FOR THE MODERN BOHEMIAN </Text></GridItem>
-                <GridItem  className={Styles.home_about_us_child2}>We blend classic, fashion forward pieces including elevated basics with bohemian detailing. Since our inception, our aim has been to provide size inclusive fashion basics for the modern bohemian. We seek to be an environmentally and socially responsible company; as such we work closely with our suppliers to ensure ethical conditions for workers. We are continually working towards providing the best clothing and accessories, with the least environmental and social harm possible.
+        <Box mb={"50px"} padding={[2,5,20]} className={Styles.home_about_us}>
+            <Grid gridTemplateColumns={['repeat(1,1fr)','repeat(2, 1fr)']}>
+                <GridItem > <Text  className={Styles.home_about_us_child1} textAlign={['center','left']}  fontSize={['xl','3xl','4xl']} padding={[0,15]} fontWeight="300"> MADE FOR THE MODERN BOHEMIAN </Text></GridItem>
+                <GridItem textAlign={['center','left']}  className={Styles.home_about_us_child2}>We blend classic, fashion forward pieces including elevated basics with bohemian detailing. Since our inception, our aim has been to provide size inclusive fashion basics for the modern bohemian. We seek to be an environmentally and socially responsible company; as such we work closely with our suppliers to ensure ethical conditions for workers. We are continually working towards providing the best clothing and accessories, with the least environmental and social harm possible.
                     <br />
-                    <button className={Styles.home_about_us_btn}>ABOUT US</button>
+                    <button  className={Styles.home_about_us_btn}>ABOUT US</button>
                 </GridItem>
             </Grid>
         </Box>
@@ -102,9 +102,9 @@ export default function Home() {
             </Grid>
         </Box>
         <Box backgroundColor={"black"} padding={"70px"}>
-            <Grid gridTemplateColumns={'repeat(4,1fr)'}>
+            <Grid gridTemplateColumns={['repeat(1,1fr)','repeat(1,1fr)','repeat(4,1fr)']}>
                 <GridItem>
-                    <Image  maxW={"300px"} src={"https://cdn11.bigcommerce.com/s-9srn18to/stencil/f5485050-5114-013b-119b-123f55a4ca1d/e/8e215d00-3d2b-013b-c3ef-3ea28820c29e/img/logo-white.png"}/>
+                    <Image w={[200,300]}   maxW={"300px"} src={"https://cdn11.bigcommerce.com/s-9srn18to/stencil/f5485050-5114-013b-119b-123f55a4ca1d/e/8e215d00-3d2b-013b-c3ef-3ea28820c29e/img/logo-white.png"}/>
                     <Flex>
                     <BsInstagram className={Styles.icons}/>
                     <FaFacebookF className={Styles.icons}/>

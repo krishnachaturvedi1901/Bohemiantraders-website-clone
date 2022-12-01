@@ -13,14 +13,14 @@
     text-align: left;
     width: 90%;
     margin: auto;
-    padding: 80px;
+    /* padding: 80px; */
     background-color: RGBA(0, 0, 0, 0.08);
 }
 
-.home_about_us_child1{
-    text-align: left;
-    padding:0 15px;
-}
+/* .home_about_us_child1{ */
+    /* text-align: left; */
+    /* padding:0 15px; */
+/* } */
 
 .home_about_us_child2{
     font-size: 13.5px;
@@ -43,6 +43,7 @@
     background-position: center;
     background-size: cover;
     display: grid;
+    width: 100%;
 }
 .grid_item2{
     height: 50%;
