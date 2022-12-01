@@ -1,7 +1,18 @@
 import React from 'react';
-import { ArrowLeftIcon, ArrowRightIcon, CheckCircleIcon, CheckIcon, Icon } from '@chakra-ui/icons'
+import {CloseIcon, ArrowLeftIcon, ArrowRightIcon, CheckCircleIcon, CheckIcon, Icon } from '@chakra-ui/icons'
 import './ProductDetail.css'
-import { Box, Button, Image, Grid, GridItem, OrderedList, UnorderedList, List, ListItem, ListIcon, Radio, RadioGroup, Stack, Tab, Tabs, TabList, TabPanels, TabPanel } from '@chakra-ui/react'
+import { PreCart } from '../PreCart/PreCart';
+
+import {
+  Box, Button, Image, Grid, GridItem, OrderedList, UnorderedList, List, ListItem, ListIcon, Radio, RadioGroup, Stack, Tab, Tabs, Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  Text, useDisclosure, TabList, TabPanels, TabPanel, VStack
+} from '@chakra-ui/react'
 function ProductDetail() {
   let [slideIndex, setslideIndex] = React.useState(1)
   const [value, setValue] = React.useState(null)
@@ -79,10 +90,20 @@ function ProductDetail() {
   else {
     rating = "https://www.shutterstock.com/image-vector/two-stars-icon-vector-260nw-1316819486.jpg"
   }
+  const OverlayOne = () => (
+    <ModalOverlay
+      bg='blackAlpha.300'
+      backdropFilter='blur(10px) hue-rotate(90deg)'
+    />
+  )
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const [overlay, setOverlay] = React.useState(<OverlayOne />)
   function AddDATAinCart() {
     if (value) {
-
-      alert('data add in cart')
+      {
+        setOverlay(<OverlayOne />)
+        onOpen()
+      }
     }
     console.log(value)
   }
@@ -96,7 +117,45 @@ function ProductDetail() {
 
   return (
     <div>
-
+      <>
+        <Modal size={'6xl'} isCentered isOpen={isOpen} onClose={onClose}>
+          {overlay}
+          <ModalContent>
+            <ModalHeader>
+              OK, ITEMS WERE ADDED TO YOUR CART. WHAT'S NEXT?
+            </ModalHeader>
+            <ModalCloseButton />
+            <ModalBody>
+              <Stack direction={['column', 'row']} >
+                <Box >
+                  <Image w={'50%'} ml={'10%'} src={data.img.model1} />
+                </Box>
+                <Box>
+                  <Text>{data.name.toUpperCase()}</Text>
+                  <Text>{data.brand.toUpperCase()}</Text>
+                  <Text>${data.price}</Text>
+                </Box>
+                <Box w={'33%'}>
+                  <VStack>
+                  <Button w={'100%'}>PRODCEED TO CHECKOUT</Button>
+                  <Text>--or use--</Text>
+                  <Button w={'100%'}>PayPal</Button>
+                  <Button w={'100%'}>G Pay</Button>
+                  <Text>Order subtotal</Text>
+                  <Text>$US {data.price}</Text>
+                  <Text>Your cart containe { } items</Text>
+                  <Button w={'100%'}>CONTINUE SHOPPING</Button>
+                  <Button w={'100%'} onClick={onClose} >VIEW OR EDIT YOUR CART</Button>
+                  </VStack>
+                </Box>
+              </Stack>
+            </ModalBody>
+            <ModalFooter>
+             
+            </ModalFooter>
+          </ModalContent>
+        </Modal>
+      </>
       <p>Home/  DRESSES  / {data.brand}</p>
       <div id='PD_div1'>
         <Grid className='slideshow-container' templateColumns='repeat(1, 1fr)'>
@@ -145,7 +204,7 @@ function ProductDetail() {
           </Box>
         </div>
       </div>
-      <div style={{height:"50px"}}></div>
+      <div style={{ height: "50px" }}></div>
       <box size='md'>
         <Tabs w={'50%'} size='sm' >
           <TabList>
@@ -156,7 +215,7 @@ function ProductDetail() {
 
           <TabPanels>
             <TabPanel>
-              <p>{data.details}</p>
+              <p>{data.details.toUpperCase()}</p>
             </TabPanel>
             <TabPanel>
               <List spacing={3}>
@@ -189,9 +248,10 @@ function ProductDetail() {
       <box>
         <h2 id='more_product'>MORE FROM THIS COLLECTION</h2>
         <Image boxSize='20%' src={data.img.item1} alt='Dan Abramov' />
-        <h3>{data.name}</h3>
+        <h3>{data.name.toUpperCase()}</h3>
         <h3>{data.price}</h3>
       </box>
+
     </div>
   )
 }
