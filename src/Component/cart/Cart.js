@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
-// Redux actions
+// Redux Actions
 import {
   addToCart,
   changeSize,
@@ -27,7 +27,9 @@ import gPay from "../../assets/dark_gpay.svg";
 import ChangeSizeModal from "./changeSizeModal/ChangeSizeModal";
 
 const Cart = () => {
+
   // Get data from redux store
+
   const cart = useSelector((state) => state.cart.cart);
   const count = useSelector((state) => state.cart.totalCount);
   const totalPrice = useSelector((state) => state.cart.totalPrice);
@@ -38,17 +40,21 @@ const Cart = () => {
   const dispatch = useDispatch();
 
   // set state from showing Change Size Modal
+
   const [showChange, setShowChange] = useState(false);
 
   // set new size in Change Size Modal
+
   const [selectedSizeForChange, setSelectedSizeForChange] = useState();
 
   // Set page Title
+
   useEffect(() => {
     document.title = "Bohemian Traders - Shopping Cart";
   }, []);
 
   // Disable scorlling backgronf when Modal is active
+  
   if (showChange) {
     document.body.style.overflow = "hidden";
   } else {
