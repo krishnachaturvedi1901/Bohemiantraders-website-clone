@@ -1,0 +1,90 @@
+.top{
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 12px 0px;
+    word-spacing: 4px;
+    letter-spacing: 1.5px;
+}
+
+.home_about_us{
+    text-align: left;
+    width: 90%;
+    margin: auto;
+    /* padding: 80px; */
+    background-color: RGBA(0, 0, 0, 0.08);
+}
+
+/* .home_about_us_child1{ */
+    /* text-align: left; */
+    /* padding:0 15px; */
+/* } */
+
+.home_about_us_child2{
+    font-size: 13.5px;
+    font-weight: 500;
+}
+
+.home_about_us_btn{
+    font-size: 13px;
+    font-weight: 550;
+    padding:8px 38px;
+    border:1px solid #2D3748;
+    color:#2D3748;
+    border-radius: 1px;
+    margin-top: 25px;
+}
+
+.grid_item{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    width: 100%;
+}
+.grid_item2{
+    height: 50%;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    display: grid;
+}
+
+.grid_item :hover{
+    transition: opacity .4s ease;
+    background-color:  rgba(0,0,0,.3);
+}
+.grid_item2 :hover{
+    transition: opacity .4s ease;
+    background-color:  rgba(0,0,0,.3);
+    cursor: pointer;
+}
+
+.cart_home{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    /* padding:73% 33%; */
+}
+
+
+.grid_child{
+    font-family: sans-serif;
+    letter-spacing: 1.25px;
+}
+
+.cart_home_btn{
+    margin:73% 33%;
+    background-color: white;
+    border:none;
+    padding:8px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
