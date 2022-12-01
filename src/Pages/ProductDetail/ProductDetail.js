@@ -99,11 +99,7 @@ function ProductDetail() {
 
       <p>Home/  DRESSES  / {data.brand}</p>
       <div id='PD_div1'>
-
-
-
         <Grid className='slideshow-container' templateColumns='repeat(1, 1fr)'>
-
           <GridItem className='mySlides fade'>
             <Image boxSize='50%' src={data.img.item1} h='100%' alt='Dan Abramov' />
             <Image boxSize='50%' src={data.img.item2} h='100%' alt='Dan Abramov' />
@@ -119,7 +115,7 @@ function ProductDetail() {
           <a className="prev" onClick={() => { plusSlides(-1) }}><ArrowLeftIcon /></a>
           <a className="next" onClick={() => { plusSlides(1) }}><ArrowRightIcon /></a>
         </Grid>
-          <div id='PD_DATA'>
+        <div id='PD_DATA'>
           <h1 id='PD_title'>{data.name}</h1>
           <h3>{data.brand}</h3>
           <h6>{data.price}</h6>
@@ -131,8 +127,6 @@ function ProductDetail() {
           </div>
           <h3>SIZE:</h3>
           <div style={{ display: "flex", gap: "20px", backgroundColor: "transparent" }}>
-
-
             <RadioGroup onChange={setValue} value={value}>
               <Stack direction='row'>
                 {data.sizes.map((el) => {
@@ -140,7 +134,6 @@ function ProductDetail() {
                     {el}
                   </Radio>
                 })}
-
               </Stack>
             </RadioGroup>
           </div>
@@ -150,9 +143,9 @@ function ProductDetail() {
               <Button colorScheme='blue' onClick={AddDATAinWishList}>ADD TO WISH LIST</Button>
             </Stack>
           </Box>
-
         </div>
       </div>
+      <div style={{height:"50px"}}></div>
       <box size='md'>
         <Tabs w={'50%'} size='sm' >
           <TabList>

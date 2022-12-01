@@ -3,8 +3,7 @@ import ProductDetail from "./Pages/ProductDetail/ProductDetail";
 function App() {
   return (
     <div className="App">
-      {/* <PreCart/> */}
-      {/* <ProductDetail/> */}
+      
     </div>
   );
 }
