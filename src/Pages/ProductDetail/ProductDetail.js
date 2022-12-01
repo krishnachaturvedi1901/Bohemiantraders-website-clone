@@ -1,8 +1,8 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
+
 import {CloseIcon, ArrowLeftIcon, ArrowRightIcon, CheckCircleIcon, CheckIcon, Icon } from '@chakra-ui/icons'
 import './ProductDetail.css'
 import { PreCart } from '../PreCart/PreCart';
-
 import {
   Box, Button, Image, Grid, GridItem, OrderedList, UnorderedList, List, ListItem, ListIcon, Radio, RadioGroup, Stack, Tab, Tabs, Modal,
   ModalOverlay,
@@ -14,8 +14,39 @@ import {
   Text, useDisclosure, TabList, TabPanels, TabPanel, VStack
 } from '@chakra-ui/react'
 function ProductDetail() {
-  let [slideIndex, setslideIndex] = React.useState(1)
-  const [value, setValue] = React.useState(null)
+  let [slideIndex, setslideIndex] = useState(1)
+  const [value, setValue] = useState(null)
+  const [data, setdata] = useState({
+    "id":"" ,
+    "brand": "",
+    "category": "",
+    "name": "",
+    "price":"",
+    "reviews":"",
+    "rating":"",
+    "sizes": [
+    
+    ],
+    "details": "",
+    "features": [],
+    "img": {
+      "item1": "",
+      "item2": "",
+      "model1": "",
+      "model2": ""
+    },
+    "inStock": "",
+    "newest": "",
+    "bestSelling":"",
+    "featured": ""})
+  useEffect(() => {
+    fetch(`https://bohemian-server.onrender.com/products/0`).then((res)=>{
+      res.json().then((res)=>{
+               setdata(res)
+      })
+    })
+  }, [])
+  
   React.useEffect(() => {
 
     showSlides(slideIndex);
@@ -39,43 +70,6 @@ function ProductDetail() {
       slides[i + 1].style.display = "none";
     }
     slides[slideIndex - 1].style.display = "flex";
-  }
-  let data = {
-    "id": 0,
-    "brand": "BOHEMIAN TRADERS",
-    "category": "Denim",
-    "name": "ullamco cupidatat consequat in dolore",
-    "price": 150,
-    "reviews": 25,
-    "rating": 1.4,
-    "sizes": [
-      "2XS",
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "2XL"
-    ],
-    "details": "aliquip nisi incididunt fugiat sit non magna laboris commodo nisi pariatur ipsum labore eiusmod velit velit ut do ex aute do duis Lorem consequat enim Lorem ut et veniam amet ipsum laboris sint consectetur amet irure qui proident incididunt sit minim culpa officia ex tempor enim ad ut",
-    "features": [
-      "White cotton voile with mulit metallic lurex stripe",
-      "Sleeveless A line silhouette",
-      "Fits true to size",
-      "96% Cotton, 4% lurex",
-      "Lightweight, non stretchy fabric",
-      "Gental machine wash in cold water, hand dry, and steam iron"
-    ],
-    "img": {
-      "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2647/27370/BTA-JACKET_01__43377.1660795006.jpg?c=2",
-      "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2647/26968/ACT06_04__40947.1660795005.jpg?c=2",
-      "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2647/26969/ACT06_01__31553.1660795006.jpg?c=2",
-      "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2647/26971/ACT06_03__85519.1660795006.jpg?c=2"
-    },
-    "inStock": true,
-    "newest": true,
-    "bestSelling": true,
-    "featured": false
   }
   let rating = "";
   if (data.rating > 4) {
@@ -189,7 +183,7 @@ function ProductDetail() {
             <RadioGroup onChange={setValue} value={value}>
               <Stack direction='row'>
                 {data.sizes.map((el) => {
-                  return <  Radio value={el} key={el}>
+                  return <Radio value={el} key={el}>
                     {el}
                   </Radio>
                 })}
@@ -205,7 +199,7 @@ function ProductDetail() {
         </div>
       </div>
       <div style={{ height: "50px" }}></div>
-      <box size='md'>
+      <Box size='md'>
         <Tabs w={'50%'} size='sm' >
           <TabList>
             <Tab>PRODUCT DETAILS</Tab>
@@ -244,13 +238,13 @@ function ProductDetail() {
             </TabPanel>
           </TabPanels>
         </Tabs>
-      </box>
-      <box>
+      </Box>
+      <Box>
         <h2 id='more_product'>MORE FROM THIS COLLECTION</h2>
         <Image boxSize='20%' src={data.img.item1} alt='Dan Abramov' />
         <h3>{data.name.toUpperCase()}</h3>
         <h3>{data.price}</h3>
-      </box>
+      </Box>
 
     </div>
   )
