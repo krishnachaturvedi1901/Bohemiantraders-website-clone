@@ -1,31 +1,25 @@
-import React,{useEffect,useState} from 'react';
-
-import {CloseIcon, ArrowLeftIcon, ArrowRightIcon, CheckCircleIcon, CheckIcon, Icon } from '@chakra-ui/icons'
+import React, { useEffect, useState } from 'react';
+import { CheckCircleIcon } from '@chakra-ui/icons'
+import { Box, Button, Image, Alert, AlertDescription, AlertIcon, AlertTitle, List, ListItem, ListIcon, Radio, RadioGroup, Stack, Tab, Tabs, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, Text, useDisclosure, TabList, TabPanels, TabPanel, VStack, Container } from '@chakra-ui/react'
 import './ProductDetail.css'
-import { PreCart } from '../PreCart/PreCart';
-import {
-  Box, Button, Image, Grid, GridItem, OrderedList, UnorderedList, List, ListItem, ListIcon, Radio, RadioGroup, Stack, Tab, Tabs, Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-  Text, useDisclosure, TabList, TabPanels, TabPanel, VStack
-} from '@chakra-ui/react'
+import { useParams } from 'react-router-dom';
+import PDimg from '../../Components/ProductDetailsCompo/PDimg';
+import { MoreProduct } from '../../Components/ProductDetailsCompo/MoreProduct';
+import { PDdetails } from '../../Components/ProductDetailsCompo/PDdetails';
+import { SendDataOnCart, SendDataOnWishList } from '../../Components/ProductDetailsCompo/SendData';
 function ProductDetail() {
   let [slideIndex, setslideIndex] = useState(1)
   const [value, setValue] = useState(null)
   const [data, setdata] = useState({
-    "id":"" ,
+    "id": "",
     "brand": "",
     "category": "",
     "name": "",
-    "price":"",
-    "reviews":"",
-    "rating":"",
+    "price": "",
+    "reviews": "",
+    "rating": "",
     "sizes": [
-    
+
     ],
     "details": "",
     "features": [],
@@ -37,21 +31,21 @@ function ProductDetail() {
     },
     "inStock": "",
     "newest": "",
-    "bestSelling":"",
-    "featured": ""})
+    "bestSelling": "",
+    "featured": ""
+  })
+  let { id } = useParams();
+  id = 5;
   useEffect(() => {
-    fetch(`https://bohemian-server.onrender.com/products/0`).then((res)=>{
-      res.json().then((res)=>{
-               setdata(res)
+    fetch(`https://bohemian-server.onrender.com/products/${id}`).then((res) => {
+      res.json().then((res) => {
+        setdata(res)
       })
     })
   }, [])
-  
   React.useEffect(() => {
-
     showSlides(slideIndex);
   }, [plusSlides])
-  console.log(slideIndex)
   function plusSlides(n) {
     let next = document.getElementsByClassName('next');
     let prev = document.getElementsByClassName("prev");
@@ -71,6 +65,7 @@ function ProductDetail() {
     }
     slides[slideIndex - 1].style.display = "flex";
   }
+
   let rating = "";
   if (data.rating > 4) {
     rating = "https://www.shutterstock.com/image-vector/five-stars-quality-rating-icon-260nw-1184466310.jpg"
@@ -84,6 +79,7 @@ function ProductDetail() {
   else {
     rating = "https://www.shutterstock.com/image-vector/two-stars-icon-vector-260nw-1316819486.jpg"
   }
+
   const OverlayOne = () => (
     <ModalOverlay
       bg='blackAlpha.300'
@@ -95,20 +91,25 @@ function ProductDetail() {
   function AddDATAinCart() {
     if (value) {
       {
+        SendDataOnCart(data, value);
         setOverlay(<OverlayOne />)
         onOpen()
       }
     }
-    console.log(value)
+    else{
+      alert('Please select a Size')
+    }
   }
   function AddDATAinWishList() {
-    alert('data add in WishList')
+    if (value) {
+      {
+        SendDataOnWishList(data, value)
+      }
+    }
+    else {
+      alert('Please select a Size')
+    }
   }
-  let FEATURES = data.features.toString().split(',', 10)
-
-  console.log(FEATURES)
-
-
   return (
     <div>
       <>
@@ -131,55 +132,41 @@ function ProductDetail() {
                 </Box>
                 <Box w={'33%'}>
                   <VStack>
-                  <Button w={'100%'}>PRODCEED TO CHECKOUT</Button>
-                  <Text>--or use--</Text>
-                  <Button w={'100%'}>PayPal</Button>
-                  <Button w={'100%'}>G Pay</Button>
-                  <Text>Order subtotal</Text>
-                  <Text>$US {data.price}</Text>
-                  <Text>Your cart containe { } items</Text>
-                  <Button w={'100%'}>CONTINUE SHOPPING</Button>
-                  <Button w={'100%'} onClick={onClose} >VIEW OR EDIT YOUR CART</Button>
+                    <Button w={'100%'}>PRODCEED TO CHECKOUT</Button>
+                    <Text>--or use--</Text>
+                    <Button w={'100%'}>PayPal</Button>
+                    <Button w={'100%'}>G Pay</Button>
+                    <Text>Order subtotal</Text>
+                    <Text>$US {data.price}</Text>
+                    <Text>Your cart containe { } items</Text>
+                    <Button w={'100%'}>CONTINUE SHOPPING</Button>
+                    <Button w={'100%'} onClick={onClose} >VIEW OR EDIT YOUR CART</Button>
                   </VStack>
                 </Box>
               </Stack>
             </ModalBody>
             <ModalFooter>
-             
+
             </ModalFooter>
           </ModalContent>
         </Modal>
       </>
-      <p>Home/  DRESSES  / {data.brand}</p>
-      <div id='PD_div1'>
-        <Grid className='slideshow-container' templateColumns='repeat(1, 1fr)'>
-          <GridItem className='mySlides fade'>
-            <Image boxSize='50%' src={data.img.item1} h='100%' alt='Dan Abramov' />
-            <Image boxSize='50%' src={data.img.item2} h='100%' alt='Dan Abramov' />
-          </GridItem>
-          <GridItem className='mySlides fade'>
-            <Image boxSize='50%' src={data.img.item2} h='100%' alt='Dan Abramov' />
-            <Image boxSize='50%' src={data.img.model1} h='100%' alt='Dan Abramov' />
-          </GridItem>
-          <GridItem className='mySlides fade'>
-            <Image boxSize='50%' src={data.img.model1} h='100%' alt='Dan Abramov' />
-            <Image boxSize='50%' src={data.img.model2} h='100%' alt='Dan Abramov' />
-          </GridItem>
-          <a className="prev" onClick={() => { plusSlides(-1) }}><ArrowLeftIcon /></a>
-          <a className="next" onClick={() => { plusSlides(1) }}><ArrowRightIcon /></a>
-        </Grid>
-        <div id='PD_DATA'>
-          <h1 id='PD_title'>{data.name}</h1>
-          <h3>{data.brand}</h3>
-          <h6>{data.price}</h6>
-          <h6>
-            Or pay 4 interest-free payments with Paytem
-          </h6>
-          <div>
-            <img style={{ width: "100px", height: "50px" }} src={rating} />
-          </div>
-          <h3>SIZE:</h3>
-          <div style={{ display: "flex", gap: "20px", backgroundColor: "transparent" }}>
+      
+      <Text>Home/  DRESSES  / {data.brand}</Text>
+      <Stack border={'1px solid red'} id='PD_div1' direction={{ base: 'column', md: 'row' }} gap={6}>
+        <Box border={'1px solid red'} width={{ base: '100%', md: '40%' }} height={{ base: '100%', md: '100%' }} >
+          <PDimg data={data} />
+        </Box>
+        <Box>
+          <Container>
+            <Text id='PD_title'>{data.name}</Text>
+            <Text>{data.brand}</Text>
+            <Text>{data.price}</Text>
+            <Text>Or pay 4 interest-free payments with Paytem</Text>
+            <Box>
+              <Image w={'100px'} src={rating} />
+            </Box>
+            <Text>SIZE:</Text>
             <RadioGroup onChange={setValue} value={value}>
               <Stack direction='row'>
                 {data.sizes.map((el) => {
@@ -189,63 +176,19 @@ function ProductDetail() {
                 })}
               </Stack>
             </RadioGroup>
-          </div>
-          <Box>
-            <Stack direction='column'>
-              <Button colorScheme='teal' variant='solid' onClick={AddDATAinCart}>Button</Button>
-              <Button colorScheme='blue' onClick={AddDATAinWishList}>ADD TO WISH LIST</Button>
-            </Stack>
-          </Box>
-        </div>
-      </div>
+
+            <Box>
+              <Stack direction='column'>
+                <Button colorScheme='teal' variant='solid' onClick={AddDATAinCart}>Add to Cart</Button>
+                <Button colorScheme='blue' onClick={AddDATAinWishList}>ADD TO WISH LIST</Button>
+              </Stack>
+            </Box>
+          </Container>
+        </Box>
+      </Stack>
       <div style={{ height: "50px" }}></div>
-      <Box size='md'>
-        <Tabs w={'50%'} size='sm' >
-          <TabList>
-            <Tab>PRODUCT DETAILS</Tab>
-            <Tab>PRODUCT FEATURES</Tab>
-            <Tab>PRODUCT SIZING</Tab>
-          </TabList>
-
-          <TabPanels>
-            <TabPanel>
-              <p>{data.details.toUpperCase()}</p>
-            </TabPanel>
-            <TabPanel>
-              <List spacing={3}>
-                {data.features.toString().split(',', 10).map(function (el) {
-                  return <ListItem>
-                    <ListIcon as={CheckCircleIcon} color='green.500' />
-                    {el}
-                  </ListItem>
-                })}
-              </List>
-            </TabPanel>
-            <TabPanel>
-              <List spacing={3}>
-                <ListItem>
-                  <ListIcon as={CheckCircleIcon} color='green.500' />
-                  Lilly is a size AU8, 170cm tall and wears a size XS
-                </ListItem>
-                <ListItem>
-                  <ListIcon as={CheckCircleIcon} color='green.500' />
-                  Bruna is a size AU16 and wears a size XL
-                </ListItem>
-                <ListItem>
-                  <Image boxSize='100%' src='https://cdn8.bigcommerce.com/s-9srn18to/product_images/uploaded_images/SS22-DRE71.png' alt='Dan Abramov' />
-                </ListItem>
-              </List>
-            </TabPanel>
-          </TabPanels>
-        </Tabs>
-      </Box>
-      <Box>
-        <h2 id='more_product'>MORE FROM THIS COLLECTION</h2>
-        <Image boxSize='20%' src={data.img.item1} alt='Dan Abramov' />
-        <h3>{data.name.toUpperCase()}</h3>
-        <h3>{data.price}</h3>
-      </Box>
-
+      <PDdetails {...data} />
+      <MoreProduct {...data} />
     </div>
   )
 }

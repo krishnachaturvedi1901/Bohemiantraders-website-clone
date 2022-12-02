@@ -1,0 +1,19 @@
+{
+  "userAccounts": [
+    {
+      "customerId": "0",
+      "name": "Admin",
+      "email": "Admin@gmail.com",
+      "password": "123456789",
+      "mobile": "123456789",
+
+      "address": [],
+
+      "cart": [],
+
+      "wishlist": [],
+
+      "orders": []
+    }
+  ]
+}

@@ -30,7 +30,7 @@
 .slideshow-container {
   width: fit-content;
   position: relative;
-  animation: 2seconds smooth transition;
+  
 }
 .prev, .next {
   cursor: pointer;
