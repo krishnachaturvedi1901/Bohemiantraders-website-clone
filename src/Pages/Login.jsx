@@ -11,8 +11,37 @@ import {
   } from '@chakra-ui/react'
   import { UnorderedList,ListItem } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import { useEffect } from 'react'
 
+const newData = {
+    email:"",
+    password:""
+
+}
 export default function Login() {
+    const[form_data, setFormData] = useState(newData);
+    const[usersData, setUsersData] = useState([]);
+    const handleChange = (e) => {
+        const { value,  name } = e.target;
+        setFormData({...form_data,[name]:value})
+    }
+
+    const getData = () => {
+        // fetch()
+        // .then((res) => res.json())
+        // .then((data) => setUsersData(data))
+        alert("You got the data")
+    }
+
+    useEffect(()=>{
+        getData()
+    },[])
+    const handleClick = () => {
+        if("id" == "id"){
+            alert("Make a patch request")
+        }
+    }
   return (
     <div>
         <Box>
@@ -23,13 +52,13 @@ export default function Login() {
                     <Box mt={"40px"}>
                     <FormControl>
                         <FormLabel letterSpacing={"1.25px"} color={"grey"} fontSize={"13px"} fontWeight="500">EMAIL ADDRESS:</FormLabel>
-                        <Input border={"1px solid grey"}
+                        <Input onChange={handleChange} name="email" value={form_data.email} border={"1px solid grey"}
                         padding="8px" width={650} fontSize={"15px"} borderRadius="0px" variant={'unstyled'} type='email' />
                         <FormLabel mt={8} letterSpacing={"1.25px"} color={"grey"} fontSize={"13px"} fontWeight="500">PASSWORD:</FormLabel>
-                        <Input border={"1px solid grey"}
+                        <Input onChange={handleChange} name="password" value={form_data.password} border={"1px solid grey"}
                         padding="8px" width={650} fontSize={"15px"} borderRadius="0px" variant={'unstyled'} type='password' />
                         <br />
-                        <Button id="btn2" fontSize={"13px"} letterSpacing={"1.25px"} fontWeight={"400"} borderRadius={0} color={"white"} backgroundColor={"black"} mt={7}>SIGN IN</Button>
+                        <Button onClick={handleClick} id="btn2" fontSize={"13px"} letterSpacing={"1.25px"} fontWeight={"400"} borderRadius={0} color={"white"} backgroundColor={"black"} mt={7}>SIGN IN</Button>
                     </FormControl>
                     </Box >
                     <Spacer />
