@@ -65,12 +65,12 @@
 
 .cart_home{
     height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+    /* background-repeat: no-repeat; */
     background-size: cover;
-    display: grid;
+    /* display: grid; */
     place-items: center;
     /* padding:73% 33%; */
+    width:100%;
 }
 
 

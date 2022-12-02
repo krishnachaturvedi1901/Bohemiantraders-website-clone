@@ -19,26 +19,26 @@ export default function Home() {
             <h5>FREE SHIPPING FOR ALL DOMESTIC AUSTRALIAN ORDERS OVER $250</h5>
         </Box>
         <Navbar />
-        <Box  m={["9px auto 20px","0 auto 50px"]} width={"98%"}><Image width="100%" src="https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/carousel-black-friday-2022.jpg?t=1668994561"/></Box>
+        <Box height={"100%"} m={["9px auto 20px","0 auto 50px"]} width={"98%"}><Image width="100%" src="https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/carousel-black-friday-2022.jpg?t=1668994561"/></Box>
         
         <Box mb={"50px"}>
         <Grid gap="0px" templateColumns={['repeat(1,1fr)','repeat(4, 1fr)']} >
-            <GridItem w={"100%"} pt={["0px"]} h={["450px","550px"]}  style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-1-black-friday-2022.jpg?t=1668994764)`}} className={Styles.grid_item} >
-                <Text  className={Styles.grid_child} pt={["420px","520px"]} style={{ paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP WOMEN</Text>
+            <GridItem w={"100%"} pt={["0px"]} h={"95%"}  style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-1-black-friday-2022.jpg?t=1668994764)`}} className={Styles.grid_item} >
+                <Text className={Styles.grid_child} pt={["320px","420px","520px"]} style={{ paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP WOMEN</Text>
             </GridItem>
-            <GridItem w={"100%"} pt={["0px"]} h={["450px","550px"]} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-2-black-friday-2022.jpg?t=1668994796)`}} className={Styles.grid_item} >
-                <Text  className={Styles.grid_child} pt={["420px","520px"]} style={{paddingBottom:"20px" ,paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP DRESSES</Text>
+            <GridItem w={"100%"} pt={["0px"]} h={"95%"} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-2-black-friday-2022.jpg?t=1668994796)`}} className={Styles.grid_item} >
+                <Text  className={Styles.grid_child} pt={["320px","420px","520px"]} style={{paddingBottom:"20px" ,paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP DRESSES</Text>
             </GridItem>
-            <GridItem w={"100%"} pt={["0px"]} h={["450px","550px"]} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-3-black-friday-2022.jpg?t=1668994879)`}} className={Styles.grid_item} >
-                <Text  className={Styles.grid_child} pt={["420px","520px"]} style={{ paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP EVENT WEAR</Text>
+            <GridItem w={"100%"} pt={["0px"]} h={"95%"} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-3-black-friday-2022.jpg?t=1668994879)`}} className={Styles.grid_item} >
+                <Text  className={Styles.grid_child} pt={["320px","420px","520px"]} style={{ paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP EVENT WEAR</Text>
             </GridItem>
-             <GridItem w={"100%"} pt={["0px"]} h={["450px","550px"]} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-4-black-friday-2022.jpg?t=1668994937)`}} className={Styles.grid_item} >
-                <Text  className={Styles.grid_child} pt={["420px","520px"]} style={{ paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP COLOUR BLOCK</Text>
+             <GridItem w={"100%"} pt={["0px"]} h={"95%"} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-4-black-friday-2022.jpg?t=1668994937)`}} className={Styles.grid_item} >
+                <Text  className={Styles.grid_child} pt={["320px","420px","520px"]} style={{ paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP COLOUR BLOCK</Text>
             </GridItem>
         </Grid>
         </Box>
         <Box mb={"50px"} width="80%" margin="auto">
-        <Grid templateColumns={['repeat(2,1fr)','repeat(4, 1fr)']} >
+        <Grid templateColumns={{base:'repeat(2,1fr)',md:'repeat(4, 1fr)'}} >
             <GridItem className={Styles.cart_home} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/500x659/products/2663/27526/ETCH-SIZING-TEMPLATE4_05__62410.1661734412.jpg?c=2)`}}>
                 <button className={Styles.cart_home_btn}>QUICK VIEW</button>
             </GridItem>
@@ -59,17 +59,17 @@ export default function Home() {
         <Text mb={['20px',"50px"]} fontSize={['3xl','5xl']} fontWeight="300" textAlign="center"> Explore</Text>
 
         <Box mb={"100px"}>
-            <Grid gap={1.5}  templateColumns = {['repeat(2,1fr),repeat(4,1fr)']}>
-                <Flex>
-                    <GridItem colStart={1} colEnd={2} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-5-black-friday-2022.jpg?t=1668994999)`}} className={Styles.grid_item} >
-                        <p  className={Styles.grid_child} style={{paddingTop:"520px",paddingBottom:"20px" ,paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP MINI</p>
+            <Grid gap={1.5}  templateColumns = {{base:'repeat(2,1fr)',md:'repeat(4,1fr)'}}>
+                {/* <Flex> */}
+                    <GridItem colStart={[1,1]} colEnd={[2,2]} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-5-black-friday-2022.jpg?t=1668994999)`}} className={Styles.grid_item} h={["350px","450px","550px"]} >
+                        <Text  className={Styles.grid_child}  pt={["320px,420px,520px"]} style={{paddingBottom:"20px" ,paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP MINI</Text>
                     </GridItem>
-                </Flex>
-            <GridItem colStart={2} colEnd={3} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-6-black-friday-2022.jpg?t=1668995058)`}} className={Styles.grid_item} >
-                <p  className={Styles.grid_child} style={{paddingTop:"520px",paddingBottom:"20px" ,paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP SEPERATES</p>
+                {/* </Flex> */}
+            <GridItem colStart={[2,2]} colEnd={[3,3]} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-6-black-friday-2022.jpg?t=1668995058)`}} className={Styles.grid_item} h={["350px","450px","550px"]} >
+                <Text  className={Styles.grid_child}  pt={["320px,420px,520px"]} style={{paddingBottom:"20px" ,paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP SEPERATES</Text>
             </GridItem>
-            <GridItem colStart={3} colEnd={5} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-7-black-friday-2022.jpg?t=1668995111)`}} className={Styles.grid_item} >
-                <p  className={Styles.grid_child} style={{paddingTop:"520px",paddingBottom:"20px" ,paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP TOPS</p>
+            <GridItem colStart={[1,3]} colEnd={[3,5]} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-7-black-friday-2022.jpg?t=1668995111)`}} className={Styles.grid_item} h={["350px","450px","550px"]} >
+                <Text  className={Styles.grid_child}  pt={["320px,420px,520px"]} style={{paddingBottom:"20px" ,paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP TOPS</Text>
             </GridItem>
             </Grid>
         </Box>
