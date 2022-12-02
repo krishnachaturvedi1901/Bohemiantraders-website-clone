@@ -11,9 +11,15 @@ export const getProductsError=()=>({
     type:GET_PRODUCTS_ERROR
 })
 
-export const getProducts=()=>(dispatch)=>{
+export const getUrl=(baseUrl,_sort,_order,price_gte,priceLow,price_lte,priceHigh)=>(dispatch)=>{
+   return baseUrl
+}
+
+
+export const getProducts=(page)=>(dispatch)=>{
+    let apiUrl=dispatch(getUrl(`https://bohemian-server.onrender.com/products?_page=${page}&_limit=12`))
     dispatch(getProductsLoading())
-    fetch(`http://localhost:3001/products`)
+    fetch(apiUrl) 
     .then((res)=>res.json())
     .then((res)=>{
         console.log("res after getProducts-->",res)

@@ -1,17 +1,16 @@
-import { background,Text, Box, Button, Grid,HStack,Input, NumberDecrementStepper, NumberIncrementStepper, NumberInput, NumberInputField, NumberInputStepper } from '@chakra-ui/react'
+import { background,Text, Box, Button, Grid,HStack,Input, NumberDecrementStepper, NumberIncrementStepper, NumberInput, NumberInputField, NumberInputStepper, Stack } from '@chakra-ui/react'
 import React from 'react'
 import {Accordion,AccordionItem,AccordionButton,AccordionPanel } from '@chakra-ui/react'
 import {MinusIcon,AddIcon} from "@chakra-ui/icons"
 import styles from "../../Pages/Products/styles.module.css"
 
 const sizes= ["2XS","XS","S","M","L","XL","2XL"]
-const orderTypes=["FEATURED ITEMS","NEWEST ITEMS","BEST SELLING","PRICE: ASCENDING","PRICE: DESCENDING"]
 
 const FilterBox = () => {
   return (
-    <Box>
-    <Accordion allowMultiple>
-    <AccordionItem w={'265px'} >
+    <Box  >
+    <Accordion allowMultiple >
+    <AccordionItem w={{basic:'45vw',md:'260px'}}   >
     {({ isExpanded }) => (
       <Box>
         <h2>
@@ -27,7 +26,7 @@ const FilterBox = () => {
           </AccordionButton>
         </h2>
         <AccordionPanel pb={4}>
-          <Grid templateColumns={'repeat(2,1fr)'} gap='6px' >
+          <Grid templateColumns={'repeat(2,1fr)'} gap={{basic:"3px",md:'6px'}} flexWrap={'wrap'} >
              {
               sizes.map((ele)=>{
                 return (
@@ -45,12 +44,12 @@ const FilterBox = () => {
   </AccordionItem>
 
   
-    <AccordionItem w={'265px'}>
+    <AccordionItem w={{base:'45vw',md:'260px'}} >
       {({ isExpanded }) => (
         <Box>
           <h2>
-            <AccordionButton  >
-              <Box flex='1' textAlign='left' className={styles.filterHeadStyle}>
+            <AccordionButton w={{base:'38vw',md:'260px'}} >
+              <Box flex='1' textAlign='left' className={styles.filterHeadStyle}  >
                PRICE
               </Box>
               {isExpanded ? (
@@ -61,8 +60,8 @@ const FilterBox = () => {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4} className={styles.filterBodyStyle} >
-            <HStack>
-              <NumberInput size='md'  defaultValue={'Min'} min={0} variant='ghost' >
+            <HStack flexDirection={{base:'column',md:'row'}} >
+              <NumberInput size={{base:'sm',md:'md'}}  defaultValue={'Min'} min={0} variant='ghost' >
                 <NumberInputField placeholder='Min.' fontSize={'14px'} />
                 <NumberInputStepper>
                   <NumberIncrementStepper color={'gray'} border='none' fontSize='.8em' />
@@ -70,7 +69,7 @@ const FilterBox = () => {
                 </NumberInputStepper>
               </NumberInput>
 
-              <NumberInput size='md'  defaultValue={'nothing'} min={0} variant='ghost' >
+              <NumberInput size={{base:'sm',md:'md'}}  defaultValue={'nothing'} min={0} variant='ghost' >
                 <NumberInputField placeholder='Max.' fontSize={'14px'} />
                 <NumberInputStepper>
                   <NumberIncrementStepper color={'gray'} border='none' fontSize='.8em'/>
@@ -84,7 +83,7 @@ const FilterBox = () => {
       )}
     </AccordionItem>
      
-    <AccordionItem w={'265px'}>
+    <AccordionItem w={{basic:'45vw',md:'265px'}}>
     {({ isExpanded }) => (
       <Box>
         <h2>
@@ -115,22 +114,6 @@ const FilterBox = () => {
   </AccordionItem>
         
 </Accordion>
-
-<Box p={'10px'} >
-    <Box className={styles.filterHeadStyle} m={'10px'}>SORT BY</Box>
-     <Box>
-     {
-      orderTypes.map((ele)=>{
-        return(
-          <Box m={'10px'}>
-          <input type="checkbox" id="otherChoice1" name={ele}  style={{marginRight:"5px"}} />
-          <label for="otherChoice1">{ele}</label>
-          </Box>
-        )
-      })
-     }
-     </Box>
- </Box>
 
 </Box>
   )
