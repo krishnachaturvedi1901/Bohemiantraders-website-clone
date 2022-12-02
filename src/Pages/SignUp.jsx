@@ -10,7 +10,7 @@ export default function SignUp() {
         <Navbar />
         <Box width={["100%","100%","95%","90%"]} m={["0px 0px 25px 0px","0px 0px 25px 0px","10px auto 50px"]}>
         <p className="heading">NEW ACCOUNT</p>
-        <Box id="reducing_width" width={["100%","100%","90%","80%"]} margin="auto">
+        <Box id="reducing_width" width={["95%","100%","90%","80%"]} margin="auto">
         <FormControl ml={["0px","-50px"]}  w={"100%"}  color="grey">
             <Grid rowGap={["5px","25px"]}  columnGap={["0px","20px"]} gridTemplateColumns={["repeat(1,1fr)","repeat(1,1fr)","repeat(2,1fr)","repeat(2,1fr)"]}>
                 <GridItem>
