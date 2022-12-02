@@ -31,16 +31,17 @@ export default function Login() {
         // fetch()
         // .then((res) => res.json())
         // .then((data) => setUsersData(data))
-        alert("You got the data")
+        
     }
 
     useEffect(()=>{
         getData()
     },[])
     const handleClick = () => {
-        if("id" == "id"){
-            alert("Make a patch request")
-        }
+        // if("id" == "id"){
+        //     alert("Make a patch request")
+        // }
+        alert(form_data.email)
     }
   return (
     <div>
