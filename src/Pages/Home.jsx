@@ -1,14 +1,16 @@
 import React from 'react'
 import Styles from "./Home.module.css"
-// import {Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 import {  Box, Grid, GridItem, Text } from '@chakra-ui/layout'
 import { Navbar } from '../Components/Navbar'
 import { Image } from '@chakra-ui/image'
-import { Input } from '@chakra-ui/react'
-import {Flex,Spacer} from "@chakra-ui/layout"
-import {BsInstagram} from "react-icons/bs"
-import {FaFacebookF,FaPinterestSquare, FaTiktok} from "react-icons/fa"
-import { Button } from '@chakra-ui/react'
+// import { Input } from '@chakra-ui/react'
+// import {Flex,Spacer} from "@chakra-ui/layout"
+// import {BsInstagram} from "react-icons/bs"
+// import {FaFacebookF,FaPinterestSquare, FaTiktok} from "react-icons/fa"
+// import { Button } from '@chakra-ui/react'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
 import Footer from '../Components/Footer'
 // import {} 
 
@@ -38,8 +40,8 @@ export default function Home() {
         </Grid>
         </Box>
         <Box mb={"50px"} width="80%" margin="auto">
-        <Grid templateColumns={{base:'repeat(2,1fr)',md:'repeat(4, 1fr)'}} >
-            <GridItem className={Styles.cart_home} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/500x659/products/2663/27526/ETCH-SIZING-TEMPLATE4_05__62410.1661734412.jpg?c=2)`}}>
+        {/* <Grid templateColumns={{base:'repeat(2,1fr)',md:'repeat(4, 1fr)'}} > */}
+            {/* <GridItem className={Styles.cart_home} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/500x659/products/2663/27526/ETCH-SIZING-TEMPLATE4_05__62410.1661734412.jpg?c=2)`}}>
                 <button className={Styles.cart_home_btn}>QUICK VIEW</button>
             </GridItem>
             <GridItem className={Styles.cart_home} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/500x659/products/2664/27667/ETCH-SIZING-TEMPLATE2-EDIT_01__27470.1662408093.jpg?c=2)`}}>
@@ -51,7 +53,34 @@ export default function Home() {
             <GridItem className={Styles.cart_home} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/500x659/products/2708/28172/EDIT-ETCH-SIZING-TEMPLATE5_04__45675__69453.1664762183.jpg?c=2)`}}>
                 <button className={Styles.cart_home_btn}>QUICK VIEW</button>
             </GridItem>
-        </Grid>
+        </Grid> */}
+        <Carousel height={"300px,400px,500px"}>
+            {/* <Link> */}
+                <Box>
+                    <Image src={"https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/500x659/products/2700/28115/ETCH-SIZING-TEMPLATE1_05__93596.1664256715.jpg?c=2"} />
+                    <Text ></Text>
+                </Box>
+            {/* </Link> */}
+            {/* <Link> */}
+                <Box>
+                    <Image src={"https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/500x659/products/2741/28290/ETCH-SIZING-TEMPLATE-4_05__25012.1666673530.jpg?c=2"} />
+                    <Text ></Text>
+                </Box>
+            {/* </Link> */}
+            {/* <Link> */}
+                <Box>
+                    <Image src={"https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/500x659/products/2733/28259/ETCH-SIZING-TEMPLATE-4_02__27379.1666567155.jpg?c=2"} />
+                    <Text ></Text>
+                </Box>
+            {/* </Link> */}
+            {/* <Link> */}
+                <Box>
+                    <Image src={"https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/500x659/products/2734/28444/ED---ETCH-SIZING-TEMPLATE-1_05__04645.1667076699.jpg?c=2"} />
+                    <Text ></Text>
+                </Box>
+            {/* </Link> */}
+                
+            </Carousel>
         </Box>
         <Box width="100%" mb={['20px',"50px"]}>
             <Image width="100%"  src="https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/l-black-friday.jpg?t=1668994655"/>
@@ -60,11 +89,9 @@ export default function Home() {
 
         <Box mb={"100px"}>
             <Grid gap={1.5}  templateColumns = {{base:'repeat(2,1fr)',md:'repeat(4,1fr)'}}>
-                {/* <Flex> */}
-                    <GridItem colStart={[1,1]} colEnd={[2,2]} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-5-black-friday-2022.jpg?t=1668994999)`}} className={Styles.grid_item} h={["350px","450px","550px"]} >
-                        <Text  className={Styles.grid_child}  pt={["320px,420px,520px"]} style={{paddingBottom:"20px" ,paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP MINI</Text>
-                    </GridItem>
-                {/* </Flex> */}
+            <GridItem colStart={[1,1]} colEnd={[2,2]} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-5-black-friday-2022.jpg?t=1668994999)`}} className={Styles.grid_item} >
+                <Text h={["350px","450px","550px"]}  paddingTop={["320px,420px,520px"]} className={Styles.grid_child}  style={{paddingBottom:"20px" ,paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP MINI</Text>
+            </GridItem>
             <GridItem colStart={[2,2]} colEnd={[3,3]} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-6-black-friday-2022.jpg?t=1668995058)`}} className={Styles.grid_item} h={["350px","450px","550px"]} >
                 <Text  className={Styles.grid_child}  pt={["320px,420px,520px"]} style={{paddingBottom:"20px" ,paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP SEPERATES</Text>
             </GridItem>
@@ -104,46 +131,6 @@ export default function Home() {
                 </GridItem>
             </Grid>
         </Box>
-        {/* <Box backgroundColor={"black"} padding={"70px"}>
-            <Grid gridTemplateColumns={['repeat(1,1fr)','repeat(1,1fr)','repeat(4,1fr)']}>
-                <GridItem>
-                    <Image w={[200,300]}   maxW={"300px"} src={"https://cdn11.bigcommerce.com/s-9srn18to/stencil/f5485050-5114-013b-119b-123f55a4ca1d/e/8e215d00-3d2b-013b-c3ef-3ea28820c29e/img/logo-white.png"}/>
-                    <Flex>
-                    <BsInstagram className={Styles.icons}/>
-                    <FaFacebookF className={Styles.icons}/>
-                    <FaPinterestSquare className={Styles.icons}/>
-                    <FaTiktok className={Styles.icons}/>
-                    </Flex>
-                </GridItem>
-                <GridItem className={Styles.about}>
-                    <h5>INFO</h5>
-                    <br />
-                    <h5>ABOUT US</h5>
-                    <h5>CONTACT US</h5>
-                    <h5>WORK WITH US</h5>
-                    <h5>TS & CS</h5>
-                    <h5>PRIVACY POLICY</h5>
-
-                </GridItem>
-                <GridItem className={Styles.about}>
-                    <h5>CUSTOMER CARE</h5>
-                    <br />
-                    <h5>SHIPPING</h5>
-                    <h5>RETURN</h5>
-                    <h5>INCLUSIVE SIZING</h5>
-                    <h5>PAYMENT METHOD</h5>
-                    <h5>GIFT CARDS</h5>
-                    <h5>OUTLET</h5>
-                </GridItem>
-                <GridItem className={Styles.about}>
-                    <h5>SUBSCRIBE TO RECEIVE UPDATES AND SPECIAL OFFERS!</h5>
-                    <br />
-                    <Flex><Input style={{color:"white", fontSize:"13px", fontWeight:"500"}} variant='flushed' placeholder='YOUR EMAIL ADDRESS' />
-                    <Button style={{fontSize:"13px",backgroundColor:"transparent", borderRadius:"0px"}} className={Styles.footer}>SUBSCRIBE</Button></Flex>
-                    
-                </GridItem>
-            </Grid>
-        </Box> */}
         <Footer />
     </div>
   )
