@@ -1624,6 +1624,35 @@
           "newest": true,
           "bestSelling": false,
           "featured": false
+        },
+        {
+          "id": 3,
+          "brand": "BOHEMIAN TRADERS",
+          "category": "Bottom",
+          "name": "aliqua nulla dolor esse sunt",
+          "price": 305,
+          "reviews": 43,
+          "rating": 3.4,
+          "sizes": "2XL",
+          "details": "in officia exercitation ipsum quis elit enim qui exercitation ullamco irure nulla deserunt eu sunt quis esse sit fugiat aliquip ullamco pariatur nisi aute aute in nisi amet ipsum culpa duis sint ad dolor voluptate exercitation ex elit cupidatat velit duis nulla laborum laboris consectetur anim consectetur officia",
+          "features": [
+            "White cotton voile with mulit metallic lurex stripe",
+            "Sleeveless A line silhouette",
+            "Fits true to size",
+            "96% Cotton, 4% lurex",
+            "Lightweight, non stretchy fabric",
+            "Gental machine wash in cold water, hand dry, and steam iron"
+          ],
+          "img": {
+            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2453/25874/1_04__26317.1659932946.jpg?c=2",
+            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2748/28411/F-BT-SS22-KNI12-NAVY_04__29268.1666983207.jpg?c=2",
+            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2748/28408/F-BT-SS22-KNI12-NAVY_01__77830.1666983206.jpg?c=2",
+            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2748/28409/F-BT-SS22-KNI12-NAVY_02__63769.1666983206.jpg?c=2"
+          },
+          "inStock": true,
+          "newest": false,
+          "bestSelling": false,
+          "featured": false
         }
       ],
       "wishlist": [
