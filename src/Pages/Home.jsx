@@ -2,9 +2,7 @@ import React from 'react'
 import Styles from "./Home.module.css"
 // import {Link} from "react-router-dom"
 import {  Box, Grid, GridItem, Text } from '@chakra-ui/layout'
-import { Navbar } from '../Components/Navbar'
 import { Image } from '@chakra-ui/image'
-import Footer from '../Components/Footer'
 // import {} 
 
 export default function Home() {
@@ -13,7 +11,7 @@ export default function Home() {
         <Box className={Styles.top}>
             <h5>FREE SHIPPING FOR ALL DOMESTIC AUSTRALIAN ORDERS OVER $250</h5>
         </Box>
-        <Navbar />
+        
         <Box  m={"0 auto 50px"} width={"98%"}><Image src="https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/carousel-black-friday-2022.jpg?t=1668994561"/></Box>
         
         <Box mb={"50px"}>
@@ -97,7 +95,7 @@ export default function Home() {
                 </GridItem>
             </Grid>
         </Box>
-        <Footer />
+        
     </div>
   )
 }

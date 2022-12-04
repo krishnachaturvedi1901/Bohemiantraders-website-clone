@@ -6,13 +6,21 @@ import { MoreProduct } from '../../Components/ProductDetailsCompo/MoreProduct';
 import { PDdetails } from '../../Components/ProductDetailsCompo/PDdetails';
 import { SendDataOnCart, SendDataOnWishList } from '../../Components/ProductDetailsCompo/SendData';
 import PDImg1 from '../../Components/ProductDetailsCompo/PDImg1';
+import { productsUrl,accountsUrl } from '../../Deployed-server-url/deployed-server-url';
+import {Link}  from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+import { useToast } from '@chakra-ui/react'
+
 function ProductDetail() {
+  const navigate= useNavigate()
   let { id } = useParams();
-  id = 5;
   const [ID, setID] = useState(id)
   let [Index, setIndex] = useState(id)
   const [value, setValue] = useState(null)
+  const [user,setUser]=useState([])
   console.log(ID)
+  const toast = useToast()
+
   const [data, setdata] = useState({
     "id": "",
     "brand": "",
@@ -37,12 +45,24 @@ function ProductDetail() {
     "bestSelling": "",
     "featured": ""
   })
+
   useEffect(() => {
-    fetch(`http://localhost:3001/products/${Index}`).then((res) => {
+
+    fetch(`${productsUrl}/${Index}`).then((res) => {
       res.json().then((res) => {
         setdata(res)
       })
     })
+    fetch(`${accountsUrl}`).then((res) => { return res.json() }).then((res) => {
+      let loginUser = res.filter((el) => {
+          if (el.login == true) {
+              return el
+          }
+      })
+      setUser(loginUser) 
+    })
+    
+
   }, [Index])
   
   if(Index!=ID){
@@ -70,22 +90,47 @@ function ProductDetail() {
   )
   const { isOpen, onOpen, onClose } = useDisclosure()
   const [overlay, setOverlay] = React.useState(<OverlayOne />)
+
   function AddDATAinCart() {
-    if (value) {
+    if (value ) {
+      if(user.length>0)
       {
-        SendDataOnCart(data, value);
+        SendDataOnCart(data, value,user);
         setOverlay(<OverlayOne />)
         onOpen()
+
+        toast({
+          title: 'Product Added',
+          description: "",
+          status: 'success',
+          duration: 4000,
+          isClosable: true,
+        })
+            
       }
+      else{ navigate('/login') }
     }
     else {
       alert('Please select a Size')
+      
     }
   }
   function AddDATAinWishList() {
     if (value) {
+      if( user.length>0)
       {
-        SendDataOnWishList(data, value)
+        SendDataOnWishList(data, value,user)
+        toast({
+          title: 'Product Added',
+          description: "",
+          status: 'success',
+          duration: 2000,
+          isClosable: true,
+        })
+        
+      }
+      else{
+        navigate('/login')
       }
     }
     else {
@@ -93,7 +138,7 @@ function ProductDetail() {
     }
   }
   return (
-    <div>
+    <div >
       <>
         <Modal size={'6xl'} isCentered isOpen={isOpen} onClose={onClose}>
           {overlay}
@@ -122,7 +167,7 @@ function ProductDetail() {
                     <Text>$US {data.price}</Text>
                     <Text>Your cart containe { } items</Text>
                     <Button w={'100%'} onClick={onClose} >CONTINUE SHOPPING</Button>
-                    <Button w={'100%'} onClick={onClose} >VIEW OR EDIT YOUR CART</Button>
+                    <Button w={'100%'} onClick={onClose} ><Link to='/cart' >VIEW OR EDIT YOUR CART</Link></Button>
                   </VStack>
                 </Box>
               </Stack>
@@ -136,10 +181,10 @@ function ProductDetail() {
       <Text>Home/  DRESSES  / {data.brand}</Text>
       <Grid templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(2, 1fr)']} gap={6}>
 
-        <Box border={'1px solid red'}>
+        <Box>
           <PDImg1 data={data} />
         </Box>
-        <Box border={'1px solid green'}>
+        <Box p={'10px'} >
           <Text id='PD_title'>{data.name}</Text>
           <Text>{data.brand}</Text>
           <Text>{data.price}</Text>
@@ -149,9 +194,9 @@ function ProductDetail() {
           </Box>
           <Text>SIZE:</Text>
           <RadioGroup onChange={setValue} value={value}>
-            <Stack direction='row'>
+            <Stack m={'10px'} direction='row'>
               {data.sizes.map((el) => {
-                return <Radio value={el} key={el}>
+                return <Radio m={'15px'} value={el} key={el}>
                   {el}
                 </Radio>
               })}

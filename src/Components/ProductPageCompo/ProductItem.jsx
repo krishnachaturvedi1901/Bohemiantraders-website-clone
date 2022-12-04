@@ -32,7 +32,7 @@ const ProductItem = ({id,brand,name,price,img}) => {
   return (
     <Box h={{base:'62vw',md:'36vw'}} w={{base:'100%', md:'100%'}} onClick={()=>{navigate(`/products/${id}`)}}>
       <Box h='75%' w='100%' onMouseOver={(e)=>mouseOver(e)} onMouseOut={(e)=>mouseOut(e)} >
-        <Image ref={ImgRef} src={imgView==="model"?img.model1:img.item1} h='100%' w='100%' />
+        <Image ref={ImgRef} src={imgView==="model"&& img?img.model1:img.item1} h='100%' w='100%' />
       </Box>
       <Box textTransform='uppercase'>
        <Box className={styles.applyFontFamily} fontSize={{base:"2.3vw",sm:"2vw",md:".85vw"}} color='#272727'  >{name}</Box>
