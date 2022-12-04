@@ -2,7 +2,7 @@ import {applyMiddleware, combineReducers, legacy_createStore as createStore} fro
 import thunk from "redux-thunk"
 import prodReducer from "./ProductPageRedux/prodReducer"
 const rootReducer=combineReducers({
-    productsState:prodReducer,
+    productsState:prodReducer
 })
 const middlewares=applyMiddleware(thunk)
 
