@@ -49,7 +49,7 @@ export default function Login() {
         const payload = {
           status : !usersData.find((el) => el.id === id)?.status
         }
-        fetch(`http://localhost:3020/todos/${id}`,{
+        fetch(`https://bohemian-server.onrender.com/accounts/${id}`,{
           method:"PATCH",
           body:JSON.stringify(payload),
           headers:{
