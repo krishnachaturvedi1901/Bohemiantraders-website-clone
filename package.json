@@ -3,11 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
     "@chakra-ui/icons": "^2.0.13",
-=======
-    "@chakra-ui/icons": "^2.0.12",
->>>>>>> main
     "@chakra-ui/react": "^2.4.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
@@ -30,6 +26,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "server":"json-server --watch products.json --port 3001",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
