@@ -1,0 +1,52 @@
+#PD_title{
+  font-size: 32px;
+  font-weight: 300;
+  color: #272727;
+  line-height: 36px;
+  margin: 0 0 20px;
+  opacity: 1;
+  text-transform: uppercase;
+}
+#PD_DATA{
+  width: 50%;
+  margin: auto;
+  gap: 20%;
+}
+.img{
+  width: 400px;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  gap: 40px;
+  position: relative;
+  overflow-x:calc(1fr,3)
+}
+#PD_div1{
+    display: flex;
+    gap: 10%;
+    justify-content: space-evenly;
+}
+#sizeButton{
+    border:#717171;
+    background-color: transparent;
+    cursor: pointer;
+}
+#sizeButton:hover{
+    border: 1px solid black;
+
+}
+#sizeButton::after{
+    border: 1px solid black;
+}
+#div1{
+  display: flex;
+}
+#more_product{
+  font-size: 32px;
+    font-weight: 300;
+    color: #272727;
+    line-height: 36px;
+    margin: 0 0 20px;
+    opacity: 1;
+    text-transform: uppercase;
+}

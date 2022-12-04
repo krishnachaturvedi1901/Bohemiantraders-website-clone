@@ -1,0 +1,19 @@
+.heading{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.form_control{
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+}
+
+/* #reducing_width{
+    width:60%;
+    margin:auto;
+} */
+
+#sign_btn:hover{
+    background-color: RGBA(0, 0, 0, 0.64);
+}

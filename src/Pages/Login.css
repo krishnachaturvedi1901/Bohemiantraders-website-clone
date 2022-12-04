@@ -1,0 +1,25 @@
+.heading{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.heading_2{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.login_ul{
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+}
+
+#btn:hover{
+    background-color: RGBA(0, 0, 0, 0.80);
+    cursor: pointer;
+}
+
+#btn2:hover{
+    background-color: RGBA(0, 0, 0, 0.80);
+    cursor: pointer;
+}
