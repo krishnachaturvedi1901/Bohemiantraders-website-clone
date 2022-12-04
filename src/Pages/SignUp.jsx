@@ -15,8 +15,10 @@ const newData = {
     country:"",
     state:"",
     pinCode:"",
-    policy:""
+    policy:"",
+    status:false
 }
+
 export default function SignUp() {
     const[form_data, setFormData] = useState(newData);
     const handleChange = (e) => {
@@ -25,6 +27,16 @@ export default function SignUp() {
         const temp = type === "checkbox" ? checked : value;
         setFormData({ ...form_data, [name]: temp });
       };
+
+      const handleClick = () => {
+        fetch(`https://bohemian-server.onrender.com/accounts`,{
+            method:"POST",
+            body:JSON.stringify(form_data),
+            headers:{
+                "Content-Type": "application/json"
+            }
+        })
+      }
   return (
     <div>
         <Navbar />
@@ -128,7 +140,7 @@ export default function SignUp() {
             </Checkbox>
             </GridItem>
             </Grid>
-            <Button width={["100%","auto"]} id="sign_btn" fontSize={"13px"} letterSpacing={"1.25px"} fontWeight={"400"} borderRadius={0} color={"white"} backgroundColor={"RGBA(0, 0, 0, 0.48)"} mt={7} onClick={() => alert(form_data.password)}>CREATE ACCOUNT</Button>
+            <Button width={["100%","auto"]} id="sign_btn" fontSize={"13px"} letterSpacing={"1.25px"} fontWeight={"400"} borderRadius={0} color={"white"} backgroundColor={"RGBA(0, 0, 0, 0.48)"} mt={7} onClick={handleClick}>CREATE ACCOUNT</Button>
             </FormControl>
             </Box>
         </Box>

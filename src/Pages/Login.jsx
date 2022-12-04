@@ -26,23 +26,40 @@ export default function Login() {
         const { value,  name } = e.target;
         setFormData({...form_data,[name]:value})
     }
-
+    
     const getData = () => {
-        // fetch()
-        // .then((res) => res.json())
-        // .then((data) => setUsersData(data))
-        
+        fetch(`https://bohemian-server.onrender.com/accounts`)
+        .then((res) => res.json())
+        .then((resData) => setUsersData(resData))
     }
 
     useEffect(()=>{
         getData()
     },[])
     const handleClick = () => {
-        // if("id" == "id"){
-        //     alert("Make a patch request")
-        // }
-        alert(form_data.email)
+        usersData.map((itmData) => {
+            if(form_data.email === itmData.email && form_data.password === itmData.password){
+                handleToggle(itmData.id)
+            }
+        })
+        
     }
+
+    const handleToggle = (id) => {
+        const payload = {
+          status : !usersData.find((el) => el.id === id)?.status
+        }
+        fetch(`http://localhost:3020/todos/${id}`,{
+          method:"PATCH",
+          body:JSON.stringify(payload),
+          headers:{
+            "Content-Type": "application/json"
+          }
+        })
+        .then(() => getData())
+      }
+
+    console.log(usersData)
   return (
     <div>
         <Box>
