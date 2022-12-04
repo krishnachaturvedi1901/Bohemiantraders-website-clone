@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from 'react';
-import { CheckCircleIcon } from '@chakra-ui/icons'
-import { Box, Button, Image, Alert, AlertDescription, AlertIcon, AlertTitle, List, ListItem, ListIcon, Radio, RadioGroup, Stack, Tab, Tabs, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, Text, useDisclosure, TabList, TabPanels, TabPanel, VStack, Container } from '@chakra-ui/react'
+import { Box, HStack, Button, Image, Radio, RadioGroup, Stack, Modal, ModalOverlay, ModalContent, ModalHeader, ModalFooter, ModalBody, ModalCloseButton, Text, useDisclosure, VStack, Grid } from '@chakra-ui/react'
 import './ProductDetail.css'
 import { useParams } from 'react-router-dom';
-import PDimg from '../../Components/ProductDetailsCompo/PDimg';
 import { MoreProduct } from '../../Components/ProductDetailsCompo/MoreProduct';
 import { PDdetails } from '../../Components/ProductDetailsCompo/PDdetails';
 import { SendDataOnCart, SendDataOnWishList } from '../../Components/ProductDetailsCompo/SendData';
+import PDImg1 from '../../Components/ProductDetailsCompo/PDImg1';
 function ProductDetail() {
-  let [slideIndex, setslideIndex] = useState(1)
+  let { id } = useParams();
+  id = 5;
+  const [ID, setID] = useState(id)
+  let [Index, setIndex] = useState(id)
   const [value, setValue] = useState(null)
+  console.log(ID)
   const [data, setdata] = useState({
     "id": "",
     "brand": "",
@@ -34,38 +37,17 @@ function ProductDetail() {
     "bestSelling": "",
     "featured": ""
   })
-  let { id } = useParams();
-  id = 5;
   useEffect(() => {
-    fetch(`https://bohemian-server.onrender.com/products/${id}`).then((res) => {
+    fetch(`http://localhost:3001/products/${Index}`).then((res) => {
       res.json().then((res) => {
         setdata(res)
       })
     })
-  }, [])
-  React.useEffect(() => {
-    showSlides(slideIndex);
-  }, [plusSlides])
-  function plusSlides(n) {
-    let next = document.getElementsByClassName('next');
-    let prev = document.getElementsByClassName("prev");
-    if (slideIndex + n < 1) { setslideIndex(1) }
-    else if (slideIndex + n >= 3) { setslideIndex(3) }
-    else { setslideIndex(slideIndex = slideIndex + n) }
-    showSlides(slideIndex);
+  }, [Index])
+  
+  if(Index!=ID){
+    setID(Index);
   }
-  function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    if (n > slides.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = slides.length }
-    for (i = 0; i < slides.length - 1; i++) {
-      slides[i].style.display = "none";
-      slides[i + 1].style.display = "none";
-    }
-    slides[slideIndex - 1].style.display = "flex";
-  }
-
   let rating = "";
   if (data.rating > 4) {
     rating = "https://www.shutterstock.com/image-vector/five-stars-quality-rating-icon-260nw-1184466310.jpg"
@@ -96,7 +78,7 @@ function ProductDetail() {
         onOpen()
       }
     }
-    else{
+    else {
       alert('Please select a Size')
     }
   }
@@ -139,7 +121,7 @@ function ProductDetail() {
                     <Text>Order subtotal</Text>
                     <Text>$US {data.price}</Text>
                     <Text>Your cart containe { } items</Text>
-                    <Button w={'100%'}>CONTINUE SHOPPING</Button>
+                    <Button w={'100%'} onClick={onClose} >CONTINUE SHOPPING</Button>
                     <Button w={'100%'} onClick={onClose} >VIEW OR EDIT YOUR CART</Button>
                   </VStack>
                 </Box>
@@ -151,44 +133,41 @@ function ProductDetail() {
           </ModalContent>
         </Modal>
       </>
-      
       <Text>Home/  DRESSES  / {data.brand}</Text>
-      <Stack border={'1px solid red'} id='PD_div1' direction={{ base: 'column', md: 'row' }} gap={6}>
-        <Box border={'1px solid red'} width={{ base: '100%', md: '40%' }} height={{ base: '100%', md: '100%' }} >
-          <PDimg data={data} />
-        </Box>
-        <Box>
-          <Container>
-            <Text id='PD_title'>{data.name}</Text>
-            <Text>{data.brand}</Text>
-            <Text>{data.price}</Text>
-            <Text>Or pay 4 interest-free payments with Paytem</Text>
-            <Box>
-              <Image w={'100px'} src={rating} />
-            </Box>
-            <Text>SIZE:</Text>
-            <RadioGroup onChange={setValue} value={value}>
-              <Stack direction='row'>
-                {data.sizes.map((el) => {
-                  return <Radio value={el} key={el}>
-                    {el}
-                  </Radio>
-                })}
-              </Stack>
-            </RadioGroup>
+      <Grid templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(2, 1fr)']} gap={6}>
 
-            <Box>
-              <Stack direction='column'>
-                <Button colorScheme='teal' variant='solid' onClick={AddDATAinCart}>Add to Cart</Button>
-                <Button colorScheme='blue' onClick={AddDATAinWishList}>ADD TO WISH LIST</Button>
-              </Stack>
-            </Box>
-          </Container>
+        <Box border={'1px solid red'}>
+          <PDImg1 data={data} />
         </Box>
-      </Stack>
+        <Box border={'1px solid green'}>
+          <Text id='PD_title'>{data.name}</Text>
+          <Text>{data.brand}</Text>
+          <Text>{data.price}</Text>
+          <Text>Or pay 4 interest-free payments with Paytem</Text>
+          <Box>
+            <Image w={'100px'} src={rating} />
+          </Box>
+          <Text>SIZE:</Text>
+          <RadioGroup onChange={setValue} value={value}>
+            <Stack direction='row'>
+              {data.sizes.map((el) => {
+                return <Radio value={el} key={el}>
+                  {el}
+                </Radio>
+              })}
+            </Stack>
+          </RadioGroup>
+          <Box>
+            <Stack direction='column'>
+              <Button colorScheme='teal' variant='solid' onClick={AddDATAinCart}>Add to Cart</Button>
+              <Button colorScheme='blue' onClick={AddDATAinWishList}>ADD TO WISH LIST</Button>
+            </Stack>
+          </Box>
+        </Box>
+      </Grid>
       <div style={{ height: "50px" }}></div>
       <PDdetails {...data} />
-      <MoreProduct {...data} />
+      <MoreProduct data={data} setID={setIndex}/>
     </div>
   )
 }
