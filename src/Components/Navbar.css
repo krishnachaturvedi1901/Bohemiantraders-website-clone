@@ -1,0 +1,15 @@
+.header_flex{
+    text-align: left;
+    flex-direction: row;
+}
+
+.header_flex a{
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    padding: 5px 8px;
+}
+
+.header_box_top{
+    padding: 0 4rem;
+}

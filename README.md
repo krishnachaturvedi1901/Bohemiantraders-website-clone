@@ -1,7 +1,7 @@
 # Bohemiantraders-website-clone
 
 <br/>
-<img  src="public\site.PNG" height="500px" width="auto" />
+<img  src="https://i.imgur.com/UmSrrkP.jpg" height="500px" width="1000px" />
 <br/>
 <b>We have created this <a href="https://bohemiantraders.com/">Bohemiantraders.com</a> clone in our construct week project.
 This is react.js based porject with full functionalities with following techstack used-</b>
@@ -16,7 +16,8 @@ This is react.js based porject with full functionalities with following techstac
   - React-redux lib
   - Json server:(CRUD)
   - Netlify deployment
+  - Render.com server deployment
 
 
 ## File-structure
-<img  src="https://github.com/krishnachaturvedi1901/Bohemiantraders-website-clone/blob/main/public/filestructure.PNG?raw=true" height="auto" width="auto" />
+<img  src="https://i.imgur.com/q39CFdB.png" height="auto" width="auto" />
