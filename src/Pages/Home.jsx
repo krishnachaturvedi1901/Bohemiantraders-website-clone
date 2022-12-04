@@ -54,10 +54,10 @@ export default function Home() {
                 <button className={Styles.cart_home_btn}>QUICK VIEW</button>
             </GridItem>
         </Grid> */}
-        <Carousel height={"300px,400px,500px"}>
+        <Carousel  showThumbs={false} height={"300px,400px,500px"}>
             {/* <Link> */}
                 <Box>
-                    <Image src={"https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/500x659/products/2700/28115/ETCH-SIZING-TEMPLATE1_05__93596.1664256715.jpg?c=2"} />
+                    <Image src={"https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/500x659/products/2700/28115/ETCH-SIZING-TEMPLATE1_05__93596.1664256715.jpg?c=2"} height="100%" />
                     <Text ></Text>
                 </Box>
             {/* </Link> */}
@@ -90,13 +90,13 @@ export default function Home() {
         <Box mb={"100px"}>
             <Grid gap={1.5}  templateColumns = {{base:'repeat(2,1fr)',md:'repeat(4,1fr)'}}>
             <GridItem colStart={[1,1]} colEnd={[2,2]} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-5-black-friday-2022.jpg?t=1668994999)`}} className={Styles.grid_item} >
-                <Text h={["350px","450px","550px"]}  paddingTop={["320px,420px,520px"]} className={Styles.grid_child}  style={{paddingBottom:"20px" ,paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP MINI</Text>
+                <Text h={["350px","450px","550px"]}  paddingTop={["320px,420px,520px"]} className={Styles.grid_child}  padding={["8px,12px,20px"]} paddingLeft={["13px,20px,30px"]} style={{ fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP MINI</Text>
             </GridItem>
             <GridItem colStart={[2,2]} colEnd={[3,3]} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-6-black-friday-2022.jpg?t=1668995058)`}} className={Styles.grid_item} h={["350px","450px","550px"]} >
-                <Text  className={Styles.grid_child}  pt={["320px,420px,520px"]} style={{paddingBottom:"20px" ,paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP SEPERATES</Text>
+                <Text  className={Styles.grid_child}  pt={["320px,420px,520px"]} padding={["8px,12px,20px"]} paddingLeft={["13px,20px,30px"]} style={{ fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP SEPERATES</Text>
             </GridItem>
             <GridItem colStart={[1,3]} colEnd={[3,5]} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-7-black-friday-2022.jpg?t=1668995111)`}} className={Styles.grid_item} h={["350px","450px","550px"]} >
-                <Text  className={Styles.grid_child}  pt={["320px,420px,520px"]} style={{paddingBottom:"20px" ,paddingLeft:"30px", fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP TOPS</Text>
+                <Text  className={Styles.grid_child}  pt={["320px,420px,520px"]} padding={["8px,12px,20px"]} paddingLeft={["13px,20px,30px"]} style={{ fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP TOPS</Text>
             </GridItem>
             </Grid>
         </Box>
