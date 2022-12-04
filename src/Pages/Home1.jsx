@@ -1,5 +1,5 @@
 import React from 'react'
-import Styles from "./Home.module.css"
+import Styles from "./Home1.module.css"
 import {Link} from "react-router-dom"
 import {  Box, Grid, GridItem, Text } from '@chakra-ui/layout'
 import { Navbar } from '../Components/Navbar'
