@@ -1,7 +1,10 @@
 import { Heading, Flex, Spacer, ButtonGroup, Grid, GridItem, Image, Stat, Text, Accordion, AccordionButton, AccordionIcon, AccordionPanel, Box, AccordionItem, Input, Button, Radio, Checkbox, useToast } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import {accountsUrl} from "../../Deployed-server-url/deployed-server-url"
+import {useNavigate} from 'react-router-dom'
 function Payment(props) {
+    const navigate=useNavigate()
     const [State, setState] = useState([])
     const [totalCoupon, settotalCoupon] = useState(0)
     const [totalPrice, settotalPrice] = useState(0)
@@ -11,7 +14,7 @@ function Payment(props) {
     let total = 0;
     const toast = useToast();
     useEffect(() => {
-        fetch(`http://localhost:3001/userAccounts?login=true`).then((el) => {
+        fetch(`${accountsUrl}?login=true`).then((el) => {
             el.json().then((data) => {
                 console.log(data)
                 setState(data)
@@ -138,7 +141,7 @@ function Payment(props) {
                                         document.getElementById('carddate').value.length>0 &&
                                         document.getElementById('cardname').value.length>0 &&
                                         document.getElementById('cardcvv').value.length>0) {
-                                        fetch(`http://localhost:3001/userAccounts/${State[0].id}`, {
+                                        fetch(`${accountsUrl}/${State[0].id}`, {
                                             headers: {
                                                 "Content-Type": "application/json"
                                             },
@@ -152,6 +155,7 @@ function Payment(props) {
                                               })
                                         
                                         }) })
+                                        
                                     }
                                     else{
                                         return toast({
@@ -162,7 +166,7 @@ function Payment(props) {
                                     }
                                 }}>
 
-                                    <Link to={'/'}>PLACE ORDER</Link>
+                                    PLACE ORDER
                                 </Button>
                             </Box> : null}
                         </GridItem>
