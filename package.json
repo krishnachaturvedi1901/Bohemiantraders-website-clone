@@ -17,13 +17,8 @@
     "framer-motion": "^6.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-<<<<<<< HEAD
-    "react-icons": "^4.7.1",
-    "react-multi-carousel": "^2.8.2",
-=======
     "react-multi-carousel": "^2.8.2",
     "react-icons": "^4.7.1",
->>>>>>> d12b6b6d7dfacdd907ed3d8510f4bcf7555b8789
     "react-redux": "^8.0.5",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.4.3",
@@ -33,11 +28,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-<<<<<<< HEAD
-    "server": "json-server --watch products.json --port 3001",
-=======
     "server": "json-server --watch db.json --port 8001",
->>>>>>> d12b6b6d7dfacdd907ed3d8510f4bcf7555b8789
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
