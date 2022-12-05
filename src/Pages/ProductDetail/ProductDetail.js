@@ -159,7 +159,7 @@ function ProductDetail() {
                 </Box>
                 <Box w={'33%'}>
                   <VStack>
-                    <Button w={'100%'}>PRODCEED TO CHECKOUT</Button>
+                    <Button w={'100%'}><Link to='/checkout'>PRODCEED TO CHECKOUT</Link></Button>
                     <Text>--or use--</Text>
                     <Button w={'100%'}>PayPal</Button>
                     <Button w={'100%'}>G Pay</Button>
