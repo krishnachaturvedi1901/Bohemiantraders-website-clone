@@ -1,7 +1,7 @@
 
 import { Image } from "@chakra-ui/image";
 import { Box,  Flex, Text } from "@chakra-ui/layout";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import "./Navbar.css"
 import {RiAccountCircleLine} from "react-icons/ri"
 import {BsSearch} from "react-icons/bs"
@@ -9,10 +9,11 @@ import {HiOutlineShoppingBag} from "react-icons/hi"
 import { useState } from "react";
 import {HamburgerIcon,CloseIcon} from "@chakra-ui/icons"
 import { IconButton } from "@chakra-ui/react";
-
+import { useNavigate } from "react-router-dom";
 
 
 export const Navbar = () =>{
+    const navigate=useNavigate()
     const [display, changeDisplay] = useState("none");
     return(
             <Box width={["100%","100%","90%","90%"]} m={["10px 0px 0px -15px","auto","auto","auto"]} style={{position:"sticky",display:"flex" ,justifyContent:"space-between",alignItems:"center"}}>
@@ -237,7 +238,7 @@ export const Navbar = () =>{
                     </Flex>
                 </Box>
                 {/* <Spacer /> */}
-                <Box p='2px'  mt={"10px"} ml={["-40%","-13%"]}>
+                <Box p='2px'  mt={"10px"} ml={["-40%","-13%"]} cursor='pointer' onClick={()=>{navigate('/')}} >
                     <Image w={["130px","250px","350px"]} src="https://cdn11.bigcommerce.com/s-9srn18to/stencil/565de430-5109-013b-39dd-52beef6de530/e/8e215d00-3d2b-013b-c3ef-3ea28820c29e/img/logo.gif" />
                 </Box>
                 <Box className="l_part" >

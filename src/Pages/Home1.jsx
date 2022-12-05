@@ -20,7 +20,6 @@ export default function Home() {
         <Box className={Styles.top}>
             <h5>FREE SHIPPING FOR ALL DOMESTIC AUSTRALIAN ORDERS OVER $250</h5>
         </Box>
-        <Navbar />
         <Box height={"100%"} m={["9px auto 20px","0 auto 50px"]} width={"98%"}><Image width="100%" src="https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/carousel-black-friday-2022.jpg?t=1668994561"/></Box>
         
         <Box mb={"50px"}>
@@ -118,7 +117,6 @@ export default function Home() {
                 </GridItem>
             </Grid>
         </Box>
-        {/* <Footer /> */}
     </div>
   )
 }
