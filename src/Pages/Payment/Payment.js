@@ -1,16 +1,20 @@
 import { Heading, Flex, Spacer, ButtonGroup, Grid, GridItem, Image, Stat, Text, Accordion, AccordionButton, AccordionIcon, AccordionPanel, Box, AccordionItem, Input, Button, Radio, Checkbox, useToast } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import {accountsUrl} from "../../Deployed-server-url/deployed-server-url"
-import {useNavigate} from 'react-router-dom'
+import { accountsUrl } from "../../Deployed-server-url/deployed-server-url"
+import { useNavigate } from 'react-router-dom'
 function Payment(props) {
-    const navigate=useNavigate()
+    const navigate = useNavigate()
     const [State, setState] = useState([])
     const [totalCoupon, settotalCoupon] = useState(0)
     const [totalPrice, settotalPrice] = useState(0)
     const [CouponOpen, setCouponOpen] = useState(false)
     const [Coupon, setCoupon] = useState(false)
     const [Payment, setPayment] = useState(false)
+    const [cardname, setcardname] = useState([])
+    const [cardnumber, setcardnumber] = useState([])
+    const [carddate, setcarddate] = useState([])
+    const [cardcvv, setcardcvv] = useState([])
     let total = 0;
     const toast = useToast();
     useEffect(() => {
@@ -28,16 +32,16 @@ function Payment(props) {
                 title: ' Hurry ! masai Coupon  added you got 10% off',
                 status: 'success',
                 isClosable: true,
-              })
+            })
             settotalCoupon((total / 10) * 3)
             settotalPrice(total - totalCoupon)
         }
-        else{
+        else {
             return toast({
                 title: 'please enter correct coupon',
                 status: 'error',
                 isClosable: true,
-              })
+            })
         }
         console.log(total, "after coupon")
     }
@@ -47,7 +51,7 @@ function Payment(props) {
 
                 <GridItem>
 
-                    <Grid templateColumns='repeat(1, 1fr)' border={'1px solid gray'} margin={'auto'} gap={1}>
+                    {State[0].cart.length > 0 ? <Grid templateColumns='repeat(1, 1fr)' border={'1px solid gray'} margin={'auto'} gap={1}>
                         <GridItem w={['100%']} margin={'auto'} h='50' border={'1px solid gray'} alignItems={'center'} textAlign={'center'} style={{ display: 'flex', justifyContent: 'space-between' }}>
                             <Text>Order Summary</Text>
                             <Link>Edit Cart</Link>
@@ -101,10 +105,10 @@ function Payment(props) {
                                 {total - totalCoupon + total / 10}</Text>
 
                         </GridItem>
-                    </Grid>
+                    </Grid> : <Text fontSize={'50px'}>Cart id Empty</Text>}
                 </GridItem>
                 <GridItem>
-                    <Grid templateColumns='repeat(1, 1fr)'  margin={'auto'} gap={1}>
+                    <Grid templateColumns='repeat(1, 1fr)' margin={'auto'} gap={1}>
                         <GridItem>
                             <Text align={'center'} fontSize={'5vh'} onClick={() => {
                                 Payment ? setPayment(false) : setPayment(true);
@@ -124,49 +128,55 @@ function Payment(props) {
                                 </Flex>
                                 <Grid templateColumns='repeat(2, 1fr)' border={'1px solid gray'} margin={'auto'} gap={6}>
 
-                                    <Input id='cardnumber' type={'tel'} placeholder='Credit Card Number' variant='filled' />
-                                    <Input id='carddate' type={'month'} variant='filled' />
-                                    <Input id='cardname' placeholder='Credit Card Name' variant='filled' />
-                                    <Input id='cvv' placeholder='CVV' type={'password'} variant='filled' />
+                                    <Input id='cardnumber' type={'tel'} placeholder='Credit Card Number' variant='filled' onChange={(e) => setcardnumber(e.target.value)} />
+                                    <Input id='carddate' type={'month'} variant='filled' onChange={(e) => setcarddate(e.target.value)} />
+                                    <Input id='cardname' placeholder='Credit Card Name' variant='filled' onChange={(e) => setcardname(e.target.value)} />
+                                    <Input id='cvv' placeholder='CVV' type={'password'} variant='filled' onChange={(e) => setcardcvv(e.target.value)} />
                                 </Grid>
                                 <Text>Terms and Conditions</Text>
                                 <Checkbox defaultChecked>Yes, I agree with the <Link>'terms and conditions.'</Link></Checkbox>
                                 <Button w={'100%'} colorScheme='blackAlpha' textColor={'white'} onClick={(e) => {
-                                    e.preventDefault();
-                                    let cart = State[0].cart;
-                                    let orders=State[0].orders
-                                    orders.push(...cart)
-                                    cart = [];
-                                    if (document.getElementById('cardnumber').value.length > 0 &&
-                                        document.getElementById('carddate').value.length>0 &&
-                                        document.getElementById('cardname').value.length>0 &&
-                                        document.getElementById('cardcvv').value.length>0) {
+
+                                    if (cardname.length > 0 &&
+                                        carddate.length > 0 &&
+                                        cardnumber.length > 0 &&
+                                        cardcvv.length > 0) {
+                                        let cart = State[0].cart;
+                                        let orders = State[0].orders
+                                        cart = [];
+                                        orders.push(...cart)
+                                        toast({
+                                            title: 'Order Placed Successfully',
+                                            status: 'success',
+                                            isClosable: true,
+                                        })
                                         fetch(`${accountsUrl}/${State[0].id}`, {
                                             headers: {
                                                 "Content-Type": "application/json"
                                             },
                                             method: "PATCH",
-                                            body: JSON.stringify({ cart,orders })
-                                        }).then((res) => { res.json().then((res) => {
-                                            return toast({
-                                                title: 'Order Placed Successfully',
-                                                status: 'success',
-                                                isClosable: true,
-                                              })
-                                        
-                                        }) })
-                                        
+                                            body: JSON.stringify({ cart, orders })
+                                        }).then((res) => {
+                                            res.json().then((res) => {
+                                            })
+                                        })
+                                        navigate('/')
+
+
                                     }
-                                    else{
+
+
+
+                                    else {
                                         return toast({
                                             title: 'Opps! card details are not available',
                                             status: 'error',
                                             isClosable: true,
-                                          }) 
+                                        })
                                     }
                                 }}>
 
-                                    PLACE ORDER
+                                    <Link>PLACE ORDER</Link>
                                 </Button>
                             </Box> : null}
                         </GridItem>
