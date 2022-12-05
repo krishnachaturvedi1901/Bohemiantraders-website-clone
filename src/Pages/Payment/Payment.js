@@ -77,7 +77,7 @@ function Payment(props) {
                         </GridItem>
                         <GridItem w={['100%']} margin={'auto'} h='50' border={'1px solid gray'} alignItems={'center'} textAlign={'center'} style={{ display: 'flex', justifyContent: 'space-between' }}>
                             <Text>Tax</Text>
-                            <Text>{total / 11}</Text>
+                            <Text>$ {10}</Text>
                         </GridItem>
                         <GridItem w={['100%']} margin={'auto'} border={'1px solid gray'} alignItems={'center'} textAlign={'center'} style={{ justifyContent: 'space-between' }}>
                             <Link onClick={() => {
@@ -95,10 +95,10 @@ function Payment(props) {
                                 if (total < 500) {
                                     total = total + 40
                                 }
-                                total = total + total / 10
+                                total = total + 10
                                 settotalPrice(total)
                             }}
-                                {total - totalCoupon + total / 10}</Text>
+                                {total - totalCoupon + 10}</Text>
 
                         </GridItem>
                     </Grid>
