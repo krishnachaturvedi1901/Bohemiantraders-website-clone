@@ -1,60 +1,44 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+//import {ChangeSizeModal} from "./changeSizeModal/ChangeSizeModal.js" 
 import { Link } from "react-router-dom";
-
-// Redux Actions
-import {
-  addToCart,
-  changeSize,
-  decrease,
-  remove,
-  selectSize,
-} from "../../redux/cart/cartSlice";
-import { setProductInfo } from "../../redux/productsDetail/productDetailsSlice";
 
 // Styles
 import styles from "./Cart.module.css";
 
 // Assets
-import downArrow from "../../assets/chevron-down.svg";
+import downArrow from "../../assets/down-chevron-svgrepo-com.svg"
 import upArrow from "../../assets/chevron-up.svg";
 import cross from "../../assets/x.svg";
 import zip from "../../assets/zip-button-wht.svg";
 import paypal from "../../assets/paypal.svg";
 import gPay from "../../assets/dark_gpay.svg";
+import { useAccordion } from "@chakra-ui/react";
 
 // Modals
-import ChangeSizeModal from "./changeSizeModal/ChangeSizeModal";
+
 
 const Cart = () => {
-
   // Get data from redux store
 
-  const cart = useSelector((state) => state.cart.cart);
-  const count = useSelector((state) => state.cart.totalCount);
-  const totalPrice = useSelector((state) => state.cart.totalPrice);
-  const selectedSize = useSelector((state) => state.cart.selectedSize);
+ const [totalPrice, setTotalPrice]=useState(0);
+ const [cart, setCart]=useState([]);
+ const [count, setCount]=useState(0);
 
   const tax = (totalPrice * 0.091).toFixed(2);
 
-  const dispatch = useDispatch();
 
   // set state from showing Change Size Modal
-
   const [showChange, setShowChange] = useState(false);
 
   // set new size in Change Size Modal
-
   const [selectedSizeForChange, setSelectedSizeForChange] = useState();
 
   // Set page Title
-
   useEffect(() => {
     document.title = "Bohemian Traders - Shopping Cart";
   }, []);
 
   // Disable scorlling backgronf when Modal is active
-  
   if (showChange) {
     document.body.style.overflow = "hidden";
   } else {
@@ -62,6 +46,22 @@ const Cart = () => {
   }
 
   // When cart is empty this content will be shown
+
+const fetchdata=()=>{
+  fetch("http://localhost:3002/accounts")
+  .then((res)=> res.json())
+  .then((data)=>{
+    console.log(data[0].cart);
+    setCart(data[0].cart)
+
+  })
+}
+useEffect(()=>{
+   fetchdata();
+},[])
+
+
+
   if (cart.length === 0) {
     return (
       <>
@@ -84,54 +84,42 @@ const Cart = () => {
         <Link to="/">HOME</Link> / YOUR CART
       </p>
       {/* number of items in cart */}
-      <h1 className={styles.header}>YOUR CART ({count} ITEMS)</h1>
+      <h1 className={styles.header}>YOUR CART ({cart.length} ITEMS)</h1>
 
       {/* product info */}
       {cart.map((product) => (
         <div
           className={styles.productContainer}
-          key={`${product.id}${product.size}`}
+          key={`${product.id}${product.id}`}
         >
           <div className={styles.firstSection}>
             <p className={styles.title}>Item</p>
             <div className={styles.innerFirstSection}>
               <div className={styles.photoContainer}>
-                <img src={product.photo} alt="product" />
+                <img src={product.img.item1} alt="product" />
               </div>
               <div className={styles.titleContainer}>
                 <p className={styles.brandName}>Boheamian Traders</p>
                 <Link
-                  to={`/product/${product.slug}`}
+                  
                   onClick={() => {
-                    dispatch(
-                      setProductInfo({
-                        category: product.category,
-                        collection: product.collection,
-                        id: product.id,
-                        slug: product.slug
-                      })
-                    );
+                    
                   }}
                 >
                   {product.name}
                 </Link>
                 <p className={styles.size}>
-                  Size: <span>{product.size}</span>
+                  Size: <span>{product.sizes[1]}</span>
                 </p>
                 <button
                   className={styles.change}
                   onClick={() => {
-                    // show change size modal
-                    setShowChange(true);
-                    // set selected size in modal
-                    dispatch(selectSize({ size: product.size }));
-                    // set default size in modal
-                    setSelectedSizeForChange(product.size);
+                    
                   }}
                 >
                   CHANGE
                 </button>
-                <ChangeSizeModal
+                {/* <ChangeSizeModal
                   // give modal show modal status
                   show={showChange}
                   // give modal close modal function
@@ -155,7 +143,7 @@ const Cart = () => {
                       })
                     );
                   }}
-                />
+                /> */}
               </div>
             </div>
           </div>
@@ -178,47 +166,23 @@ const Cart = () => {
                     className={styles.quantityBtn}
                     // decrease or remove product
                     onClick={() => {
-                      product.quantity !== 1
-                        ? // decrease quantity if quantity is more than 1
-                          dispatch(
-                            decrease({
-                              id: product.id,
-                              size: product.size,
-                              price: product.price,
-                            })
-                          )
-                        : // remove item if quantity in equal to 1
-                          dispatch(
-                            remove({
-                              id: product.id,
-                              size: product.size,
-                              price: product.price,
-                            })
-                          );
+                      
                     }}
                   >
                     <img src={downArrow} alt="decrease" />
                   </button>
-                  <p className={styles.quantitySmall}>{product.quantity}</p>
+                  <p className={styles.quantitySmall}>{/* {product.quantity} */} 1</p>
                   <button
                     className={styles.quantityBtn}
                     onClick={() => {
                       // increase product quantity
-                      dispatch(
-                        addToCart({
-                          id: product.id,
-                          size: product.size,
-                          price: product.price,
-                          name: product.name,
-                          photo: product.photo,
-                        })
-                      );
+                     
                     }}
                   >
                     <img src={upArrow} alt="increase" />
                   </button>
                 </div>
-                <p className={styles.quantityMedium}>{product.quantity}</p>
+                <p className={styles.quantityMedium}>{product.id -product.id +1 } </p>
               </div>
             </div>
             <div className={styles.forthSection}>
@@ -226,7 +190,7 @@ const Cart = () => {
               <div>
                 <p className={styles.totalPrice}>
                   $<span className={styles.us}>US</span>{" "}
-                  {product.price * product.quantity}
+                  {product.price * 1}
                 </p>
                 <img
                   className={styles.cross}
@@ -234,13 +198,7 @@ const Cart = () => {
                   alt="delete"
                   onClick={() => {
                     // remove product from cart
-                    dispatch(
-                      remove({
-                        id: product.id,
-                        size: product.size,
-                        price: product.size,
-                      })
-                    );
+                    
                   }}
                 />
               </div>
@@ -287,7 +245,13 @@ const Cart = () => {
           <img src={zip} alt="zip" />
           <p>&#9432;</p>
         </div>
-        <button className={styles.checkoutBtn}>CHECK OUT</button>
+        <Link to="/checkout">
+        <button className={styles.checkoutBtn}>
+          
+          CHECK OUT
+          
+          </button>
+          </Link>
         <p className={styles.use}>-- or use --</p>
         <div className={styles.paypal}>
           <img src={paypal} alt="paypal" />
