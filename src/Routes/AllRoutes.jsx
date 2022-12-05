@@ -1,10 +1,10 @@
 import React from 'react'
 import { Route,Routes } from "react-router-dom";
 import Login from "../Pages/Login";
-import Home from "../Pages/Home";
 import SignUp from "../Pages/SignUp";
 import Products from "../Pages/Products/Products"
-import ProductDetail from '../Pages/ProductDetail/ProductDetail';
+import Home from "../Pages/Home"
+import ProductDetail from "../Pages/ProductDetail/ProductDetail"
 import Cart from "../Components/cart/Cart"
 
 const AllRoutes = () => {
