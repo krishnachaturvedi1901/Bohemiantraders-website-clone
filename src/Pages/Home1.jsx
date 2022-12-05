@@ -39,21 +39,8 @@ export default function Home() {
             </GridItem>
         </Grid>
         </Box>
-        <Box mb={"50px"} width="80%" margin="auto">
-        {/* <Grid templateColumns={{base:'repeat(2,1fr)',md:'repeat(4, 1fr)'}} > */}
-            {/* <GridItem className={Styles.cart_home} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/500x659/products/2663/27526/ETCH-SIZING-TEMPLATE4_05__62410.1661734412.jpg?c=2)`}}>
-                <button className={Styles.cart_home_btn}>QUICK VIEW</button>
-            </GridItem>
-            <GridItem className={Styles.cart_home} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/500x659/products/2664/27667/ETCH-SIZING-TEMPLATE2-EDIT_01__27470.1662408093.jpg?c=2)`}}>
-                <button className={Styles.cart_home_btn}>QUICK VIEW</button>
-            </GridItem>
-            <GridItem className={Styles.cart_home} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/500x659/products/2720/28098/ETCH-SIZING-TEMPLATE6_03__71555.1664255984.jpg?c=2)`}}>
-                <button className={Styles.cart_home_btn}>QUICK VIEW</button>
-            </GridItem>
-            <GridItem className={Styles.cart_home} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/500x659/products/2708/28172/EDIT-ETCH-SIZING-TEMPLATE5_04__45675__69453.1664762183.jpg?c=2)`}}>
-                <button className={Styles.cart_home_btn}>QUICK VIEW</button>
-            </GridItem>
-        </Grid> */}
+        <Box display={["flex","none","none","none"]} mb={"50px"} width="80%" margin="auto">
+        
         <Carousel  showThumbs={false} height={"300px,400px,500px"}>
             {/* <Link> */}
                 <Box>
@@ -88,7 +75,7 @@ export default function Home() {
         <Text mb={['20px',"50px"]} fontSize={['3xl','5xl']} fontWeight="300" textAlign="center"> Explore</Text>
 
         <Box mb={"100px"}>
-            <Grid gap={1.5}  templateColumns = {{base:'repeat(2,1fr)',md:'repeat(4,1fr)'}}>
+            <Grid gap={1.5}  templateColumns = {['repeat(2,1fr)','repeat(2,1fr)','repeat(2,1fr)','repeat(4,1fr)']}>
             <GridItem colStart={[1,1]} colEnd={[2,2]} style={{backgroundImage:`url(https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/original/image-manager/cta-5-black-friday-2022.jpg?t=1668994999)`}} className={Styles.grid_item} >
                 <Text h={["350px","450px","550px"]}  paddingTop={["320px,420px,520px"]} className={Styles.grid_child}  padding={["8px,12px,20px"]} paddingLeft={["13px,20px,30px"]} style={{ fontSize:"12px", fontWeight:"550", color:"white",}}>SHOP MINI</Text>
             </GridItem>
@@ -131,7 +118,7 @@ export default function Home() {
                 </GridItem>
             </Grid>
         </Box>
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }

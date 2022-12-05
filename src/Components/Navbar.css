@@ -8,8 +8,384 @@
     font-weight: 500;
     letter-spacing: 1.25px;
     padding: 5px 8px;
+    /* word-spacing: 4px; */
 }
 
 .header_box_top{
     padding: 0 4rem;
+    justify-content: space-around;
+}
+
+.top_flex_1{
+    width:38%;
+    margin-left: 30px;
+}
+.l_part{
+    width:15%;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 45px;
+    align-items: center;
+}
+
+#drop_1,#drop_2,#drop_3,#drop_5 {
+    visibility: hidden;
+    display: flex;
+    font-size: 15px;
+    letter-spacing: 1;
+    font-weight: 500;
+    color: rgb(66, 66, 66);
+    position: absolute;
+    top: 38px;
+    z-index: 2;
+    padding: 20px 20px 10px 10px;
+    background-color: white;
+  }
+
+  #drop_7{
+    visibility: hidden;
+    display: flex;
+    font-size: 15px;
+    letter-spacing: 1;
+    font-weight: 500;
+    color: rgb(66, 66, 66);
+    position: absolute;
+    top: 62px;
+    z-index: 2;
+    padding: 20px 20px 10px 10px;
+    background-color: white;
+  }
+
+#dropDiv_1:hover {
+border-bottom: 1px solid;
+color:grey;
+}
+#dropDiv_1:hover #drop_1{
+    visibility: visible;
+
+}
+#dropDiv_2:hover {
+border-bottom: 1px solid;
+color:grey;
+}
+#dropDiv_2:hover #drop_2{
+    visibility: visible;
+
+}
+#dropDiv_3:hover {
+border-bottom: 1px solid;
+color:grey;
+}
+#dropDiv_3:hover #drop_3{
+    visibility: visible;
+}
+#dropDiv_5:hover {
+border-bottom: 1px solid;
+color:grey;
+}
+#dropDiv_5:hover #drop_5{
+    visibility: visible;
+}
+#dropDiv_7:hover {
+border-bottom: 1px solid;
+color:grey;
+}
+#dropDiv_7:hover #drop_7{
+    visibility: visible;
+}
+
+#dropDiv_4:hover {
+border-bottom: 1px solid;
+color:grey;
+}
+#dropDiv_6:hover {
+border-bottom: 1px solid;
+color:grey;
+}
+#dropDiv_8:hover {
+border-bottom: 1px solid;
+color:grey;
+}
+#drop_1 > div {
+    width: 180px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    text-align: left;
+    line-height: 1.8;
+    background-color: rgb(255, 255, 255);
+  }
+#drop_2 > div {
+    width: 180px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    text-align: left;
+    line-height: 1.8;
+    background-color: rgb(255, 255, 255);
+  }
+#drop_3 > div {
+    width: 180px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    text-align: left;
+    line-height: 1.8;
+    background-color: rgb(255, 255, 255);
+  }
+#drop_5 > div {
+    width: 180px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    text-align: left;
+    line-height: 1.8;
+    background-color: rgb(255, 255, 255);
+  }
+#drop_7 > div {
+    width: 180px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    text-align: left;
+    line-height: 1.8;
+    background-color: rgb(255, 255, 255);
+  }
+
+#drop_1 > div > p {
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+  
+#drop_2 > div > p {
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+#drop_3 > div > p {
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+#drop_5 > div > p {
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+#drop_7 > div > p {
+    font-size: 12px;
+    padding: 5px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+#drop_1 > div >p:hover{
+    text-decoration: underline;
+}
+  
+#drop_2 > div >p:hover{
+    text-decoration: underline;
+}
+#drop_3 > div >p:hover{
+    text-decoration: underline;
+}
+#drop_5 > div >p:hover{
+    text-decoration: underline;
+}
+#drop_7 > div >p:hover{
+    text-decoration: underline;
+}
+  
+
+#forSmall{
+    background-color: white;
+    width: 100%;
+    padding:50px 20px 50px 20px;
+}
+
+#drop_1s,#drop_2s,#drop_3s,#drop_5s {
+    visibility: hidden;
+    display: flex;
+    font-size: 15px;
+    letter-spacing: 1;
+    font-weight: 500;
+    color: rgb(66, 66, 66);
+    position: absolute;
+    /* top: 38px; */
+    z-index: 2;
+    padding: 20px 20px 10px 10px;
+    background-color: white;
+  }
+
+  #drop_7s{
+    visibility: hidden;
+    display: flex;
+    font-size: 15px;
+    letter-spacing: 1;
+    font-weight: 500;
+    color: rgb(66, 66, 66);
+    position: absolute;
+    /* top: 62px; */
+    z-index: 2;
+    padding: 20px 20px 10px 10px;
+    background-color: white;
+  }
+
+  #dropDiv_1s,
+  #dropDiv_2s,
+  #dropDiv_3s,
+  #dropDiv_4s,
+  #dropDiv_5s,
+  #dropDiv_6s,
+  #dropDiv_7s,
+  #dropDiv_8s{
+    padding:10px;
+  }
+
+#dropDiv_1s:hover {
+border-bottom: 1px solid;
+color:grey;
+}
+#dropDiv_1s:hover #drop_1s{
+    visibility: visible;
+
+}
+#dropDiv_2s:hover {
+border-bottom: 1px solid;
+color:grey;
+}
+#dropDiv_2s:hover #drop_2s{
+    visibility: visible;
+
+}
+#dropDiv_3s:hover {
+border-bottom: 1px solid;
+color:grey;
+}
+#dropDiv_3s:hover #drop_3s{
+    visibility: visible;
+}
+#dropDiv_5s:hover {
+border-bottom: 1px solid;
+color:grey;
+}
+#dropDiv_5s:hover #drop_5s{
+    visibility: visible;
+}
+#dropDiv_7s:hover {
+border-bottom: 1px solid;
+color:grey;
+}
+#dropDiv_7s:hover #drop_7s{
+    visibility: visible;
+}
+
+#dropDiv_4s:hover {
+border-bottom: 1px solid;
+color:grey;
+}
+#dropDiv_6s:hover {
+border-bottom: 1px solid;
+color:grey;
+}
+#dropDiv_8s:hover {
+border-bottom: 1px solid;
+color:grey;
+}
+#drop_1s > div {
+    width: 100vw;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    text-align: center;
+    line-height: 1.8;
+    background-color: rgb(255, 255, 255);
+  }
+#drop_2s > div {
+    width: 100vw;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    text-align: center;
+    line-height: 1.8;
+    background-color: rgb(255, 255, 255);
+  }
+#drop_3s > div {
+    width: 100vw;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    text-align: center;
+    line-height: 1.8;
+    background-color: rgb(255, 255, 255);
+  }
+#drop_5s > div {
+    width: 100vw;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    text-align: center;
+    line-height: 1.8;
+    background-color: rgb(255, 255, 255);
+  }
+#drop_7s > div {
+    width: 100vw;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    text-align: center;
+    line-height: 1.8;
+    background-color: rgb(255, 255, 255);
+  }
+
+#drop_1s > div > p {
+    font-size: 12px;
+    padding: 10px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+  
+#drop_2s > div > p {
+    font-size: 12px;
+    padding: 10px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+#drop_3s > div > p {
+    font-size: 12px;
+    padding: 10px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+#drop_5s > div > p {
+    font-size: 12px;
+    padding: 10px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+#drop_7s > div > p {
+    font-size: 12px;
+    padding: 10px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+#drop_1s > div >p:hover{
+    text-decoration: underline;
+}
+  
+#drop_2s > div >p:hover{
+    text-decoration: underline;
+}
+#drop_3s > div >p:hover{
+    text-decoration: underline;
+}
+#drop_5s > div >p:hover{
+    text-decoration: underline;
+}
+#drop_7s > div >p:hover{
+    text-decoration: underline;
 }
