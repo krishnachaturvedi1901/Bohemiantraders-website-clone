@@ -1,9 +1,52 @@
 @font-face {
-    font-family: "Work Sans";
-    font-style: normal;
-    font-weight: 500;
-    src: url("../fonts/WorkSans-Medium.ttf");
-  }
+
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/WorkSans-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/WorkSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/WorkSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/WorkSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/WorkSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "FreightDisp Pro;";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/FreightSansProMedium-Regular.ttf");
+}
   
   @font-face {
     font-family: "Work Sans";
@@ -46,3 +89,4 @@
     font-weight: 400;
     src: url("../fonts/FreightSansProMedium-Regular.ttf");
   }
+

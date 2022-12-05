@@ -38,12 +38,12 @@
 }
 
 .grid_item{
-    height: 100%;
+    /* height: 100%; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: grid;
-    width: 100%;
+    /* width: 100%; */
 }
 .grid_item2{
     height: 50%;
@@ -65,12 +65,12 @@
 
 .cart_home{
     height: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
+    /* background-repeat: no-repeat; */
     background-size: cover;
-    display: grid;
+    /* display: grid; */
     place-items: center;
     /* padding:73% 33%; */
+    width:100%;
 }
 
 

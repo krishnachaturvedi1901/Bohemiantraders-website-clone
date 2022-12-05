@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Button } from '@chakra-ui/react'
 import React, { useEffect, useState } from 'react'
 import {useSearchParams} from "react-router-dom"
 import {useDispatch,useSelector} from "react-redux"
@@ -30,12 +30,11 @@ const Pagination = () => {
 
   return (
     <Box  display={'flex'} m='auto' justifyContent={'center'} className={styles.pageButton} >
-     <button  onClick={()=>handlePageChange(page-1)} disabled={page===1}>{'Previous'}</button>
+     <Button  onClick={()=>handlePageChange(page-1)} disabled={page===1}>{'Previous'}</Button>
      {page>1?<button onClick={()=>handlePageChange(page-1)}>{page-1}</button>:null}
-     <button >{page}</button>
+     <Button >{page}</Button>
      <button  onClick={()=>handlePageChange(page+1)}>{page+1}</button>
-     <button  onClick={()=>handlePageChange(page+2)}>{page+2}</button>
-     <button  onClick={()=>handlePageChange(page+1)}>{'Next'}</button>
+     <Button  onClick={()=>handlePageChange(page+1)}>{'Next'}</Button>
     </Box>
   )
 }

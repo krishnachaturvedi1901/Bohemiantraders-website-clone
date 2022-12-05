@@ -20,6 +20,19 @@ const ChangeSizeModal = ({
     return null;
   }
 
+
+  const fetchdata=()=>{
+  fetch("http://localhost:3002/accounts")
+  .then((res)=> res.json())
+  .then((data)=>{
+    console.log(data[0].cart);
+  })
+}
+useEffect(()=>{
+   fetchdata();
+},[])
+
+
   return (
     <div className={styles.container} onClick={onClose}>
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>

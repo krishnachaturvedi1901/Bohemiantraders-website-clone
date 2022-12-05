@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import {store} from "./Redux/store"
 import ImageViewContextProvider from './Context/ImageViewContextProvider/ImageViewContextProvider';
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
 
@@ -19,6 +20,7 @@ root.render(
     </ChakraProvider>
     </BrowserRouter>
     </Provider>
+
 
 );
 

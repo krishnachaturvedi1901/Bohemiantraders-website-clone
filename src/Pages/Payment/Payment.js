@@ -90,7 +90,7 @@ function Payment(props) {
                                 <Text>+{Math.ceil(total / 11)}</Text>
                             </GridItem>
                             <Grid p={'30px'} style={{ display: 'flex', justifyContent: 'space-between' }}><Text>total Coupon</Text><Text>= {totalCoupon}</Text></Grid>
-                            <GridItem border={'1px solid gray'} p={'30px'} w={['100%']} margin={'auto'} border={'1px solid gray'} alignItems={'center'} textAlign={'center'} style={{ justifyContent: 'space-between' }}>
+                            <GridItem border={'1px solid gray'} p={'30px'} w={['100%']} margin={'auto'} b={'1px solid gray'} alignItems={'center'} textAlign={'center'} style={{ justifyContent: 'space-between' }}>
                                 <Link onClick={() => {
                                     CouponOpen ? setCouponOpen(false) : setCouponOpen(true);
                                 }}>Coupon/Gift Certificate</Link>
@@ -106,10 +106,10 @@ function Payment(props) {
                                 if (total < 500) {
                                     total = total + 40
                                 }
-                                total = total + total / 10
+                                total = total + 10
                                 settotalPrice(total)
                             }}
-                                {total - totalCoupon + total / 10}</Text>
+                                {total - totalCoupon + 10}</Text>
 
                         </GridItem>
                     </Grid> : <Text fontSize={'50px'}>Cart id Empty</Text>}
