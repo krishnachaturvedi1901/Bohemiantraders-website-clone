@@ -1,6 +1,5 @@
 import { createContext, useState } from "react";
 import React from 'react'
-import { Box } from "@chakra-ui/react";
 
 export const ImageViewContext = createContext()
 

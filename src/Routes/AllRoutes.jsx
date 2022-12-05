@@ -4,18 +4,18 @@ import Login from "../Pages/Login";
 import Home from "../Pages/Home";
 import SignUp from "../Pages/SignUp";
 import Products from "../Pages/Products/Products"
-import Home from "../Pages/Home"
-import ProductDetailFake from '../Pages/ProductDetailFake';
+import ProductDetail from '../Pages/ProductDetail/ProductDetail';
+import Cart from "../Components/cart/Cart"
 
 const AllRoutes = () => {
   return (
     <Routes>
      <Route path="/" element={<Home/>} />
       <Route path="/products" element={<Products/>} />
-      <Route path="/products/:id" element={<ProductDetailFake/>} />
+      <Route path="/products/:id" element={<ProductDetail/>} />
       <Route path="/login" element={<Login />}></Route>
       <Route path="/signUp" element={<SignUp />}></Route>
-
+      <Route path='/cart' element={<Cart/>} />
     </Routes>
   )
 }

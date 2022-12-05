@@ -1,5 +1,5 @@
 import { GET_PRODUCTS_ERROR, GET_PRODUCTS_LOADING, GET_PRODUCTS_SUCCCESS } from "./prodActionTypes"
-
+import {productsUrl} from "../../Deployed-server-url/deployed-server-url"
 export const getProductsLoading=()=>({
     type:GET_PRODUCTS_LOADING
 })
@@ -17,7 +17,7 @@ export const getUrl=(baseUrl,_sort,_order,price_gte,priceLow,price_lte,priceHigh
 
 
 export const getProducts=(page)=>(dispatch)=>{
-    let apiUrl=dispatch(getUrl(`https://bohemian-server.onrender.com/products?_page=${page}&_limit=12`))
+    let apiUrl=dispatch(getUrl(`${productsUrl}?_page=${page}&_limit=12`))
     dispatch(getProductsLoading())
     fetch(apiUrl) 
     .then((res)=>res.json())

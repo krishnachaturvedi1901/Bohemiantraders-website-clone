@@ -2,15 +2,18 @@ import { Box, Image, Text } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import "react-multi-carousel/lib/styles.css";
+import { productsUrl } from '../../Deployed-server-url/deployed-server-url';
+
 export function MoreProduct(props) {
   const [State, setState] = useState([])
   let data = props.data
   
 let setID=props.setID
   useEffect(() => {
-    fetch(`http://localhost:3001/products`).then((res) => {
+    fetch(`${productsUrl}`).then((res) => {
       res.json().then((res) => {
         setState(res)
+        console.log('ressss after prodct detail mount ',res)
       })
     })
   }, [])
@@ -55,12 +58,12 @@ let setID=props.setID
       >
         {State.map((el) => {
           if (el.category == data.category) {
-            return <Box key={el} onClick={()=>{
+            return <Box cursor={'pointer'} border='1px solid #cecece' m='5px' textAlign={'center'} key={el} onClick={()=>{
               console.log("hiiiiiiiiiiii")
               setID(el.id)}}>
               <Image m={'auto'} src={el.img.item1} alt='Dan Abramov' />
-              <Text>{el.name}</Text>
-              <Text>{el.price}</Text>
+              <Text textTransform={'uppercase'} >{el.name}</Text>
+              <Text>US ${el.price}</Text>
             </Box>
           }
         })}
