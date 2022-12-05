@@ -1,3 +1,7 @@
+import logo from './logo.svg';
+import './App.css';
+import Cart from './Components/cart/Cart';
+
 
 import Footer from "./Components/Footer";
 import { Navbar } from "./Components/Navbar";
@@ -8,7 +12,7 @@ function App() {
      <Navbar/>
      <AllRoutes/>
      <Footer/>
-    </div>
+   </div>
   );
 }
 
