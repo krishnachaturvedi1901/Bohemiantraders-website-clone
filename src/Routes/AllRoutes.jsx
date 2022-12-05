@@ -7,6 +7,7 @@ import Home1 from "../Pages/Home1"
 import ProductDetail from "../Pages/ProductDetail/ProductDetail"
 import Cart from "../Components/cart/Cart"
 import Payment from "../Pages/Payment/Payment"
+import Account from '../Pages/Account/Account';
 
 const AllRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AllRoutes = () => {
       <Route path="/signUp" element={<SignUp />}></Route>
       <Route path='/cart' element={<Cart/>} />
       <Route path='/checkout' element={<Payment/>} />
+      <Route path="/account" element={<Account />}></Route>
     </Routes>
   )
 }

@@ -9,11 +9,25 @@ import {HiOutlineShoppingBag} from "react-icons/hi"
 import { useState } from "react";
 import {HamburgerIcon,CloseIcon} from "@chakra-ui/icons"
 import { IconButton } from "@chakra-ui/react";
-
+import { useEffect } from "react";
+import axios from "axios";
+import { accountsUrl } from "../Deployed-server-url/deployed-server-url";
 
 
 export const Navbar = () =>{
     const [display, changeDisplay] = useState("none");
+
+    const[log_user_data,setLogUserData] = useState([])
+
+    const getData = () => {
+        fetch(`http://localhost:8001/accounts`)
+        .then((res) => res.json())
+        .then((resData) => setLogUserData(resData))
+    }
+
+    useEffect(() => {
+        getData();
+    },[])
     return(
             <Box width={["100%","100%","90%","90%"]} m={["10px 0px 0px -15px","auto","auto","auto"]} style={{position:"sticky",display:"flex" ,justifyContent:"space-between",alignItems:"center"}}>
                 <Box style={{textAlign:"center"}} className="top_flex_1" p={["0.5","1","1.5",'2']}>
@@ -260,8 +274,13 @@ export const Navbar = () =>{
                     <Box >
                     <BsSearch fontSize={"17px"}/>
                     </Box>
-                    <Box >
-                    <Link to="/login"><RiAccountCircleLine fontSize={"25px"}/></Link>
+                    <Box display="flex">
+                    {
+                        log_user_data.map((e) => {
+                          return  e.login === true ?<Box> <Link  to="/account">{e.name}</Link> </Box> : <Box><Link  to="/login"><RiAccountCircleLine fontSize={"25px"}/></Link> </Box> 
+                        })
+                    }
+                    
                     </Box>
                     <Box >
                     <Link to="/login"><HiOutlineShoppingBag fontSize={"25px"}/></Link>

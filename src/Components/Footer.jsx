@@ -24,7 +24,7 @@ export default function Footer() {
                     <FaTiktok className="icons"/>
                     </Flex>
                 </GridItem>
-                <GridItem  pt={["12px","12px","0px","0px"]} className="about">
+                <GridItem textAlign={["center","left"]} pt={["12px","12px","0px","0px"]} className="about">
                     <h5>INFO</h5>
                     <Box w={"100%"} pt={["15px,25px"]}>
                     <h5>ABOUT US</h5>
@@ -34,7 +34,7 @@ export default function Footer() {
                     <h5>PRIVACY POLICY</h5>
                     </Box>
                 </GridItem>
-                <GridItem pt={["12px","12px","0px","0px"]} className="about">
+                <GridItem textAlign={["center","left"]} pt={["12px","12px","0px","0px"]} className="about">
                     <h5 >CUSTOMER CARE</h5>
                     <br />
                     <h5>SHIPPING</h5>

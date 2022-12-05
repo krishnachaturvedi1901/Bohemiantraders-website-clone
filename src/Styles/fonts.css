@@ -47,12 +47,7 @@
   font-weight: 400;
   src: url("../fonts/FreightSansProMedium-Regular.ttf");
 }
-=======
-    font-family: "Work Sans";
-    font-style: normal;
-    font-weight: 500;
-    src: url("../fonts/WorkSans-Medium.ttf");
-  }
+
   
   @font-face {
     font-family: "Work Sans";
