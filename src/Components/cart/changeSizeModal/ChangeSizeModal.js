@@ -20,6 +20,7 @@ const ChangeSizeModal = ({
     return null;
   }
 
+
   const fetchdata=()=>{
   fetch("http://localhost:3002/accounts")
   .then((res)=> res.json())
@@ -30,6 +31,7 @@ const ChangeSizeModal = ({
 useEffect(()=>{
    fetchdata();
 },[])
+
 
   return (
     <div className={styles.container} onClick={onClose}>

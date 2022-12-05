@@ -133,14 +133,19 @@ div p.location {
   font-weight: 500;
   line-height: 1.5;
   color: #333;
+
+
   margin-left: 100px;
+
 }
 
 .thirdSection {
   display: flex;
   justify-content: space-between;
   margin-top: 11px;
+
   
+
 }
 
 .thirdSection .title {
@@ -152,7 +157,10 @@ div p.location {
   display: flex;
   padding-left: 21px;
   align-items: center;
+
+
   margin-left: 120px;
+
 }
 
 .quantityInnerContainer {
@@ -207,8 +215,11 @@ div p.location {
   line-height: 21px;
   font-size: 14px;
   color: #333;
+
+
   margin-left: 120px;
 }
+
 
 .cross {
   width: 16px;
@@ -220,7 +231,8 @@ div p.location {
   margin-right: 15px;
   cursor: pointer;
   margin-right: -100px;
-}
+  }
+
 
 .checkoutContainer {
   border-top: 1px solid #e5e5e5;
@@ -352,7 +364,7 @@ div p.location {
   .thirdSection,
   .forthSection {
     display: block;
-    
+
   }
 
   .price,
