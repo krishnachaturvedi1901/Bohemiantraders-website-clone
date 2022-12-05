@@ -14,7 +14,7 @@ export const Navbar = () =>{
                     <Flex className="header_flex" 
                      wrap={'wrap'}>
                         <a  href="#">WHAT'S NEW</a>
-                        <a  href="#"> WOMEN</a>
+                        <Link to='/products'> WOMEN</Link>
                         <a  href="#"> DRESSES</a>
                         <a  href="#">ATHLETIC</a>
                         <a  href="#">CURVE</a>

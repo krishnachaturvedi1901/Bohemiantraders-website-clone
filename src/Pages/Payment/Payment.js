@@ -129,7 +129,7 @@ function Payment(props) {
                                 <Text>Terms and Conditions</Text>
                                 <Checkbox defaultChecked>Yes, I agree with the <Link>'terms and conditions.'</Link></Checkbox>
                                 <Button w={'100%'} colorScheme='blackAlpha' textColor={'white'} onClick={(e) => {
-                                    
+                                    e.preventDefault();
                                     let cart = State[0].cart;
                                     let orders=State[0].orders
                                     orders.push(...cart)
