@@ -6,19 +6,18 @@ import { MoreProduct } from '../../Components/ProductDetailsCompo/MoreProduct';
 import { PDdetails } from '../../Components/ProductDetailsCompo/PDdetails';
 import { SendDataOnCart, SendDataOnWishList } from '../../Components/ProductDetailsCompo/SendData';
 import PDImg1 from '../../Components/ProductDetailsCompo/PDImg1';
-import { productsUrl,accountsUrl } from '../../Deployed-server-url/deployed-server-url';
-import {Link}  from "react-router-dom"
+import { productsUrl, accountsUrl } from '../../Deployed-server-url/deployed-server-url';
+import { Link } from "react-router-dom"
 import { useNavigate } from "react-router-dom";
 import { useToast } from '@chakra-ui/react'
 
 function ProductDetail() {
-  const navigate= useNavigate()
+  const navigate = useNavigate()
   let { id } = useParams();
   const [ID, setID] = useState(id)
   let [Index, setIndex] = useState(id)
   const [value, setValue] = useState(null)
-  const [user,setUser]=useState([])
-  console.log(ID)
+  const [user, setUser] = useState([])
   const toast = useToast()
 
   const [data, setdata] = useState({
@@ -55,17 +54,17 @@ function ProductDetail() {
     })
     fetch(`${accountsUrl}`).then((res) => { return res.json() }).then((res) => {
       let loginUser = res.filter((el) => {
-          if (el.login == true) {
-              return el
-          }
+        if (el.login == true) {
+          return el
+        }
       })
-      setUser(loginUser) 
+      setUser(loginUser)
     })
-    
+
 
   }, [Index])
-  
-  if(Index!=ID){
+
+  if (Index != ID) {
     setID(Index);
   }
   let rating = "";
@@ -92,10 +91,9 @@ function ProductDetail() {
   const [overlay, setOverlay] = React.useState(<OverlayOne />)
 
   function AddDATAinCart() {
-    if (value ) {
-      if(user.length>0)
-      {
-        SendDataOnCart(data, value,user);
+    if (value) {
+      if (user.length > 0) {
+        SendDataOnCart(data, value, user);
         setOverlay(<OverlayOne />)
         onOpen()
 
@@ -106,20 +104,23 @@ function ProductDetail() {
           duration: 4000,
           isClosable: true,
         })
-            
+
       }
-      else{ navigate('/login') }
+      else { navigate('/login') }
     }
     else {
-      alert('Please select a Size')
-      
+      return toast({
+        title: 'please select size',
+        status: 'error',
+        isClosable: true,
+      })
+
     }
   }
   function AddDATAinWishList() {
     if (value) {
-      if( user.length>0)
-      {
-        SendDataOnWishList(data, value,user)
+      if (user.length > 0) {
+        SendDataOnWishList(data, value, user)
         toast({
           title: 'Product Added',
           description: "",
@@ -127,14 +128,18 @@ function ProductDetail() {
           duration: 2000,
           isClosable: true,
         })
-        
+
       }
-      else{
+      else {
         navigate('/login')
       }
     }
     else {
-      alert('Please select a Size')
+      return toast({
+        title: 'please select size',
+        status: 'error',
+        isClosable: true,
+      })
     }
   }
   return (
@@ -212,7 +217,7 @@ function ProductDetail() {
       </Grid>
       <div style={{ height: "50px" }}></div>
       <PDdetails {...data} />
-      <MoreProduct data={data} setID={setIndex}/>
+      <MoreProduct data={data} setID={setIndex} />
     </div>
   )
 }

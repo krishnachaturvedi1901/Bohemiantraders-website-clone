@@ -16,7 +16,6 @@ let setID=props.setID
       })
     })
   }, [])
-  State.length > 0 ? console.log(State, "moredata") : console.log("nodata here")
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 768 },

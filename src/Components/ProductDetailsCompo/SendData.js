@@ -1,13 +1,12 @@
 import { accountsUrl } from "../../Deployed-server-url/deployed-server-url"
 
 export const SendDataOnCart = (data, size, user) => {
-    console.log(user,"user")
-    console.log(data,"user")
     let cart = user[0].cart;
     
-    const product1 =false;
+    let product1 =false;
     cart.map((el)=>{
         if(el.id ==data.id&&el.sizes==size){
+            product1=true
              let quantity=el.quantity
              el.quantity=quantity+1;
              fetch(`${accountsUrl}/${user[0].id}`, {
@@ -22,7 +21,6 @@ export const SendDataOnCart = (data, size, user) => {
    
     if (product1==false) {
         const newobj = { ...data, sizes: size ,quantity :1}
-        console.log(user[0])
         cart.push(newobj)
         fetch(`${accountsUrl}/${user[0].id}`, {
             headers: {

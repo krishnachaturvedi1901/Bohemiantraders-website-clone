@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { accountsUrl } from "../../Deployed-server-url/deployed-server-url"
 import { useNavigate } from 'react-router-dom'
+import { LineChartOutlined } from '@ant-design/icons';
 function Payment(props) {
     const navigate = useNavigate()
     const [State, setState] = useState([])
@@ -28,8 +29,8 @@ function Payment(props) {
     console.log(Coupon)
     function SubCoupon() {
         if (Coupon == 'masai' && totalCoupon == 0) {
-            return toast({
-                title: ' Hurry ! masai Coupon  added you got 10% off',
+            toast({
+                title: ` Hurry ! you save US $ ${(total / 10) * 3}`,
                 status: 'success',
                 isClosable: true,
             })
@@ -49,51 +50,57 @@ function Payment(props) {
         State.length > 0 ?
             <div><Grid templateColumns={['repeat(1, 1fr)', 'repeat(2, 1fr)']} w={['95%', '90%']} margin={'auto'} gap={1}>
 
-                <GridItem>
+                <GridItem bg={'yellow.50'}  >
 
                     {State[0].cart.length > 0 ? <Grid templateColumns='repeat(1, 1fr)' border={'1px solid gray'} margin={'auto'} gap={1}>
                         <GridItem w={['100%']} margin={'auto'} h='50' border={'1px solid gray'} alignItems={'center'} textAlign={'center'} style={{ display: 'flex', justifyContent: 'space-between' }}>
                             <Text>Order Summary</Text>
-                            <Link>Edit Cart</Link>
+                            <Link to={'/cart'}>Edit Cart</Link>
                         </GridItem>
+                        <GridItem Mh={'400px'} scrollBehavior={'smooth'} overflowX={'scroll'} overflowY={'noun'} >    
                         {State[0].cart.map((el) => {
-                            total = total + el.price;
-                            return <Grid templateColumns='repeat(1, 1fr)' w={'100%'} border={'1px solid gray'} margin={'auto'} gap={1}>
+                            total = total + (el.price * el.quantity);
+                            return <Grid  templateColumns='repeat(1, 1fr)' w={'100%'} margin={'auto'} gap={1}>
                                 <GridItem w={['100%']} margin={'auto'} style={{ display: 'flex', justifyContent: 'space-between' }}>
                                     <Image w={'100px'} h={'100px'} src={el.img.model1} />
                                     <GridItem w={['100%']} ml={'40px'}>
                                         <Text>{el.name}</Text>
                                         <Text>{el.sizes}</Text>
                                     </GridItem>
-                                    <Text>{el.price}</Text>
+                                    <GridItem style={{ display: 'flex' }} w={['100%']} ml={'40px'}>
+                                        <Text>US$  {el.quantity} * {el.price}</Text>
+                                    </GridItem>
                                 </GridItem>
                             </Grid>
                         })}
+                        </GridItem>
+                        <Grid border={'1px solid gray'}>
 
-                        <GridItem w={['100%']} margin={'auto'} h='50' border={'1px solid gray'} alignItems={'center'} textAlign={'center'} style={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <Text>Subtotal</Text>
-                            <Text>{total}</Text>
-                        </GridItem>
-                        <GridItem w={['100%']} margin={'auto'} h='50' border={'1px solid gray'} alignItems={'center'} textAlign={'center'} style={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <Text>Shipping</Text>
-                            <Text>{total < 500 ? 40 : 0}</Text>
+                            <GridItem border={'1px solid gray'} p={'30px'} w={['100%']} margin={'auto'} h='50' alignItems={'center'} textAlign={'center'} style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                <Text>Subtotal</Text>
+                                <Text>{total}</Text>
+                            </GridItem>
+                            <GridItem border={'1px solid gray'} p={'30px'} w={['100%']} margin={'auto'} h='50' alignItems={'center'} textAlign={'center'} style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                <Text>Shipping</Text>
+                                <Text>+{total < 500 ? 40 : 0}</Text>
 
-                        </GridItem>
-                        <GridItem w={['100%']} margin={'auto'} h='50' border={'1px solid gray'} alignItems={'center'} textAlign={'center'} style={{ display: 'flex', justifyContent: 'space-between' }}>
-                            <Text>Tax</Text>
-                            <Text>{total / 11}</Text>
-                        </GridItem>
-                        <GridItem w={['100%']} margin={'auto'} border={'1px solid gray'} alignItems={'center'} textAlign={'center'} style={{ justifyContent: 'space-between' }}>
-                            <Link onClick={() => {
-                                CouponOpen ? setCouponOpen(false) : setCouponOpen(true);
-                            }}>Coupon/Gift Certificate</Link>
-                            {CouponOpen ? <Input onChange={(e) => {
-                                setCoupon(e.target.value);
-                            }} w={'80%'}></Input> : null}
-                            {CouponOpen ? <Button onClick={SubCoupon}>Submit</Button> : null}
-                            {totalCoupon ? <Text>total Coupon = {totalCoupon}</Text> : null}
-                        </GridItem>
-                        <GridItem w={['100%']} margin={'auto'} h='50' alignItems={'center'} textAlign={'center'} style={{ display: 'flex', justifyContent: 'space-between' }}>
+                            </GridItem>
+                            <GridItem border={'1px solid gray'} p={'30px'} w={['100%']} margin={'auto'} h='50' alignItems={'center'} textAlign={'center'} style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                <Text>Tax</Text>
+                                <Text>+{Math.ceil(total / 11)}</Text>
+                            </GridItem>
+                            <Grid p={'30px'} style={{ display: 'flex', justifyContent: 'space-between' }}><Text>total Coupon</Text><Text>= {totalCoupon}</Text></Grid>
+                            <GridItem border={'1px solid gray'} p={'30px'} w={['100%']} margin={'auto'} border={'1px solid gray'} alignItems={'center'} textAlign={'center'} style={{ justifyContent: 'space-between' }}>
+                                <Link onClick={() => {
+                                    CouponOpen ? setCouponOpen(false) : setCouponOpen(true);
+                                }}>Coupon/Gift Certificate</Link>
+                                {CouponOpen ? <Input onChange={(e) => {
+                                    setCoupon(e.target.value);
+                                }} w={'80%'}></Input> : null}
+                                {CouponOpen ? <Button onClick={SubCoupon}>Submit</Button> : null}
+                            </GridItem>
+                        </Grid>
+                        <GridItem p={'30px'} w={['100%']} margin={'auto'} h='50' alignItems={'center'} textAlign={'center'} style={{ display: 'flex', justifyContent: 'space-between' }}>
                             <Text fontSize={'3vh'} as={'b'}>Estimated Total (USD)	</Text>
                             <Text fontSize={'3vh'} as={'b'} >US$ {() => {
                                 if (total < 500) {
@@ -137,6 +144,10 @@ function Payment(props) {
                                 <Checkbox defaultChecked>Yes, I agree with the <Link>'terms and conditions.'</Link></Checkbox>
                                 <Button w={'100%'} colorScheme='blackAlpha' textColor={'white'} onClick={(e) => {
 
+                                    let cart = State[0].cart;
+                                    let orders = State[0].orders
+                                    orders.push(...cart)
+                                    cart = [];
                                     if (cardname.length > 0 &&
                                         carddate.length > 0 &&
                                         cardnumber.length > 0 &&
@@ -158,6 +169,11 @@ function Payment(props) {
                                             body: JSON.stringify({ cart, orders })
                                         }).then((res) => {
                                             res.json().then((res) => {
+                                                return toast({
+                                                    title: 'Order Placed Successfully',
+                                                    status: 'success',
+                                                    isClosable: true,
+                                                })
                                             })
                                         })
                                         navigate('/')
