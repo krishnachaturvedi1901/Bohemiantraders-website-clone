@@ -50,10 +50,10 @@ const Cart = () => {
   // When cart is empty this content will be shown
 
 const fetchdata=()=>{
-  fetch(`${accountsUrl}`)
+  fetch(`${accountsUrl}?login=true`)
   .then((res)=> res.json())
   .then((data)=>{
-    console.log(data[0].cart);
+    console.log("user in cart Page-> ",data[0].cart);
     setCart(data[0].cart)
 
   })
@@ -63,7 +63,7 @@ useEffect(()=>{
 },[])
 
 let total= cart.reduce((acc,ele)=>{
-  return acc +(ele.price * 1)
+  return acc +(ele.price * ele.quantity)
 },0)
 let taxPrice=10
 
