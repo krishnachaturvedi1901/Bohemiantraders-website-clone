@@ -1390,9 +1390,7 @@
   ],
   "accounts": [
     {
-      "id": "0",
-      "name": "Admin",
-      "email": "Admin@gmail.com",
+      "email": "nagendradangi105@gmail.com",
       "password": "123456789",
       "mobile": "123456789",
       "address": [],
@@ -1494,7 +1492,7 @@
           "price": 820,
           "reviews": 9,
           "rating": 1.2,
-          "sizes": "XS",
+          "sizes": "XL",
           "details": "non incididunt exercitation occaecat anim irure dolore eiusmod pariatur duis in do duis Lorem magna occaecat sit eiusmod duis officia est qui cupidatat id aliquip tempor cupidatat culpa adipisicing officia proident do mollit elit excepteur in sunt id consequat laboris dolor do mollit",
           "features": [
             "White cotton voile with mulit metallic lurex stripe",
@@ -1512,7 +1510,8 @@
           "inStock": true,
           "newest": false,
           "bestSelling": false,
-          "featured": false
+          "featured": false,
+          "quantity": 2
         },
         {
           "id": 1,
@@ -1522,7 +1521,7 @@
           "price": 820,
           "reviews": 9,
           "rating": 1.2,
-          "sizes": "XS",
+          "sizes": "2XL",
           "details": "non incididunt exercitation occaecat anim irure dolore eiusmod pariatur duis in do duis Lorem magna occaecat sit eiusmod duis officia est qui cupidatat id aliquip tempor cupidatat culpa adipisicing officia proident do mollit elit excepteur in sunt id consequat laboris dolor do mollit",
           "features": [
             "White cotton voile with mulit metallic lurex stripe",
@@ -1661,7 +1660,7 @@
           "quantity": 3
         },
         {
-          "id": 2,
+          "id": 1,
           "brand": "BOHEMIAN TRADERS",
           "category": "Longwear",
           "name": "id in occaecat eiusmod aliqua",
@@ -1798,16 +1797,16 @@
             "Lightweight, non stretchy fabric"
           ],
           "img": {
-            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2453/25874/1_04__26317.1659932946.jpg?c=2",
-            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2748/28411/F-BT-SS22-KNI12-NAVY_04__29268.1666983207.jpg?c=2",
-            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2748/28408/F-BT-SS22-KNI12-NAVY_01__77830.1666983206.jpg?c=2",
-            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2748/28409/F-BT-SS22-KNI12-NAVY_02__63769.1666983206.jpg?c=2"
+            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27526/ETCH-SIZING-TEMPLATE4_05__62410.1661734412.jpg?c=2",
+            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27481/DRE35_04__44530.1661235937.jpg?c=2",
+            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27480/DRE35_01__42626.1661235937.jpg?c=2",
+            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27479/DRE35_02__82692.1661235937.jpg?c=2"
           },
           "inStock": true,
-          "newest": true,
+          "newest": false,
           "bestSelling": false,
           "featured": false,
-          "quantity": 1
+          "quantity": 3
         },
         {
           "id": 13,
@@ -1869,7 +1868,7 @@
           "quantity": 14
         },
         {
-          "id": 36,
+          "id": 1,
           "brand": "BOHEMIAN TRADERS",
           "category": "Longwear",
           "name": "exercitation mollit deserunt proident in sit",
@@ -1886,16 +1885,16 @@
             "Lightweight, non stretchy fabric"
           ],
           "img": {
-            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2453/25874/1_04__26317.1659932946.jpg?c=2",
-            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2748/28411/F-BT-SS22-KNI12-NAVY_04__29268.1666983207.jpg?c=2",
-            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2748/28408/F-BT-SS22-KNI12-NAVY_01__77830.1666983206.jpg?c=2",
-            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2748/28409/F-BT-SS22-KNI12-NAVY_02__63769.1666983206.jpg?c=2"
+            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27526/ETCH-SIZING-TEMPLATE4_05__62410.1661734412.jpg?c=2",
+            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27481/DRE35_04__44530.1661235937.jpg?c=2",
+            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27480/DRE35_01__42626.1661235937.jpg?c=2",
+            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27479/DRE35_02__82692.1661235937.jpg?c=2"
           },
           "inStock": true,
-          "newest": true,
+          "newest": false,
           "bestSelling": false,
           "featured": false,
-          "quantity": 1
+          "quantity": 3
         },
         {
           "id": 13,
@@ -1912,13 +1911,14 @@
             "Sleeveless A line silhouette",
             "Fits true to size",
             "96% Cotton, 4% lurex",
-            "Lightweight, non stretchy fabric"
+            "Lightweight, non stretchy fabric",
+            "Gental machine wash in cold water, hand dry, and steam iron"
           ],
           "img": {
-            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28257/ETCH-SIZING-TEMPLATE-3_01__33165.1666240979.jpg?c=2",
-            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28011/BT-SS22-DRE94-LAVENDER-FLORAL_04__53536.1664161313.jpg?c=2",
-            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28008/BT-SS22-DRE94-LAVENDER-FLORAL_01__28526.1664161312.jpg?c=2",
-            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28009/BT-SS22-DRE94-LAVENDER-FLORAL_02__29614.1664161312.jpg?c=2"
+            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27526/ETCH-SIZING-TEMPLATE4_05__62410.1661734412.jpg?c=2",
+            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27481/DRE35_04__44530.1661235937.jpg?c=2",
+            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27480/DRE35_01__42626.1661235937.jpg?c=2",
+            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27479/DRE35_02__82692.1661235937.jpg?c=2"
           },
           "inStock": true,
           "newest": true,
