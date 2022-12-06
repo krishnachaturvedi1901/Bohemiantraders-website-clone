@@ -82,7 +82,7 @@ export default function Login() {
                     </FormControl>
                     </Box >
                     <Spacer />
-                    <Box mt={"54px"} backgroundColor={"RGBA(0, 0, 0, 0.04)"} padding="20px" width={"100%"} ml={"30px"}>
+                    <Box textAlign={'left'} mt={"54px"} backgroundColor={"RGBA(0, 0, 0, 0.04)"} padding="20px" width={"100%"} ml={"30px"}>
                     <p className="heading_2">NEW CUSTOMER?</p>
                    <p className="login_ul"> Create an account with us and you'll be able to:</p>
                     <UnorderedList className='login_ul' ml={"40px"}>

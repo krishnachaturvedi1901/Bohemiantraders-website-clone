@@ -1,7 +1,9 @@
 import { Box, Button, Checkbox, Flex, FormControl, FormLabel, Grid, GridItem, Input, Select, Spacer } from '@chakra-ui/react'
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import Footer from '../Components/Footer'
 import { Navbar } from '../Components/Navbar'
+import { accountsUrl } from '../Deployed-server-url/deployed-server-url'
 import "./SignUp.css"
 const newData = {
     email:"",
@@ -16,11 +18,16 @@ const newData = {
     state:"",
     pinCode:"",
     policy:"",
-    status:false
+    cart: [],
+    wishlist: [],
+    orders: [],
+    login:false,
+
 }
 
 export default function SignUp() {
-    const[form_data, setFormData] = useState(newData);
+    const navigate =useNavigate()
+    const[form_data, setFormData] = useState({...newData});
     const handleChange = (e) => {
         const { value, type, name, checked } = e.target;
     
@@ -29,17 +36,19 @@ export default function SignUp() {
       };
 
       const handleClick = () => {
-        fetch(`https://bohemian-server.onrender.com/accounts`,{
+        fetch(`${accountsUrl}`,{
             method:"POST",
             body:JSON.stringify(form_data),
             headers:{
                 "Content-Type": "application/json"
             }
         })
+        .then(()=>{
+            navigate('/login')
+        })
       }
   return (
     <div>
-        <Navbar />
         <Box width={["100%","100%","95%","90%"]} m={["0px 0px 25px 0px","0px 0px 25px 0px","10px auto 50px"]}>
         <p className="heading">NEW ACCOUNT</p>
         <Box id="reducing_width" width={["95%","100%","90%","80%"]} margin="auto">
@@ -145,7 +154,6 @@ export default function SignUp() {
             </Box>
         </Box>
         
-        <Footer />
     </div>
   )
 }

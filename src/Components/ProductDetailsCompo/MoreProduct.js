@@ -13,11 +13,9 @@ let setID=props.setID
     fetch(`${productsUrl}`).then((res) => {
       res.json().then((res) => {
         setState(res)
-        console.log('ressss after prodct detail mount ',res)
       })
     })
   }, [])
-  State.length > 0 ? console.log(State, "moredata") : console.log("nodata here")
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 768 },
@@ -59,7 +57,6 @@ let setID=props.setID
         {State.map((el) => {
           if (el.category == data.category) {
             return <Box cursor={'pointer'} border='1px solid #cecece' m='5px' textAlign={'center'} key={el} onClick={()=>{
-              console.log("hiiiiiiiiiiii")
               setID(el.id)}}>
               <Image m={'auto'} src={el.img.item1} alt='Dan Abramov' />
               <Text textTransform={'uppercase'} >{el.name}</Text>
