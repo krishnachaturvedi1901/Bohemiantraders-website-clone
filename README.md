@@ -42,11 +42,11 @@ We made this entire multipage react website in a week and tried to reach as clos
 
 Page created by @[Hardeep Siwach](@Hardeep317) with his all efforts. On the landing page, you will see a gorgeous navbar and the poster of the day. The search bar is fully functional and as you click on the cart button you can move to the cart only if you logged in otherwise to the login page first.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670348943631/4sw2OSt40.png?auto=compress,format&format=webp align="left")
+![Home Page](https://cdn.hashnode.com/res/hashnode/image/upload/v1670348943631/4sw2OSt40.png?auto=compress,format&format=webp align="left")
 
 A mobile responsive home page -
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1670353923101/GaQ9Dpm2e.jpg align="center")
+![Home Page Mobile view](https://cdn.hashnode.com/res/hashnode/image/upload/v1670353923101/GaQ9Dpm2e.jpg align="center")
 
 ### Login and Signup
 
