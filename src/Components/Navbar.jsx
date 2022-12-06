@@ -8,15 +8,17 @@ import {BsSearch} from "react-icons/bs"
 import {HiOutlineShoppingBag} from "react-icons/hi"
 import { useState } from "react";
 import {HamburgerIcon,CloseIcon} from "@chakra-ui/icons"
-import { IconButton } from "@chakra-ui/react";
+import { IconButton, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay } from "@chakra-ui/react";
 import { useEffect } from "react";
 import axios from "axios";
 import { accountsUrl } from "../Deployed-server-url/deployed-server-url";
+import { useDisclosure } from "@chakra-ui/react";
 
 
 export const Navbar = () =>{
     const [display, changeDisplay] = useState("none");
-
+    const[title,setTitle] = useState("");
+    const[match,setMatch] = useState([])
     const[log_user_data,setLogUserData] = useState([])
 
     const getData = () => {
@@ -24,10 +26,23 @@ export const Navbar = () =>{
         .then((res) => res.json())
         .then((resData) => setLogUserData(resData))
     }
+    const handleChange = (e) => {
+        setTitle(e.target.value)
+        fetch(`http://localhost:8001/products?q=${title}`)
+        .then((res) => res.json())
+        .then((matchedData) => setMatch(matchedData))
+    }
 
+    console.log(match)
     useEffect(() => {
         getData();
     },[])
+
+    const handleClicked = () => {
+        setTitle("")
+        setMatch([])
+    }
+    const { isOpen, onOpen, onClose } = useDisclosure()
     return(
             <Box width={["100%","100%","90%","90%"]} m={["10px 0px 0px -15px","auto","auto","auto"]} style={{position:"sticky",display:"flex" ,justifyContent:"space-between",alignItems:"center"}}>
                 <Box style={{textAlign:"center"}} className="top_flex_1" p={["0.5","1","1.5",'2']}>
@@ -272,14 +287,28 @@ export const Navbar = () =>{
                         </select>
                     </Box>
                     <Box >
-                    <BsSearch fontSize={"17px"}/>
+                    <BsSearch onClick={onOpen} fontSize={"17px"}/>
+                    <Modal isOpen={isOpen} onClose={onClose}>
+                        <ModalOverlay />
+                        <ModalContent>
+                        <ModalCloseButton />
+                        <ModalBody>
+                            <Input value={title} onChange={handleChange} w={"90%"}/>
+                            {
+                                match.map((ele) => {
+                                    return <Box>
+                                       <Link onClose={onClose} onClick={handleClicked} to={`products/${ele.id}`}> <Text size={"2xl"}>{ele.name}</Text></Link>
+                                    </Box>
+                                })
+                            }
+                        </ModalBody>
+
+                        
+                        </ModalContent>
+                    </Modal>
                     </Box>
                     <Box display="flex">
-                    {
-                        log_user_data.map((e) => {
-                          return  e.login === true ?<Box> <Link  to="/account">{e.name}</Link> </Box> : <Box><Link  to="/login"><RiAccountCircleLine fontSize={"25px"}/></Link> </Box> 
-                        })
-                    }
+                    <Link  to="/login"><RiAccountCircleLine fontSize={"25px"}/></Link>
                     
                     </Box>
                     <Box >

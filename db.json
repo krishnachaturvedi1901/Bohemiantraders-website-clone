@@ -1767,6 +1767,34 @@
           "newest": false,
           "bestSelling": false,
           "featured": false
+        },
+        {
+          "id": 1,
+          "brand": "BOHEMIAN TRADERS",
+          "category": "Maxi",
+          "name": "est nisi nostrud ad",
+          "price": 820,
+          "reviews": 9,
+          "rating": 1.2,
+          "sizes": "M",
+          "details": "non incididunt exercitation occaecat anim irure dolore eiusmod pariatur duis in do duis Lorem magna occaecat sit eiusmod duis officia est qui cupidatat id aliquip tempor cupidatat culpa adipisicing officia proident do mollit elit excepteur in sunt id consequat laboris dolor do mollit",
+          "features": [
+            "White cotton voile with mulit metallic lurex stripe",
+            "Sleeveless A line silhouette",
+            "Fits true to size",
+            "96% Cotton, 4% lurex",
+            "Lightweight, non stretchy fabric"
+          ],
+          "img": {
+            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27526/ETCH-SIZING-TEMPLATE4_05__62410.1661734412.jpg?c=2",
+            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27481/DRE35_04__44530.1661235937.jpg?c=2",
+            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27480/DRE35_01__42626.1661235937.jpg?c=2",
+            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27479/DRE35_02__82692.1661235937.jpg?c=2"
+          },
+          "inStock": true,
+          "newest": false,
+          "bestSelling": false,
+          "featured": false
         }
       ],
       "wishlist": [

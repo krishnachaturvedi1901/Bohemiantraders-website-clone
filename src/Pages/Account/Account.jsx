@@ -20,7 +20,9 @@ export default function Account() {
             <Box>
                 <Text fontSize={"30px"}>Your Orders</Text>
                 {
-
+                    log_user_data.map((e) => {
+                        
+                    })
                 }
             </Box>
         </Flex>
