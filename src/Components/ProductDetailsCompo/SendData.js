@@ -32,8 +32,16 @@ export const SendDataOnCart = (data, size, user) => {
     }
 }
 export const SendDataOnWishList = (data, size, user) => {
-    const newobj = { ...data, sizes: size }
     let wishlist = user[0].wishlist;
+    
+    let product1 =false;
+    wishlist.map((el)=>{
+        if(el.id ==data.id&&el.sizes==size){
+            product1=true
+             }
+    })
+    if (product1==false) {
+    const newobj = { ...data, sizes: size,quantity:1 }
     wishlist.push(newobj)
     fetch(`${accountsUrl}/${user[0].id}`, {
         method: "PATCH",
@@ -42,5 +50,5 @@ export const SendDataOnWishList = (data, size, user) => {
             "Content-Type": "application/json"
         },
     })
-
+    }
 }

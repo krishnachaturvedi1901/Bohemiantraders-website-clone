@@ -6,13 +6,21 @@ import "./Navbar.css"
 import {RiAccountCircleLine} from "react-icons/ri"
 import {BsSearch} from "react-icons/bs"
 import {HiOutlineShoppingBag} from "react-icons/hi"
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import {HamburgerIcon,CloseIcon} from "@chakra-ui/icons"
 import { IconButton } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
-
+import { accountsUrl } from "../Deployed-server-url/deployed-server-url";
 
 export const Navbar = () =>{
+    const [User, setUser] = useState(false)
+    useEffect(() => {
+        fetch(`${accountsUrl}?login=true`).then((el)=>{
+          el.json().then((data)=>{
+              setUser(data[0]) 
+          });
+        })
+      }, [])
     const navigate=useNavigate()
     const [display, changeDisplay] = useState("none");
     return(
@@ -262,10 +270,10 @@ export const Navbar = () =>{
                     <BsSearch fontSize={"17px"}/>
                     </Box>
                     <Box >
-                    <Link to="/login"><RiAccountCircleLine fontSize={"25px"}/></Link>
+                    <Link to={User.login?"/account":"/login"}>{User.login?<Text p={'20px'}>{User.fName}</Text>:<RiAccountCircleLine fontSize={"25px"}/>}</Link>
                     </Box>
                     <Box >
-                    <Link to="/login"><HiOutlineShoppingBag fontSize={"25px"}/></Link>
+                    <Link to="/cart"><HiOutlineShoppingBag fontSize={"25px"}/></Link>
                     </Box>
                 </Box>
             </Box>
