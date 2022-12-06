@@ -8,15 +8,7 @@
       "price": 150,
       "reviews": 25,
       "rating": 4.4,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
       "details": "aliquip nisi incididunt fugiat sit non magna laboris commodo nisi pariatur ipsum labore eiusmod velit velit ut do ex aute do duis Lorem consequat enim Lorem ut et veniam amet ipsum laboris sint consectetur amet irure qui proident incididunt sit minim culpa officia ex tempor enim ad ut",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -45,16 +37,7 @@
       "price": 820,
       "reviews": 9,
       "rating": 1.2,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
       "details": "non incididunt exercitation occaecat anim irure dolore eiusmod pariatur duis in do duis Lorem magna occaecat sit eiusmod duis officia est qui cupidatat id aliquip tempor cupidatat culpa adipisicing officia proident do mollit elit excepteur in sunt id consequat laboris dolor do mollit",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -82,15 +65,7 @@
       "price": 595,
       "reviews": 40,
       "rating": 2.8,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
       "details": "nulla aute et aliquip id ut voluptate incididunt fugiat sit proident ex laboris aliquip magna esse officia ea duis ad in excepteur et quis cillum elit ad laboris sunt veniam aliquip duis in nisi commodo fugiat ex sint proident id ullamco velit eiusmod officia eiusmod est reprehenderit velit enim ut",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -119,16 +94,7 @@
       "price": 305,
       "reviews": 43,
       "rating": 3.4,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
       "details": "in officia exercitation ipsum quis elit enim qui exercitation ullamco irure nulla deserunt eu sunt quis esse sit fugiat aliquip ullamco pariatur nisi aute aute in nisi amet ipsum culpa duis sint ad dolor voluptate exercitation ex elit cupidatat velit duis nulla laborum laboris consectetur anim consectetur officia",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -157,16 +123,7 @@
       "price": 95,
       "reviews": 21,
       "rating": 1.9,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
       "details": "exercitation nostrud dolor aute ad consectetur labore do nisi cillum velit ipsum minim sint anim nulla esse amet ipsum id sint in aliqua occaecat eu do aliquip reprehenderit consequat nisi id labore ad non laboris Lorem officia ullamco ut commodo culpa ad",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -194,16 +151,7 @@
       "price": 550,
       "reviews": 30,
       "rating": 3,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
       "details": "nostrud nulla mollit consequat qui ullamco cupidatat dolore sit quis ipsum anim tempor tempor dolor fugiat mollit eu id cillum nisi magna ea nulla elit occaecat cillum culpa dolore occaecat dolore ullamco ut in exercitation ipsum aute mollit qui reprehenderit sint sint",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -231,15 +179,7 @@
       "price": 315,
       "reviews": 6,
       "rating": 2.2,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
       "details": "ex et do labore qui exercitation est voluptate laboris proident ad culpa cillum aliqua magna excepteur ad veniam eu commodo anim mollit aute sunt minim in deserunt duis nostrud pariatur cupidatat qui sint nisi irure deserunt esse nostrud mollit culpa",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -268,17 +208,7 @@
       "price": 390,
       "reviews": 45,
       "rating": 1.9,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL",
-        "4XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       "details": "nostrud reprehenderit id velit voluptate tempor qui ad cillum culpa officia est sit est ad elit esse officia deserunt laborum officia pariatur in sint ea ad ipsum excepteur magna veniam do sit veniam veniam ipsum consequat laborum non laboris non laboris dolore",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -306,17 +236,7 @@
       "price": 580,
       "reviews": 38,
       "rating": 4.2,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL",
-        "4XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       "details": "mollit eiusmod Lorem proident excepteur quis nisi excepteur consectetur sit anim et cillum consequat excepteur mollit eiusmod nostrud quis nulla esse dolore consequat non nostrud nisi aliquip quis proident ipsum fugiat laboris quis adipisicing adipisicing minim nostrud commodo consequat exercitation est do",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -344,15 +264,7 @@
       "price": 390,
       "reviews": 22,
       "rating": 5,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
       "details": "pariatur fugiat non dolore pariatur magna eiusmod laboris mollit nisi veniam nisi pariatur elit cupidatat irure veniam do non occaecat pariatur enim reprehenderit officia consectetur commodo consequat est mollit incididunt laborum incididunt cupidatat nulla exercitation mollit enim sit duis esse proident fugiat proident cillum consectetur id sint duis",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -380,16 +292,7 @@
       "price": 490,
       "reviews": 37,
       "rating": 1.8,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
       "details": "consectetur nisi ut esse do pariatur occaecat elit et eiusmod ex laboris veniam non nostrud reprehenderit reprehenderit ea non deserunt est magna pariatur aute velit culpa labore sunt exercitation magna culpa reprehenderit sint velit magna exercitation Lorem aute cupidatat magna ut voluptate exercitation nostrud eiusmod ea laboris ut",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -417,17 +320,7 @@
       "price": 820,
       "reviews": 41,
       "rating": 3.2,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL",
-        "4XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       "details": "duis cupidatat velit officia ipsum eu anim proident irure velit dolore fugiat ex ex pariatur enim nisi qui quis non consequat voluptate adipisicing consequat dolor sint amet sunt quis proident commodo laborum duis Lorem excepteur magna ex nostrud ipsum ullamco minim laboris ut nulla ullamco aliquip ipsum",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -456,16 +349,7 @@
       "price": 445,
       "reviews": 48,
       "rating": 3.4,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
       "details": "eu esse cupidatat cillum anim occaecat cillum ea id incididunt deserunt esse eiusmod ullamco ipsum excepteur laborum nulla proident proident labore anim ipsum cupidatat ipsum cupidatat et ipsum ipsum magna commodo excepteur adipisicing id sunt do nulla ipsum proident enim",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -493,16 +377,7 @@
       "price": 605,
       "reviews": 43,
       "rating": 1.8,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
       "details": "cillum ea mollit Lorem sunt nisi nulla voluptate consectetur pariatur commodo et quis magna consequat anim aliqua fugiat veniam minim proident in qui quis nisi nisi consequat qui consectetur proident aute laborum ad proident in enim ea ullamco aliqua excepteur tempor incididunt nisi velit in cillum voluptate laborum nulla non",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -530,16 +405,7 @@
       "price": 440,
       "reviews": 18,
       "rating": 4.1,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
       "details": "id occaecat est anim commodo excepteur ea anim irure tempor dolore excepteur reprehenderit nisi officia anim ipsum eu pariatur ea esse do ea sunt culpa ea ea sit ad commodo duis consequat elit labore do aliquip occaecat duis veniam eu",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -567,15 +433,7 @@
       "price": 520,
       "reviews": 8,
       "rating": 3.4,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
       "details": "culpa dolore ullamco laborum eu exercitation laboris occaecat nostrud cupidatat est cupidatat culpa minim occaecat fugiat ut sit occaecat sit voluptate reprehenderit sit elit et enim Lorem ex ex veniam laborum culpa non duis qui magna voluptate qui nisi do nisi ex laborum ex duis cillum cupidatat cupidatat ut",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -603,17 +461,7 @@
       "price": 550,
       "reviews": 10,
       "rating": 4.9,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL",
-        "4XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       "details": "dolor occaecat eiusmod irure ex dolore anim nulla laborum esse quis nulla ad adipisicing cillum laboris consequat mollit Lorem irure quis tempor dolor fugiat eiusmod incididunt officia excepteur veniam eiusmod consectetur ea occaecat proident officia nostrud incididunt ea id eu reprehenderit ea labore veniam pariatur labore commodo ad",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -642,17 +490,7 @@
       "price": 550,
       "reviews": 36,
       "rating": 2.9,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL",
-        "4XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       "details": "do consequat enim nulla qui aute aute ipsum aute amet enim laborum culpa nostrud consequat qui eiusmod enim voluptate ut id pariatur quis eiusmod consequat ut commodo proident magna pariatur sint velit proident duis nostrud dolor nostrud dolore culpa irure et nostrud occaecat id dolor pariatur",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -681,17 +519,7 @@
       "price": 790,
       "reviews": 13,
       "rating": 1.3,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL",
-        "4XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       "details": "tempor est ad officia aliqua labore aliquip consectetur pariatur consequat sint culpa excepteur exercitation et minim sit laborum sint voluptate et exercitation amet amet officia quis cupidatat qui irure voluptate aliquip fugiat consectetur aliqua tempor esse sit aute adipisicing excepteur Lorem sunt deserunt aliqua ex ea qui pariatur voluptate",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -719,16 +547,7 @@
       "price": 330,
       "reviews": 37,
       "rating": 1.1,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
       "details": "ea voluptate reprehenderit ullamco voluptate sunt fugiat dolore mollit irure irure sunt consectetur commodo enim occaecat cupidatat esse deserunt ea sit quis officia sint minim elit proident duis laborum magna elit deserunt irure ea quis elit Lorem excepteur enim voluptate consectetur cillum pariatur",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -756,15 +575,7 @@
       "price": 765,
       "reviews": 12,
       "rating": 2.4,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
       "details": "ullamco ad adipisicing nulla excepteur enim dolor est officia consequat esse deserunt dolor culpa culpa cupidatat cillum labore id ex ipsum eu incididunt est proident sint tempor reprehenderit consectetur nisi tempor dolor ullamco commodo id nisi nulla aute non qui laboris nulla esse commodo",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -793,16 +604,7 @@
       "price": 345,
       "reviews": 34,
       "rating": 2.3,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
       "details": "culpa consequat exercitation incididunt in consectetur quis magna Lorem aute officia nostrud elit excepteur et reprehenderit cupidatat ipsum minim anim aliquip pariatur do irure in et dolor duis cillum do reprehenderit exercitation amet elit proident fugiat velit cupidatat laboris aliqua id",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -831,15 +633,7 @@
       "price": 780,
       "reviews": 34,
       "rating": 2.7,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
       "details": "occaecat ipsum excepteur et pariatur amet minim dolore aliquip ea ad excepteur exercitation ut nisi consectetur non occaecat et esse labore anim qui et qui laborum amet laboris sunt esse sit sint consectetur velit sint incididunt ad reprehenderit laboris irure eu et veniam et sunt et do ut eu",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -868,15 +662,7 @@
       "price": 590,
       "reviews": 14,
       "rating": 3.6,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
       "details": "et est excepteur nulla veniam anim officia culpa proident consequat in nisi sit quis sit laboris exercitation eu magna laboris veniam laborum sit id dolore commodo Lorem deserunt commodo ea consequat reprehenderit est ex irure sint ullamco ea do incididunt laborum aliquip",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -905,16 +691,7 @@
       "price": 765,
       "reviews": 7,
       "rating": 1.1,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
       "details": "eu ipsum excepteur consectetur ullamco et tempor aute non et ut qui amet id ullamco excepteur tempor non laboris ullamco voluptate et in veniam eu excepteur ullamco aute et ipsum sint ut ad mollit ullamco culpa quis incididunt et nisi esse",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -943,17 +720,7 @@
       "price": 395,
       "reviews": 15,
       "rating": 3.4,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL",
-        "4XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       "details": "ea sint nulla ipsum non enim dolor esse minim in ea minim eiusmod ut dolore do culpa nisi deserunt ullamco ullamco sint labore sit amet consectetur dolore veniam ex fugiat amet nisi incididunt aute nisi dolore culpa eiusmod consectetur occaecat id consectetur aliquip proident minim incididunt",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -981,17 +748,7 @@
       "price": 210,
       "reviews": 26,
       "rating": 3.7,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL",
-        "4XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       "details": "laboris dolore Lorem commodo esse exercitation incididunt duis minim magna nulla proident cillum commodo excepteur non aliquip eiusmod et tempor aliqua sint velit elit exercitation aliquip irure qui ullamco quis proident nulla sit aliquip ullamco proident aliqua nostrud elit et ullamco ex ut commodo irure",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -1019,15 +776,7 @@
       "price": 565,
       "reviews": 50,
       "rating": 2.9,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
       "details": "eu adipisicing sit aliquip consequat ullamco eiusmod excepteur dolor mollit elit pariatur culpa nisi nulla sint incididunt sint laboris dolor cillum consequat reprehenderit ea aliquip minim commodo ad tempor non officia nostrud voluptate incididunt eu proident eu reprehenderit excepteur ad occaecat aute dolore aute cupidatat sunt fugiat id magna",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -1056,15 +805,7 @@
       "price": 675,
       "reviews": 9,
       "rating": 2.2,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
       "details": "eiusmod ut labore elit occaecat aute adipisicing exercitation mollit nostrud enim culpa laborum eiusmod anim pariatur dolor anim do do culpa consectetur ipsum non mollit veniam culpa consectetur aute elit irure enim elit ipsum fugiat aliqua elit amet ex laborum sit Lorem enim ea incididunt nostrud pariatur est ex",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -1092,17 +833,7 @@
       "price": 660,
       "reviews": 48,
       "rating": 2.9,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL",
-        "4XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       "details": "sit adipisicing anim sunt commodo proident officia consectetur laboris sunt veniam ex pariatur quis reprehenderit id nostrud ad id veniam nisi nisi adipisicing deserunt ad aliqua dolor aute amet magna non dolor quis mollit in fugiat deserunt nisi cillum sit laborum",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -1130,17 +861,7 @@
       "price": 525,
       "reviews": 43,
       "rating": 3.2,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL",
-        "4XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       "details": "tempor aliquip commodo ex ipsum pariatur minim est et culpa ipsum ipsum exercitation adipisicing veniam esse minim aliquip est est fugiat non eiusmod aute do ea adipisicing duis eiusmod labore est ea adipisicing Lorem laboris dolore fugiat aliqua fugiat ipsum ut occaecat ut proident ipsum officia ut sint",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -1168,16 +889,7 @@
       "price": 675,
       "reviews": 45,
       "rating": 1.1,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
       "details": "exercitation enim consequat labore laborum eiusmod sint nisi eu ullamco duis fugiat laboris ex magna proident aute reprehenderit pariatur consectetur enim nulla nostrud commodo anim Lorem officia nulla ut do commodo quis nisi ipsum aliqua do cillum sint in cillum irure laborum commodo voluptate incididunt in",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -1206,15 +918,7 @@
       "price": 260,
       "reviews": 40,
       "rating": 3.3,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
       "details": "consequat adipisicing officia consequat ea adipisicing quis culpa non ea eu fugiat est fugiat Lorem exercitation in nostrud nulla do non incididunt ullamco ex exercitation elit non laborum sit ex reprehenderit incididunt sint qui ipsum est excepteur velit labore incididunt nulla elit deserunt occaecat dolore",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -1243,17 +947,7 @@
       "price": 340,
       "reviews": 20,
       "rating": 4.7,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL",
-        "4XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       "details": "deserunt sint reprehenderit Lorem amet sint Lorem dolore elit exercitation sint nulla mollit officia Lorem ullamco duis aliquip sint commodo excepteur elit adipisicing anim dolore quis fugiat nostrud nostrud nisi eiusmod anim aliqua aliqua eu pariatur aliquip adipisicing ullamco Lorem nisi",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -1282,15 +976,7 @@
       "price": 540,
       "reviews": 31,
       "rating": 2,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL"],
       "details": "adipisicing eiusmod sint sint elit amet consequat aliquip nisi ipsum qui eiusmod fugiat do nostrud duis velit ipsum consequat deserunt amet officia eiusmod consectetur minim cillum labore anim laborum minim sunt duis ut laborum irure dolor deserunt non amet deserunt consequat cupidatat duis fugiat sit qui esse Lorem ipsum ea",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -1319,16 +1005,7 @@
       "price": 495,
       "reviews": 12,
       "rating": 1.4,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL"],
       "details": "officia officia et qui esse mollit in et id in laboris laborum aliqua voluptate aute laboris enim eu laboris ea Lorem voluptate et aute officia ad anim magna sit anim amet consectetur enim sit sint commodo ipsum consequat exercitation incididunt aute est deserunt irure Lorem sunt",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -1357,17 +1034,7 @@
       "price": 470,
       "reviews": 12,
       "rating": 2.5,
-      "sizes": [
-        "2XS",
-        "XS",
-        "S",
-        "M",
-        "L",
-        "XL",
-        "2XL",
-        "3XL",
-        "4XL"
-      ],
+      "sizes": ["2XS", "XS", "S", "M", "L", "XL", "2XL", "3XL", "4XL"],
       "details": "aliqua proident proident esse sit labore occaecat labore amet consequat dolor laborum exercitation cillum voluptate consequat Lorem voluptate nostrud anim sunt reprehenderit aute sunt eu fugiat aliquip ad occaecat dolore consectetur adipisicing exercitation velit reprehenderit nisi culpa dolore deserunt elit voluptate",
       "features": [
         "White cotton voile with mulit metallic lurex stripe",
@@ -1390,411 +1057,7 @@
   ],
   "accounts": [
     {
-      "id": "0",
-      "name": "Admin",
-      "email": "Admin@gmail.com",
-      "password": "123456789",
-      "mobile": "123456789",
-      "address": [],
-      "cart": [],
-      "wishlist": [
-        {
-          "id": 1,
-          "brand": "BOHEMIAN TRADERS",
-          "category": "Maxi",
-          "name": "est nisi nostrud ad",
-          "price": 820,
-          "reviews": 9,
-          "rating": 1.2,
-          "sizes": "XS",
-          "details": "non incididunt exercitation occaecat anim irure dolore eiusmod pariatur duis in do duis Lorem magna occaecat sit eiusmod duis officia est qui cupidatat id aliquip tempor cupidatat culpa adipisicing officia proident do mollit elit excepteur in sunt id consequat laboris dolor do mollit",
-          "features": [
-            "White cotton voile with mulit metallic lurex stripe",
-            "Sleeveless A line silhouette",
-            "Fits true to size",
-            "96% Cotton, 4% lurex",
-            "Lightweight, non stretchy fabric"
-          ],
-          "img": {
-            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27526/ETCH-SIZING-TEMPLATE4_05__62410.1661734412.jpg?c=2",
-            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27481/DRE35_04__44530.1661235937.jpg?c=2",
-            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27480/DRE35_01__42626.1661235937.jpg?c=2",
-            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27479/DRE35_02__82692.1661235937.jpg?c=2"
-          },
-          "inStock": true,
-          "newest": false,
-          "bestSelling": false,
-          "featured": false
-        },
-        {
-          "id": 1,
-          "brand": "BOHEMIAN TRADERS",
-          "category": "Maxi",
-          "name": "est nisi nostrud ad",
-          "price": 820,
-          "reviews": 9,
-          "rating": 1.2,
-          "sizes": "XS",
-          "details": "non incididunt exercitation occaecat anim irure dolore eiusmod pariatur duis in do duis Lorem magna occaecat sit eiusmod duis officia est qui cupidatat id aliquip tempor cupidatat culpa adipisicing officia proident do mollit elit excepteur in sunt id consequat laboris dolor do mollit",
-          "features": [
-            "White cotton voile with mulit metallic lurex stripe",
-            "Sleeveless A line silhouette",
-            "Fits true to size",
-            "96% Cotton, 4% lurex",
-            "Lightweight, non stretchy fabric"
-          ],
-          "img": {
-            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27526/ETCH-SIZING-TEMPLATE4_05__62410.1661734412.jpg?c=2",
-            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27481/DRE35_04__44530.1661235937.jpg?c=2",
-            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27480/DRE35_01__42626.1661235937.jpg?c=2",
-            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27479/DRE35_02__82692.1661235937.jpg?c=2"
-          },
-          "inStock": true,
-          "newest": false,
-          "bestSelling": false,
-          "featured": false
-        }
-      ],
-      "orders": [
-        {
-          "id": 2,
-          "brand": "BOHEMIAN TRADERS",
-          "category": "Longwear",
-          "name": "id in occaecat eiusmod aliqua",
-          "price": 595,
-          "reviews": 40,
-          "rating": 2.8,
-          "sizes": "2XS",
-          "details": "nulla aute et aliquip id ut voluptate incididunt fugiat sit proident ex laboris aliquip magna esse officia ea duis ad in excepteur et quis cillum elit ad laboris sunt veniam aliquip duis in nisi commodo fugiat ex sint proident id ullamco velit eiusmod officia eiusmod est reprehenderit velit enim ut",
-          "features": [
-            "White cotton voile with mulit metallic lurex stripe",
-            "Sleeveless A line silhouette",
-            "Fits true to size",
-            "96% Cotton, 4% lurex",
-            "Lightweight, non stretchy fabric",
-            "Gental machine wash in cold water, hand dry, and steam iron"
-          ],
-          "img": {
-            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2730/28443/ED-ETCH-SIZING-TEMPLATE-4_01__61589.1667076662.jpg?c=2",
-            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2730/28429/EDIT-RECOLOUR-BT-SS22-DRE79-GREEN-STRIPE_04__88073.1667075036.jpg?c=2",
-            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2730/28426/EDIT-RECOLOUR-BT-SS22-DRE79-GREEN-STRIPE_01__86920.1667075036.jpg?c=2",
-            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2730/28427/EDIT-RECOLOUR-BT-SS22-DRE79-GREEN-STRIPE_02__29742.1667075036.jpg?c=2"
-          },
-          "inStock": true,
-          "newest": true,
-          "bestSelling": true,
-          "featured": false,
-          "quantity": 3
-        },
-        {
-          "id": 2,
-          "brand": "BOHEMIAN TRADERS",
-          "category": "Longwear",
-          "name": "id in occaecat eiusmod aliqua",
-          "price": 595,
-          "reviews": 40,
-          "rating": 2.8,
-          "sizes": "XS",
-          "details": "nulla aute et aliquip id ut voluptate incididunt fugiat sit proident ex laboris aliquip magna esse officia ea duis ad in excepteur et quis cillum elit ad laboris sunt veniam aliquip duis in nisi commodo fugiat ex sint proident id ullamco velit eiusmod officia eiusmod est reprehenderit velit enim ut",
-          "features": [
-            "White cotton voile with mulit metallic lurex stripe",
-            "Sleeveless A line silhouette",
-            "Fits true to size",
-            "96% Cotton, 4% lurex",
-            "Lightweight, non stretchy fabric",
-            "Gental machine wash in cold water, hand dry, and steam iron"
-          ],
-          "img": {
-            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2730/28443/ED-ETCH-SIZING-TEMPLATE-4_01__61589.1667076662.jpg?c=2",
-            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2730/28429/EDIT-RECOLOUR-BT-SS22-DRE79-GREEN-STRIPE_04__88073.1667075036.jpg?c=2",
-            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2730/28426/EDIT-RECOLOUR-BT-SS22-DRE79-GREEN-STRIPE_01__86920.1667075036.jpg?c=2",
-            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2730/28427/EDIT-RECOLOUR-BT-SS22-DRE79-GREEN-STRIPE_02__29742.1667075036.jpg?c=2"
-          },
-          "inStock": true,
-          "newest": true,
-          "bestSelling": true,
-          "featured": false,
-          "quantity": 1
-        },
-        {
-          "id": 2,
-          "brand": "BOHEMIAN TRADERS",
-          "category": "Longwear",
-          "name": "id in occaecat eiusmod aliqua",
-          "price": 595,
-          "reviews": 40,
-          "rating": 2.8,
-          "sizes": "2XS",
-          "details": "nulla aute et aliquip id ut voluptate incididunt fugiat sit proident ex laboris aliquip magna esse officia ea duis ad in excepteur et quis cillum elit ad laboris sunt veniam aliquip duis in nisi commodo fugiat ex sint proident id ullamco velit eiusmod officia eiusmod est reprehenderit velit enim ut",
-          "features": [
-            "White cotton voile with mulit metallic lurex stripe",
-            "Sleeveless A line silhouette",
-            "Fits true to size",
-            "96% Cotton, 4% lurex",
-            "Lightweight, non stretchy fabric",
-            "Gental machine wash in cold water, hand dry, and steam iron"
-          ],
-          "img": {
-            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2730/28443/ED-ETCH-SIZING-TEMPLATE-4_01__61589.1667076662.jpg?c=2",
-            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2730/28429/EDIT-RECOLOUR-BT-SS22-DRE79-GREEN-STRIPE_04__88073.1667075036.jpg?c=2",
-            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2730/28426/EDIT-RECOLOUR-BT-SS22-DRE79-GREEN-STRIPE_01__86920.1667075036.jpg?c=2",
-            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2730/28427/EDIT-RECOLOUR-BT-SS22-DRE79-GREEN-STRIPE_02__29742.1667075036.jpg?c=2"
-          },
-          "inStock": true,
-          "newest": true,
-          "bestSelling": true,
-          "featured": false,
-          "quantity": 3
-        },
-        {
-          "id": 2,
-          "brand": "BOHEMIAN TRADERS",
-          "category": "Longwear",
-          "name": "id in occaecat eiusmod aliqua",
-          "price": 595,
-          "reviews": 40,
-          "rating": 2.8,
-          "sizes": "XS",
-          "details": "nulla aute et aliquip id ut voluptate incididunt fugiat sit proident ex laboris aliquip magna esse officia ea duis ad in excepteur et quis cillum elit ad laboris sunt veniam aliquip duis in nisi commodo fugiat ex sint proident id ullamco velit eiusmod officia eiusmod est reprehenderit velit enim ut",
-          "features": [
-            "White cotton voile with mulit metallic lurex stripe",
-            "Sleeveless A line silhouette",
-            "Fits true to size",
-            "96% Cotton, 4% lurex",
-            "Lightweight, non stretchy fabric",
-            "Gental machine wash in cold water, hand dry, and steam iron"
-          ],
-          "img": {
-            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2730/28443/ED-ETCH-SIZING-TEMPLATE-4_01__61589.1667076662.jpg?c=2",
-            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2730/28429/EDIT-RECOLOUR-BT-SS22-DRE79-GREEN-STRIPE_04__88073.1667075036.jpg?c=2",
-            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2730/28426/EDIT-RECOLOUR-BT-SS22-DRE79-GREEN-STRIPE_01__86920.1667075036.jpg?c=2",
-            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2730/28427/EDIT-RECOLOUR-BT-SS22-DRE79-GREEN-STRIPE_02__29742.1667075036.jpg?c=2"
-          },
-          "inStock": true,
-          "newest": true,
-          "bestSelling": true,
-          "featured": false,
-          "quantity": 1
-        },
-        {
-          "id": 17,
-          "brand": "BOHEMIAN TRADERS",
-          "category": "Longwear",
-          "name": "tempor tempor voluptate ex laborum",
-          "price": 550,
-          "reviews": 36,
-          "rating": 2.9,
-          "sizes": "L",
-          "details": "do consequat enim nulla qui aute aute ipsum aute amet enim laborum culpa nostrud consequat qui eiusmod enim voluptate ut id pariatur quis eiusmod consequat ut commodo proident magna pariatur sint velit proident duis nostrud dolor nostrud dolore culpa irure et nostrud occaecat id dolor pariatur",
-          "features": [
-            "White cotton voile with mulit metallic lurex stripe",
-            "Sleeveless A line silhouette",
-            "Fits true to size",
-            "96% Cotton, 4% lurex",
-            "Lightweight, non stretchy fabric",
-            "Gental machine wash in cold water, hand dry, and steam iron"
-          ],
-          "img": {
-            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28257/ETCH-SIZING-TEMPLATE-3_01__33165.1666240979.jpg?c=2",
-            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28011/BT-SS22-DRE94-LAVENDER-FLORAL_04__53536.1664161313.jpg?c=2",
-            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28008/BT-SS22-DRE94-LAVENDER-FLORAL_01__28526.1664161312.jpg?c=2",
-            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28009/BT-SS22-DRE94-LAVENDER-FLORAL_02__29614.1664161312.jpg?c=2"
-          },
-          "inStock": false,
-          "newest": true,
-          "bestSelling": false,
-          "featured": false,
-          "quantity": 14
-        },
-        {
-          "id": 36,
-          "brand": "BOHEMIAN TRADERS",
-          "category": "Longwear",
-          "name": "exercitation mollit deserunt proident in sit",
-          "price": 470,
-          "reviews": 12,
-          "rating": 2.5,
-          "sizes": "XS",
-          "details": "aliqua proident proident esse sit labore occaecat labore amet consequat dolor laborum exercitation cillum voluptate consequat Lorem voluptate nostrud anim sunt reprehenderit aute sunt eu fugiat aliquip ad occaecat dolore consectetur adipisicing exercitation velit reprehenderit nisi culpa dolore deserunt elit voluptate",
-          "features": [
-            "White cotton voile with mulit metallic lurex stripe",
-            "Sleeveless A line silhouette",
-            "Fits true to size",
-            "96% Cotton, 4% lurex",
-            "Lightweight, non stretchy fabric"
-          ],
-          "img": {
-            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2453/25874/1_04__26317.1659932946.jpg?c=2",
-            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2748/28411/F-BT-SS22-KNI12-NAVY_04__29268.1666983207.jpg?c=2",
-            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2748/28408/F-BT-SS22-KNI12-NAVY_01__77830.1666983206.jpg?c=2",
-            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2748/28409/F-BT-SS22-KNI12-NAVY_02__63769.1666983206.jpg?c=2"
-          },
-          "inStock": true,
-          "newest": true,
-          "bestSelling": false,
-          "featured": false,
-          "quantity": 1
-        },
-        {
-          "id": 13,
-          "brand": "BOHEMIAN TRADERS",
-          "category": "Top",
-          "name": "est dolore sunt tempor id occaecat",
-          "price": 605,
-          "reviews": 43,
-          "rating": 1.8,
-          "sizes": "M",
-          "details": "cillum ea mollit Lorem sunt nisi nulla voluptate consectetur pariatur commodo et quis magna consequat anim aliqua fugiat veniam minim proident in qui quis nisi nisi consequat qui consectetur proident aute laborum ad proident in enim ea ullamco aliqua excepteur tempor incididunt nisi velit in cillum voluptate laborum nulla non",
-          "features": [
-            "White cotton voile with mulit metallic lurex stripe",
-            "Sleeveless A line silhouette",
-            "Fits true to size",
-            "96% Cotton, 4% lurex",
-            "Lightweight, non stretchy fabric"
-          ],
-          "img": {
-            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28257/ETCH-SIZING-TEMPLATE-3_01__33165.1666240979.jpg?c=2",
-            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28011/BT-SS22-DRE94-LAVENDER-FLORAL_04__53536.1664161313.jpg?c=2",
-            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28008/BT-SS22-DRE94-LAVENDER-FLORAL_01__28526.1664161312.jpg?c=2",
-            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28009/BT-SS22-DRE94-LAVENDER-FLORAL_02__29614.1664161312.jpg?c=2"
-          },
-          "inStock": true,
-          "newest": true,
-          "bestSelling": true,
-          "featured": true,
-          "quantity": 2
-        },
-        {
-          "id": 17,
-          "brand": "BOHEMIAN TRADERS",
-          "category": "Longwear",
-          "name": "tempor tempor voluptate ex laborum",
-          "price": 550,
-          "reviews": 36,
-          "rating": 2.9,
-          "sizes": "L",
-          "details": "do consequat enim nulla qui aute aute ipsum aute amet enim laborum culpa nostrud consequat qui eiusmod enim voluptate ut id pariatur quis eiusmod consequat ut commodo proident magna pariatur sint velit proident duis nostrud dolor nostrud dolore culpa irure et nostrud occaecat id dolor pariatur",
-          "features": [
-            "White cotton voile with mulit metallic lurex stripe",
-            "Sleeveless A line silhouette",
-            "Fits true to size",
-            "96% Cotton, 4% lurex",
-            "Lightweight, non stretchy fabric",
-            "Gental machine wash in cold water, hand dry, and steam iron"
-          ],
-          "img": {
-            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28257/ETCH-SIZING-TEMPLATE-3_01__33165.1666240979.jpg?c=2",
-            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28011/BT-SS22-DRE94-LAVENDER-FLORAL_04__53536.1664161313.jpg?c=2",
-            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28008/BT-SS22-DRE94-LAVENDER-FLORAL_01__28526.1664161312.jpg?c=2",
-            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28009/BT-SS22-DRE94-LAVENDER-FLORAL_02__29614.1664161312.jpg?c=2"
-          },
-          "inStock": false,
-          "newest": true,
-          "bestSelling": false,
-          "featured": false,
-          "quantity": 14
-        },
-        {
-          "id": 36,
-          "brand": "BOHEMIAN TRADERS",
-          "category": "Longwear",
-          "name": "exercitation mollit deserunt proident in sit",
-          "price": 470,
-          "reviews": 12,
-          "rating": 2.5,
-          "sizes": "XS",
-          "details": "aliqua proident proident esse sit labore occaecat labore amet consequat dolor laborum exercitation cillum voluptate consequat Lorem voluptate nostrud anim sunt reprehenderit aute sunt eu fugiat aliquip ad occaecat dolore consectetur adipisicing exercitation velit reprehenderit nisi culpa dolore deserunt elit voluptate",
-          "features": [
-            "White cotton voile with mulit metallic lurex stripe",
-            "Sleeveless A line silhouette",
-            "Fits true to size",
-            "96% Cotton, 4% lurex",
-            "Lightweight, non stretchy fabric"
-          ],
-          "img": {
-            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2453/25874/1_04__26317.1659932946.jpg?c=2",
-            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2748/28411/F-BT-SS22-KNI12-NAVY_04__29268.1666983207.jpg?c=2",
-            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2748/28408/F-BT-SS22-KNI12-NAVY_01__77830.1666983206.jpg?c=2",
-            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2748/28409/F-BT-SS22-KNI12-NAVY_02__63769.1666983206.jpg?c=2"
-          },
-          "inStock": true,
-          "newest": true,
-          "bestSelling": false,
-          "featured": false,
-          "quantity": 1
-        },
-        {
-          "id": 13,
-          "brand": "BOHEMIAN TRADERS",
-          "category": "Top",
-          "name": "est dolore sunt tempor id occaecat",
-          "price": 605,
-          "reviews": 43,
-          "rating": 1.8,
-          "sizes": "M",
-          "details": "cillum ea mollit Lorem sunt nisi nulla voluptate consectetur pariatur commodo et quis magna consequat anim aliqua fugiat veniam minim proident in qui quis nisi nisi consequat qui consectetur proident aute laborum ad proident in enim ea ullamco aliqua excepteur tempor incididunt nisi velit in cillum voluptate laborum nulla non",
-          "features": [
-            "White cotton voile with mulit metallic lurex stripe",
-            "Sleeveless A line silhouette",
-            "Fits true to size",
-            "96% Cotton, 4% lurex",
-            "Lightweight, non stretchy fabric"
-          ],
-          "img": {
-            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28257/ETCH-SIZING-TEMPLATE-3_01__33165.1666240979.jpg?c=2",
-            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28011/BT-SS22-DRE94-LAVENDER-FLORAL_04__53536.1664161313.jpg?c=2",
-            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28008/BT-SS22-DRE94-LAVENDER-FLORAL_01__28526.1664161312.jpg?c=2",
-            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2731/28009/BT-SS22-DRE94-LAVENDER-FLORAL_02__29614.1664161312.jpg?c=2"
-          },
-          "inStock": true,
-          "newest": true,
-          "bestSelling": true,
-          "featured": true,
-          "quantity": 2
-        },
-        {
-          "id": 1,
-          "brand": "BOHEMIAN TRADERS",
-          "category": "Maxi",
-          "name": "est nisi nostrud ad",
-          "price": 820,
-          "reviews": 9,
-          "rating": 1.2,
-          "sizes": "2XS",
-          "details": "non incididunt exercitation occaecat anim irure dolore eiusmod pariatur duis in do duis Lorem magna occaecat sit eiusmod duis officia est qui cupidatat id aliquip tempor cupidatat culpa adipisicing officia proident do mollit elit excepteur in sunt id consequat laboris dolor do mollit",
-          "features": [
-            "White cotton voile with mulit metallic lurex stripe",
-            "Sleeveless A line silhouette",
-            "Fits true to size",
-            "96% Cotton, 4% lurex",
-            "Lightweight, non stretchy fabric"
-          ],
-          "img": {
-            "item1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27526/ETCH-SIZING-TEMPLATE4_05__62410.1661734412.jpg?c=2",
-            "item2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27481/DRE35_04__44530.1661235937.jpg?c=2",
-            "model1": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27480/DRE35_01__42626.1661235937.jpg?c=2",
-            "model2": "https://cdn11.bigcommerce.com/s-9srn18to/images/stencil/800x800/products/2663/27479/DRE35_02__82692.1661235937.jpg?c=2"
-          },
-          "inStock": true,
-          "newest": false,
-          "bestSelling": false,
-          "featured": false,
-          "quantity": 1
-        }
-      ],
-      "login": true
-    },
-    {
-      "id": "1",
-      "name": "Admin2",
-      "email": "Admin2@gmail.com",
-      "password": "123456789",
-      "mobile": "123456789",
-      "address": [],
-      "cart": [],
-      "wishlist": [],
-      "orders": [],
-      "login": false
+     
     }
   ]
 }
