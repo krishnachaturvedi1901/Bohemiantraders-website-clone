@@ -1,7 +1,6 @@
 # Bohemiantraders-website-clone
 <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1670347682821/AL5b9trwM.png?auto=compress,format&format=webp" alt='poster' />
-Created `Bohemiantraders.com` Clone
-This is our collaborative project with a team of 4 members here we have made a fully responsive react-redux e-commerce website clone with all CRUD-based functionality.
+Created `Bohemiantraders.com` clone, this is our collaborative week project with a team of 4 members here we have made a fully responsive react-redux e-commerce website clone with all CRUD-based functionality.
 
 We made this entire multipage react website in a week and tried to reach as close as possible to the actual website, it's not fair to say that we have created the same website but from the UI perspective and by concluding all the frontend functionality, yes proudly it is a clone.
 
